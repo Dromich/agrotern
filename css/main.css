@@ -87,6 +87,117 @@ body {
 .top_logo_img {
 	max-width: 100%;
 	display: block;
-	width: 70%;
-	margin: 0 auto;
+	width: 22%;
+	margin: 10px auto;
+}
+.phone_icon {
+	font-size: 4rem;
+	color: #0047AB;
+	float: left;
+	padding-top: 20px;
+}
+.phone_numb {
+	float: left;
+	padding: 20px;
+	padding-left: 10px;
+}
+.phone_href {
+	display: block;
+	margin-top: 5px;
+	color: #0047AB;
+}
+.maile_href {
+	margin-left: -20%;
+	color: #333;	
+}
+.maile_href i {
+	margin-right: 5px;
+}
+.top_phone_blo.col-md-4 {
+	padding-left: 6.3%;
+	padding-top: .6%;
+}
+.top_cart_blo.col-md-4 {
+	text-align: right;
+	padding-right: 6.3%;
+	padding-top: 1.9%;
+}
+.vork_time {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-weight: 600;
+}
+.vork_time_ttl {
+	margin: 0;
+	padding: 0;
+	font-weight: 200;
+}
+
+.top_slider_menu {
+	position: absolute;
+	width: 100%;
+	z-index: 99;
+	background-color: #0047AB;
+}
+.horisontal-menu li div {
+	display: none;
+}
+.horisontal-menu {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	padding-left: 5.8%;
+}
+.horisontal-menu li {
+	display: inline-block;
+	padding: 15px;
+	transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+}
+.horisontal-menu li:hover {
+	background-color: rgb(6, 39, 85);
+	text-decoration: none;
+}
+.horisontal-menu li a {
+	color: #fff;
+}
+.horisontal-menu li a:hover {
+	text-decoration: none;
+}
+
+.cat_menu {
+	display: block;
+	width: 100%;
+	list-style: none;
+}
+.item_menu {
+	display: block;
+	width: 100%;
+	height: 400px;
+}
+.cat_menu li {
+	display: inline-block;
+	margin-left: .5%;
+	margin-right: .5%;
+	border: 1px solid #333;
+	text-align: center;
+	width: 18.5%;
+	height: 400px;
+	position: relative;
+}
+.cat_menu li img {
+	
+	vertical-align: top;
+}
+.cat_menu li h3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.seo_ttl {
+	text-align: center;
+	padding: 15px;
 }
