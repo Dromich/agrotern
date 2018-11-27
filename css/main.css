@@ -187,8 +187,8 @@ body {
 	position: relative;
 }
 .cat_menu li img {
-	
 	vertical-align: top;
+	max-width: 100%;
 }
 .cat_menu li h3 {
 	position: absolute;
@@ -200,4 +200,65 @@ body {
 .seo_ttl {
 	text-align: center;
 	padding: 15px;
+}
+.main_item.col-md-3 {
+	height: 450px;
+	/* border-image: 1px solid #333; */
+	padding: 10px;
+}
+.item_img {
+	max-width: 100%;
+	vertical-align: top;
+}
+.item_ttl {
+	width: 100%;
+	text-align: center;
+}
+.item_brand {
+	width: 100%;
+	text-align: center;
+	display: block;
+	margin: 20px auto;
+}
+.price_section {
+	display: block;
+	bottom: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+}
+.marketing_span {
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+	background-color: orange;
+	display: block;
+	color: #fff;
+}
+.item_in {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #333;
+	padding: 15px;
+}
+.b_but {
+	display: block;
+	/* margin: 5px; */
+	padding: 5px;
+	background-color: red;
+	width: 100px;
+	border-radius: 10px;
+	margin: 5px auto;
+	color: #fff;
+}
+.row.row_slider {
+	margin: 0;
+}
+#about_us {
+	padding: 5%;
+	background-image: url(../img/index.png);
+	background-size:cover;
+	background-position: center center;
+	color: #fff;
 }
