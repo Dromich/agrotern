@@ -262,3 +262,101 @@ body {
 	background-position: center center;
 	color: #fff;
 }
+#our_brands {
+	padding: 5%;
+}
+.col-md-4.brand_grid {
+	/* text-align: center; */
+	/* padding: 25px; */
+	/* border: 1px solid; */
+	margin: 0;
+	padding: 0;
+	height: 180px;
+}
+.brand_img {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.brand_ttl {
+	display: block;
+	width: 100%;
+	text-align: center;
+	/* padding: 25px; */
+	font-size: 3rem;
+}
+.foot_logo_img {
+	max-width: 45%;
+	/* display: block; */
+	margin: 0 auto;
+	vertical-align: top;
+}
+footer {
+	padding: 3%;
+	background-color: #0047AB;
+	color: #fff;
+}
+footer h5 {
+	font-size: 1.8rem;
+	padding: 0;
+	margin: 0;
+}
+.foot_ul {
+	list-style: none;
+	padding: 0;
+}
+.foot_ul li a {
+	color: #fff;
+}
+.foot_ul li i {
+	margin-right: 10px;
+	font-size: 11px;
+}
+.footer_phone a {
+	color: #fff;
+}
+.footer_phone a {
+	color: #fff;
+}
+.footer_phone_icon {
+	color: #fff;
+}
+.footer_social a i {
+	color: #fff;
+	font-size: 2.2rem;
+	padding: 2px;
+}
+.footer_bottom_line {
+	width: 100%;
+	background-color: #0E3368;
+	height: 50px;
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.copir p {
+	margin: 0;
+	padding: 10px;
+	display: block;
+	
+}
+.pay_blo {
+	float: right;
+	display: inline-block;
+	font-size: 2.5rem;
+	margin: 0 50px;
+	padding: 0;
+	
+}
+.copir {
+	display: inline-block;
+}
+.pay_blo p {
+	margin: 0;
+	padding: 5px;
+	display: inline-block;
+	font-size: 2.2rem;
+	font-weight: 100;
+}
