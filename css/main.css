@@ -360,3 +360,78 @@ footer h5 {
 	font-size: 2.2rem;
 	font-weight: 100;
 }
+.iner_cont {
+	min-height: 50vh;
+	padding: 5%;
+}
+.market_ul {
+	list-style: none;
+	width: 100%;
+	display: block;
+	font-size: 2rem;
+}
+.on_sele {
+	color: green;
+}
+.bay_naw {
+	padding: 20px;
+	text-align: center;
+	border: 2px solid #0047AB;
+	border-radius: 28px;
+	display: block;
+	margin: 10px;
+	width: 50%;
+	color: #fff;
+	background-color: #0E3368;
+	transition: all .5s;
+}
+.bay_naw:hover{
+	color: #000;
+	background-color: #fff;
+	text-decoration: none;
+
+}
+.price {
+	font-size: 3rem;
+	margin: 15px;
+}
+.market_elem {
+	text-align: left;
+	padding: 3%;
+}
+.market_ditail {
+	border-left: 2px solid #33333380;
+	padding: 3%;
+}
+.market_dit_ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.market_dit_ul li i {
+	font-size: 3rem;
+	display: inline;
+}
+.market_dit_ul li h4 {
+	padding: 0;
+	margin: 0 20px;
+	display: inline-block;
+	font-size: 2.5rem;
+}
+.desc table {
+	border: 1px solid;
+	padding: 20px;
+}
+.desc table tr {
+	border: 1px solid #333;
+	padding: 10px;
+	text-align: justify;
+}
+.desc table td {
+	border: 1px solid;
+	padding: 5px;
+}
+.desc table tr:nth-child(2n) {
+	background-color: #e1e1e1;
+	border: 1px dotted;
+}
