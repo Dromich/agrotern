@@ -140,9 +140,7 @@ body {
 	z-index: 99;
 	background-color: #0047AB;
 }
-.horisontal-menu li div {
-	display: none;
-}
+
 .horisontal-menu {
 	list-style: none;
 	display: inline-block;
@@ -150,6 +148,65 @@ body {
 	margin: 0;
 	padding-left: 5.8%;
 }
+/*=====MENU=====*/
+
+.horisontal-menu>ul>li {
+    display:inline-block;
+	overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+	position: relative;
+}
+/*.horisontal-menu li div {
+	
+	display: none;
+	position: absolute;
+	
+	height: 200px;
+	width: 100%;
+	background-color: blue;
+	padding: 5px;
+	
+	left: 0;
+}*/
+.horisontal-menu li div {
+	display: none;
+	position: absolute;
+	top: 50px;
+	margin: 0;
+	z-index: 9999;
+	padding: 1em 1em 1em 1em;
+	background-color:#0047AB ;
+}
+
+
+.horisontal-menu > li > div > ul {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	width: 300px;
+	vertical-align: top;
+	/* border: 1px solid red; */
+	font-size: 12px;
+	/* float: left; */
+}
+.horisontal-menu > li:hover > div > ul{display:inline-block;list-style:none;min-width:10em;margin:0 2em 0 0;text-align:left;}
+.horisontal-menu > li > div > ul > li {
+	display: inline-block;
+	list-style: none;
+	margin: 5px auto;
+	text-align: left;
+	padding: 0;
+	width: 90%;
+}
+.horisontal-menu > li > div > ul > li >a{
+	padding: 5px;
+}
+.hover_item:hover >div {
+	display: block;
+}
+/*=====MENU=====*/
 .horisontal-menu li {
 	display: inline-block;
 	padding: 15px;
