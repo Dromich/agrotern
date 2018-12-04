@@ -6,29 +6,28 @@
 
 <head>
 
-	<meta charset="utf-8">
+	
 
-	<title>Заголовок</title>
-	<meta name="description" content="">
+	{headers}
 
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="{THEME}/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="{THEME}/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{THEME}/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="{THEME}/img/favicon/apple-touch-icon-114x114.png">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="{THEME}/libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="{THEME}/libs/animate/animate.css">
 	
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="{THEME}/css/fonts.css">
+	<link rel="stylesheet" href="{THEME}/css/main.css">
+	<link rel="stylesheet" href="{THEME}/css/media.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-	<script src="libs/modernizr/modernizr.js"></script>
+	<script src="{THEME}/libs/modernizr/modernizr.js"></script>
 
 </head>
 
@@ -48,9 +47,7 @@
 					</ul>
 				</nav>
 			</li>
-			<li class="social-network"><a href="https://www.facebook.com/alekceu655/" class="facebook" target="_blank"></a><a href="https://www.instagram.com/motokosmosinfo/?hl=ru"
-				 class="instagram" target="_blank"></a><a href="https://www.youtube.com/channel/UCyJ7v_VERC2DfaghXa53BRA/videos?disable_polymer=1"
-				 class="youtube" target="_blank"></a></li>
+			
 			
 		</ul>
 	</div>
@@ -70,7 +67,7 @@
 		
 		</div>
 		<div class="top_logo col-md-4">
-			<a href="/"><img class="top_logo_img" src="img/logo.png" alt="logo"></a>
+			<a href="/"><img class="top_logo_img" src="{THEME}/img/logo.png" alt="logo"></a>
 		</div>
 		<div class="top_cart_blo col-md-4">
 			<div class="vork_di">
@@ -156,32 +153,32 @@
 
 <ul class="cat_menu">
 	<li><div class="item_menu">
-			<img src="img/moto_trak.jpg" alt="item">
+			<img src="{THEME}/img/moto_trak.jpg" alt="item">
 		</div>
 		<h3>Мототракторы</h3>
 	</li>
 	<li><div class="item_menu">
-			<img src="img/mini_trak.jpg" alt="item">
+			<img src="{THEME}/img/mini_trak.jpg" alt="item">
 		</div>
 		<h3>Минитракторы</h3>
 	</li>
 	<li><div class="item_menu">
-			<img src="img/motoblok.jpg" alt="item">
+			<img src="{THEME}/img/motoblok.jpg" alt="item">
 		</div>
 		<h3>Мотоблоки</h3>
 	</li>
 	<li><div class="item_menu">
-			<img src="img/navisne.jpg" alt="item">
+			<img src="{THEME}/img/navisne.jpg" alt="item">
 		</div>
 		<h3>Навесное оборудование</h3>
 	</li>
 	<li><div class="item_menu">
-			<img src="img/generator.jpg" alt="item">
+			<img src="{THEME}/img/generator.jpg" alt="item">
 		</div>
 		<h3>Генераторы</h3>
 	</li>
 	<li><div class="item_menu">
-			<img src="img/snig.jpg" alt="item">
+			<img src="{THEME}/img/snig.jpg" alt="item">
 		</div>
 		<h3>Снегоуборочные машины</h3>
 	</li>
@@ -200,7 +197,7 @@
 
 				<div class="main_item col-md-3">
 						<div class="item_in">
-								<img class="item_img" src="img/s117.jpg" alt="main image">
+								<img class="item_img" src="{THEME}/img/s117.jpg" alt="main image">
 			
 								<h3 class="item_ttl">Трактор DW 404 D</h3>
 								<span class="item_brand">DW</span>
@@ -215,7 +212,7 @@
 					</div>
 					<div class="main_item col-md-3">
 							<div class="item_in">
-									<img class="item_img" src="img/s117.jpg" alt="main image">
+									<img class="item_img" src="{THEME}/img/s117.jpg" alt="main image">
 				
 									<h3 class="item_ttl">Трактор DW 404 D</h3>
 									<span class="item_brand">DW</span>
@@ -230,7 +227,7 @@
 						</div>
 						<div class="main_item col-md-3">
 								<div class="item_in">
-										<img class="item_img" src="img/s117.jpg" alt="main image">
+										<img class="item_img" src="{THEME}/img/s117.jpg" alt="main image">
 					
 										<h3 class="item_ttl">Трактор DW 404 D</h3>
 										<span class="item_brand">DW</span>
@@ -245,7 +242,7 @@
 							</div>
 							<div class="main_item col-md-3">
 									<div class="item_in">
-											<img class="item_img" src="img/s117.jpg" alt="main image">
+											<img class="item_img" src="{THEME}/img/s117.jpg" alt="main image">
 						
 											<h3 class="item_ttl">Трактор DW 404 D</h3>
 											<span class="item_brand">DW</span>
@@ -266,7 +263,7 @@
 
 						<div class="main_item col-md-3">
 								<div class="item_in">
-										<img class="item_img" src="img/s577.jpg" alt="main image">
+										<img class="item_img" src="{THEME}/img/s577.jpg" alt="main image">
 					
 										<h3 class="item_ttl">Трактор DW 404 D</h3>
 										<span class="item_brand">DW</span>
@@ -281,7 +278,7 @@
 							</div>
 							<div class="main_item col-md-3">
 									<div class="item_in">
-											<img class="item_img" src="img/s577.jpg" alt="main image">
+											<img class="item_img" src="{THEME}/img/s577.jpg" alt="main image">
 						
 											<h3 class="item_ttl">Трактор DW 404 D</h3>
 											<span class="item_brand">DW</span>
@@ -296,7 +293,7 @@
 								</div>
 								<div class="main_item col-md-3">
 										<div class="item_in">
-												<img class="item_img" src="img/s577.jpg" alt="main image">
+												<img class="item_img" src="{THEME}/img/s577.jpg" alt="main image">
 							
 												<h3 class="item_ttl">Трактор DW 404 D</h3>
 												<span class="item_brand">DW</span>
@@ -311,7 +308,7 @@
 									</div>
 									<div class="main_item col-md-3">
 											<div class="item_in">
-													<img class="item_img" src="img/s577.jpg" alt="main image">
+													<img class="item_img" src="{THEME}/img/s577.jpg" alt="main image">
 								
 													<h3 class="item_ttl">Трактор DW 404 D</h3>
 													<span class="item_brand">DW</span>
@@ -372,15 +369,15 @@
 		
 		<div class="row">
 			<h3 class="brand_ttl">Наши бренды</h3>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="img/bre1.png" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="img/bre2.jpg" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="img/bre3.jpg" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="img/bre4.jpg" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="img/bre5.png" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="img/bre6.png" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="img/bre7.jpg" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="img/bre8.jpg" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="img/bre9.png" alt="brand_item"></div>
+			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre1.png" alt="brand_item"></div>
+			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre2.jpg" alt="brand_item"></div>
+			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre3.jpg" alt="brand_item"></div>
+			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre4.jpg" alt="brand_item"></div>
+			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre5.png" alt="brand_item"></div>
+			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre6.png" alt="brand_item"></div>
+			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre7.jpg" alt="brand_item"></div>
+			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre8.jpg" alt="brand_item"></div>
+			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre9.png" alt="brand_item"></div>
 		</div>
 	</div>
 
@@ -390,7 +387,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
-					<a href="/"><img class="foot_logo_img" src="img/logo_foot.png" alt="logo"></a>
+					<a href="/"><img class="foot_logo_img" src="{THEME}/img/logo_foot.png" alt="logo"></a>
 			<h4 class="footerPh4">Лучший выбор
 					качественной техники</h4>
 					<div class="footer_social">
@@ -470,12 +467,12 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="{THEME}/libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="{THEME}/libs/waypoints/waypoints.min.js"></script>
+	<script src="{THEME}/libs/animate/animate-css.js"></script>
+	<script src="{THEME}/libs/plugins-scroll/plugins-scroll.js"></script>
 	
-	<script src="js/common.js"></script>
+	<script src="{THEME}/js/common.js"></script>
 	
 	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
