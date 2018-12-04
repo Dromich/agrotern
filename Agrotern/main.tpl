@@ -202,137 +202,16 @@
 		 data-autoplay="true" data-loop="true" >
 		   
 		<div class="row row_slider">
-
-				<div class="main_item col-md-3">
-						<div class="item_in">
-								<img class="item_img" src="{THEME}/img/s117.jpg" alt="main image">
+			{custom  category="1-100"  template="main_slider" available="main" navigation="no" from="0" limit="4" fixed="no" order="date" sort="desc" cache="no"}
 			
-								<h3 class="item_ttl">Трактор DW 404 D</h3>
-								<span class="item_brand">DW</span>
-								<span class="marketing_span">Хит продаж</span>
 					
-								<div class="price_section">
-									<span class="price">190 400 <b>грн</b> </span>
-					<span class="b_but">Купить</span>
-								</div>
-						</div>
 						
-					</div>
-					<div class="main_item col-md-3">
-							<div class="item_in">
-									<img class="item_img" src="{THEME}/img/s117.jpg" alt="main image">
-				
-									<h3 class="item_ttl">Трактор DW 404 D</h3>
-									<span class="item_brand">DW</span>
-									<span class="marketing_span">Хит продаж</span>
-						
-									<div class="price_section">
-										<span class="price">190 400 <b>грн</b> </span>
-										<span class="b_but">Купить</span>
-									</div>
-							</div>
 							
-						</div>
-						<div class="main_item col-md-3">
-								<div class="item_in">
-										<img class="item_img" src="{THEME}/img/s117.jpg" alt="main image">
-					
-										<h3 class="item_ttl">Трактор DW 404 D</h3>
-										<span class="item_brand">DW</span>
-										<span class="marketing_span">Хит продаж</span>
-							
-										<div class="price_section">
-											<span class="price">190 400 <b>грн</b> </span>
-											<span class="b_but">Купить</span>
-										</div>
-								</div>
-								
-							</div>
-							<div class="main_item col-md-3">
-									<div class="item_in">
-											<img class="item_img" src="{THEME}/img/s117.jpg" alt="main image">
-						
-											<h3 class="item_ttl">Трактор DW 404 D</h3>
-											<span class="item_brand">DW</span>
-											<span class="marketing_span">Хит продаж</span>
-								
-											<div class="price_section">
-												<span class="price">190 400 <b>грн</b> </span>
-												<span class="b_but">Купить</span>
-											</div>
-									</div>
-									
-								</div>
 					
 			
 			
 				</div><!--One Row-->
-				<div class="row row_slider">
-
-						<div class="main_item col-md-3">
-								<div class="item_in">
-										<img class="item_img" src="{THEME}/img/s577.jpg" alt="main image">
-					
-										<h3 class="item_ttl">Трактор DW 404 D</h3>
-										<span class="item_brand">DW</span>
-										<span class="marketing_span">Хит продаж</span>
-							
-										<div class="price_section">
-											<span class="price">190 400 <b>грн</b> </span>
-							<span class="b_but">Купить</span>
-										</div>
-								</div>
-								
-							</div>
-							<div class="main_item col-md-3">
-									<div class="item_in">
-											<img class="item_img" src="{THEME}/img/s577.jpg" alt="main image">
-						
-											<h3 class="item_ttl">Трактор DW 404 D</h3>
-											<span class="item_brand">DW</span>
-											<span class="marketing_span">Хит продаж</span>
-								
-											<div class="price_section">
-												<span class="price">190 400 <b>грн</b> </span>
-												<span class="b_but">Купить</span>
-											</div>
-									</div>
-									
-								</div>
-								<div class="main_item col-md-3">
-										<div class="item_in">
-												<img class="item_img" src="{THEME}/img/s577.jpg" alt="main image">
-							
-												<h3 class="item_ttl">Трактор DW 404 D</h3>
-												<span class="item_brand">DW</span>
-												<span class="marketing_span">Хит продаж</span>
-									
-												<div class="price_section">
-													<span class="price">190 400 <b>грн</b> </span>
-													<span class="b_but">Купить</span>
-												</div>
-										</div>
-										
-									</div>
-									<div class="main_item col-md-3">
-											<div class="item_in">
-													<img class="item_img" src="{THEME}/img/s577.jpg" alt="main image">
-								
-													<h3 class="item_ttl">Трактор DW 404 D</h3>
-													<span class="item_brand">DW</span>
-													<span class="marketing_span">Хит продаж</span>
-										
-													<div class="price_section">
-														<span class="price">190 400 <b>грн</b> </span>
-														<span class="b_but">Купить</span>
-													</div>
-											</div>
-											
-										</div>
-							
-					
-					
-						</div><!--Two Row-->
+				
 		 </div> <!--Fotorama End-->
 
 

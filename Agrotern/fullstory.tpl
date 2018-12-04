@@ -17,13 +17,12 @@
 			<li class="manufacturer">"Производитель: <b>Jinma</b>"</li>
 			<li><div class="rating-bad"></div></li>
 			<li class="price"><b>242 520 </b> грн</li>
-			<li class="on_sele"> <i class="fas fa-check"></i> В наличии</li>
+					[xfgiven_on-sale] 	<li class="on_sele"> <i class="fas fa-check"></i> В наличии</li>[/xfgiven_on-sale]
+					[xfnotgiven_on-sale] <li class="on_sele_off"> <i class="fas fa-times"></i>  Нет в наличии</li> [/xfnotgiven_on-sale]
 			<li><a class="bay_naw" href="#">Купитьсейчас</a></li>
 			
 			<li class="short_disk"><h5>Краткое описание</h5>
-					Мощность 40 л.с. <br>
-					Гидроусилитель руля есть<br>
-					Передач (4+1)х2, </li>
+				{short-story} </li>
 		</ul>
 	</div>
 	<div class="market_ditail col-md-4">
