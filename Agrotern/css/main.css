@@ -298,6 +298,16 @@ body {
 	height: 100%;
 	border: 1px solid #333;
 	padding: 15px;
+	color: #2c2a2a;
+}
+.item_in a {
+	transition: all cubic-bezier(0.215, 0.610, 0.355, 1);
+	
+	color: #2c2a2a;
+}
+.item_in a :hover{
+	
+	color: #3a3939;
 }
 .b_but {
 	display: block;
