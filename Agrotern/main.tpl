@@ -30,6 +30,7 @@
 	<script src="{THEME}/libs/modernizr/modernizr.js"></script>
 
 </head>
+{AJAX}
 
 <body>
 	<div class="FixedLayoutBig">
@@ -142,6 +143,13 @@
 		</ul>
 		</div>
 
+		[available=showfull|cat]
+		{info}
+		{content}
+		[/available]
+
+
+		[available=main]  	
 	<div class="fotorama" data-width="100%" 
 	 data-fit="cover" data-autoplay="true" data-loop="true" data-nav="false">
 		<img src="https://motokosmos.com.ua/images/_o/banner-1-(1).jpg">
@@ -363,7 +371,7 @@
 			от утомительных ожиданий уже приобретенного товара – быстрая доставка не заставит себя долго ждать. <br>
 	 </p>
 </section>
-		
+[/available]	
 <section id="our_brands">
 	<div class="container">
 		
