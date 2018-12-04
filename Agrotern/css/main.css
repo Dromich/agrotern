@@ -306,7 +306,7 @@ body {
 	color: #2c2a2a;
 }
 .item_in a :hover{
-	
+	text-decoration: none;
 	color: #3a3939;
 }
 .b_but {

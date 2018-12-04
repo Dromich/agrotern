@@ -4,7 +4,7 @@
 			[full-link]
 			<img class="item_img" src="[xfvalue_image_url_main_img]" alt="main image">
 
-			<h3 class="item_ttl">Трактор DW 404 D</h3>
+			<h3 class="item_ttl">{title limit="30"}...</h3>
 			<span class="item_brand">DW</span>
 			<span class="marketing_span">Хит продаж</span>
 			[/full-link]
