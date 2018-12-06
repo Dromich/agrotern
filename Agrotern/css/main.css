@@ -84,10 +84,57 @@ body {
 .text-justify li a {
 	color: #333;
 }
+.phones_items i {
+	font-size: 2rem;
+	padding: 5px 1px 1px;
+	margin-left: 5px;
+	vertical-align: bottom;
+}
+.phones_items a {
+	font-size: 12px;
+	font-weight: 600;
+	color: #333333b3 !important;
+	font-family: arial;
+}
+.header-pages-menu a {
+	text-transform: uppercase;
+	letter-spacing: 1.35px;
+	transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) all ;
+}
+.header-pages-menu a:hover {
+	text-decoration: none;
+	color: #0047AB;
+}
+.sform {
+	width: 100%;
+	padding: 20px;
+}
+#story {
+	transition: cubic-bezier(.18,.89,.32,1.28) all .5s;
+}
+#story:hover {
+	transform: scale(1.1);
+}
+#quicksearch {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#quicksearch input {
+	width: 80%;
+	border: 1px solid #333;
+	padding: 5px;
+	background-color: transparent;
+}
+#sw {
+	background-color: transparent;
+	border: none;
+	margin-left: -5%;
+}
 .top_logo_img {
 	max-width: 100%;
 	display: block;
-	width: 22%;
+	width: 40%;
 	margin: 10px auto;
 }
 .phone_icon {

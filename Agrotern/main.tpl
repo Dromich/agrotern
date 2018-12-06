@@ -10,6 +10,7 @@
 
 	{headers}
 
+
 	<link rel="shortcut icon" href="{THEME}/img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="{THEME}/img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="{THEME}/img/favicon/apple-touch-icon-72x72.png">
@@ -30,56 +31,58 @@
 	<script src="{THEME}/libs/modernizr/modernizr.js"></script>
 
 </head>
+
 {AJAX}
 
 <body>
-	<div class="FixedLayoutBig">
-		<ul class="text-justify">
-			<li>
-				<nav>
-					<ul class="header-pages-menu">
-						<li><a href="/about.htm">О нас</a></li>
-						<li><a href="/delivery.htm">Доставка и оплата</a></li>
-						<li><a href="/guarantee.htm">Гарантия</a></li>
-						<li><a href="/contacts.htm">Контакты</a></li>
-						<li><a href="/promo.php">Вопросы и ответы</a></li>
-						<li><a href="/ruls.htm">Условия использования</a></li>
-						<li><a href="/cooperation.htm">Сотрудничество с нами</a></li>
-					</ul>
-				</nav>
-			</li>
-			
-			
-		</ul>
-	</div>
+	<!--div class="FixedLayoutBig">
+		
+	</div-->
 <div class="container-fluid">
 	<div class="top_logo_blo row">
-		<div class="top_phone_blo col-md-4">
-			<div class="phone_icon">
-				<i class="fas fa-mobile-alt"></i>
+			<div class="top_logo col-md-3">
+					<a href="/"><img class="top_logo_img" src="{THEME}/img/logo.png" alt="logo"></a>
+				</div>
+		<div class="top_phone_blo col-md-7">
+			<ul class="text-justify">
+				
+
+						<ul class="header-pages-menu phones_items col-md-12">
+								<li><i class="fas fa-phone-square"></i> <a rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
+								<li><i class="fas fa-phone-square"></i> <a rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
+								<li><i class="fas fa-at"></i> <a rel="email" href="#">our_mail@gmail.com</a></li>
+							</ul>
+				
+				<li>
+					<nav>
+						<ul class="header-pages-menu col-md-12">
+							<li><a href="/about.htm">О нас</a></li>
+							<li><a href="/delivery.htm">Доставка и оплата</a></li>
+							<li><a href="/guarantee.htm">Гарантия</a></li>
+							<li><a href="/contacts.htm">Контакты</a></li>	
+							<li><a href="/cooperation.htm">Сотрудничество</a></li>
+						</ul>
+					</nav>
+				</li>
+				
+				
+			</ul>
+
+			<div class="sform">
+					<form id="quicksearch" method="post">
+                            <input name="do" value="search" type="hidden">
+                            <input name="subaction" value="search" type="hidden">
+                            <div class="sblock">
+                                <input id="story" name="story" placeholder="Введите слово для поиска" autocomplete="off" type="text">
+                                <button id="sw" type="submit"><span class="fa fa-search"></span></button>
+                            </div>
+                        </form>
 			</div>
+		
+		</div>
+	
+		<div class="top_cart_blo col-md-2">
 			
-			<div class="phone_numb">
-				<a class="phone_href" href="#"> +38 (097) 111-22-33</a>
-				<a class="phone_href" href="#"> +38 (097) 111-22-33</a>
-		
-				<a class="maile_href" href="#"><i class="fas fa-at"></i>main_mail@gmail.com</a>
-			</div>
-		
-		</div>
-		<div class="top_logo col-md-4">
-			<a href="/"><img class="top_logo_img" src="{THEME}/img/logo.png" alt="logo"></a>
-		</div>
-		<div class="top_cart_blo col-md-4">
-			<div class="vork_di">
-					<!--i class="far fa-clock"></i-->
-					
-					<ul class="vork_time">							
-						<li><p class="vork_time_ttl">Время роботы:</p></li>
-						<li>Пн-Пт: 8:00-20:00</li>
-						<li>Сб-Вс: 8:00-18:00</li>
-					</ul>
-			</div>
 
 		</div>
 		
@@ -104,7 +107,7 @@
 						<li><a class="_usrLink" href="/mototraktora/vityaz">Мототракторы Витязь</a></li>
 					</ul>
 					<ul>
-						<li><a class="_usrLink" href="/mototraktora/mototraktor-v-kieve">Мототрактор в Киеве</a></li>
+												<li><a class="_usrLink" href="/mototraktora/mototraktor-v-kieve">Мототрактор в Киеве</a></li>
 						<li><a class="_usrLink" href="/mototraktora/mototraktor-v-odesse">Мототрактор в Одессе</a></li>
 						<li><a class="_usrLink" href="/mototraktora/mototraktor-v-harkove">Мототрактор в Харькове</a></li>
 						<li><a class="_usrLink" href="/mototraktora/mototraktor-v-zhitomire">Мототрактор в Житомире</a></li>
