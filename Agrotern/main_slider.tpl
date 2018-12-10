@@ -9,12 +9,12 @@
 			<span class="marketing_span">Хит продаж</span>
 			
 			<div class="price_section">
-				<span class="price">190 400 <b>грн</b> </span>
+				<span class="price"><span class="price_val">[xfvalue_price]<span> <b>грн</b> </span>
 
 			</div>
 <div class="butt">
 		<span class="b_but">Купить</span> 
-		<span class="v_but">Посмотреть</span>
+		[full-link]<span class="v_but">Посмотреть</span>[/full-link]
 </div>
 			
 	</div>

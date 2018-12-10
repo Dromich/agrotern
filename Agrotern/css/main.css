@@ -368,7 +368,10 @@ body {
 	text-decoration: none;
 	color: #3a3939;
 }
-
+.price b {
+	font-size: 2.5rem;
+	margin-left: 10px;
+}
 .row.row_slider {
 	margin: 0;
 }
