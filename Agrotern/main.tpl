@@ -185,27 +185,27 @@
 
 <ul class="cat_menu">
 	<li><div class="item_menu">
-			<img src="{THEME}/img/moto_trak.jpg" alt="item">
+			<img src="{THEME}/img/main_cat/1.jpg" alt="item">
 		</div>
 		<h3>Мототракторы</h3>
 	</li>
 	<li><div class="item_menu">
-			<img src="{THEME}/img/mini_trak.jpg" alt="item">
+			<img src="{THEME}/img/main_cat/2.jpg" alt="item">
 		</div>
 		<h3>Минитракторы</h3>
 	</li>
 	<li><div class="item_menu">
-			<img src="{THEME}/img/motoblok.jpg" alt="item">
+			<img src="{THEME}/img/main_cat/3.jpg" alt="item">
 		</div>
 		<h3>Мотоблоки</h3>
 	</li>
 	<li><div class="item_menu">
-			<img src="{THEME}/img/navisne.jpg" alt="item">
+			<img src="{THEME}/img/main_cat/4.jpg" alt="item">
 		</div>
 		<h3>Навесное оборудование</h3>
 	</li>
 	<li><div class="item_menu">
-			<img src="{THEME}/img/generator.jpg" alt="item">
+			<img src="{THEME}/img/main_cat/5.jpg" alt="item">
 		</div>
 		<h3>Генераторы</h3>
 	</li>
