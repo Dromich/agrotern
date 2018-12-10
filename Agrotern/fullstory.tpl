@@ -5,18 +5,16 @@
 	<div class="iner_slider col-md-4">
 		<div class="fotorama" data-width="100%" 
 	 data-fit="contain" data-autoplay="true" data-loop="true" data-nav="thumbs">
-		<img src="https://motokosmos.com.ua/imgs/mg426.jpg">
-		<img src="https://motokosmos.com.ua/imgs/mg428.jpg">
-		<img src="https://motokosmos.com.ua/imgs/mg427.jpg">
-		<img src="https://motokosmos.com.ua/imgs/m364.jpg">
+	 
+	 [xfvalue_slide_img]
 		
 	  </div> 
 	</div>
 	<div class="market_elem col-md-4">
 		<ul class="market_ul">
-			<li class="manufacturer">"Производитель: <b>Jinma</b>"</li>
+			<li class="manufacturer">"Производитель: <b>[xfvalue_brand]</b>"</li>
 			<li><div class="rating-bad"></div></li>
-			<li class="price"><b>242 520 </b> грн</li>
+			<li class="price"><b>[xfvalue_price]</b> грн</li>
 					[xfgiven_on-sale] 	<li class="on_sele"> <i class="fas fa-check"></i> В наличии</li>[/xfgiven_on-sale]
 					[xfnotgiven_on-sale] <li class="on_sele_off"> <i class="fas fa-times"></i>  Нет в наличии</li> [/xfnotgiven_on-sale]
 			<li><a class="bay_naw" href="#">Купитьсейчас</a></li>

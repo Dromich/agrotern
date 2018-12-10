@@ -144,6 +144,27 @@
 				</div>
 			</li>
 		</ul>
+		[not-available=showfull]
+		<div class="topSlider_promo">
+			<div class="promoItem">
+		<i class="fas fa-dollar-sign"></i> <span class="promoSlogan">НИКАКОЙ ПРЕДОПЛАТЫ!
+			<p>Оплата товара при получении			
+					</p>
+		</span>
+			</div>
+			<div class="promoItem">
+					<i class="fas fa-gift"></i> <span class="promoSlogan">ПРИЯТНЫЕ СЮРПРИЗЫ!
+						<p>Навесное оборудование в подарок.			
+								</p>
+					</span>
+						</div>
+						<div class="promoItem">
+								<i class="far fa-registered"></i><span class="promoSlogan">100% ОРИГИНАЛ
+									<p>Гарантия от производитиля.			
+											</p>
+								</span>
+									</div>
+		</div>[/not-available]
 		</div>
 
 		[available=showfull|cat]

@@ -205,18 +205,7 @@ body {
     list-style:none;
 	position: relative;
 }
-/*.horisontal-menu li div {
-	
-	display: none;
-	position: absolute;
-	
-	height: 200px;
-	width: 100%;
-	background-color: blue;
-	padding: 5px;
-	
-	left: 0;
-}*/
+
 .horisontal-menu li div {
 	display: none;
 	position: absolute;
@@ -254,6 +243,29 @@ body {
 	display: block;
 }
 /*=====MENU=====*/
+.topSlider_promo {
+	display: block;
+	width: 100%;
+	margin: 0;
+	border-top: 1px solid #fff;
+	padding-top: 5px;
+	background-color: #333;
+}
+
+.promoItem {
+	display: inline-block;
+	width: 33%;
+	padding-left: 6.35%;
+	color: #fff;
+}
+.promoItem i {
+	font-size: 3.5rem;
+	padding: 5px;
+}
+.promoItem p {
+	margin: 0;
+	padding: 0;
+}
 .horisontal-menu li {
 	display: inline-block;
 	padding: 15px;
@@ -356,18 +368,33 @@ body {
 	text-decoration: none;
 	color: #3a3939;
 }
-.b_but {
-	display: block;
-	/* margin: 5px; */
-	padding: 5px;
-	background-color: red;
-	width: 100px;
+
+.row.row_slider {
+	margin: 0;
+}
+.butt {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	font-size: 12px;
+}
+.b_but {	
+	padding: 10px;
+	background-color: red;	
 	border-radius: 10px;
 	margin: 5px auto;
 	color: #fff;
+	display: inline;
 }
-.row.row_slider {
-	margin: 0;
+.v_but {
+	
+	padding: 10px;
+	background-color: red;
+	color: #fff;
+	border-radius: 10px;
+	margin-left: 45%;
+	display: inline;
+	
 }
 #about_us {
 	padding: 5%;
