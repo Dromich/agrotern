@@ -589,3 +589,6 @@ footer .vork_di {
 .on_sele_off {
 	color: red;
 }
+.top_slider {
+	min-height: 150px;
+}

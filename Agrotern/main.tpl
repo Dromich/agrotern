@@ -144,7 +144,7 @@
 				</div>
 			</li>
 		</ul>
-		[not-available=showfull]
+		[not-available=showfull|cat]
 		<div class="topSlider_promo">
 			<div class="promoItem">
 		<i class="fas fa-dollar-sign"></i> <span class="promoSlogan">НИКАКОЙ ПРЕДОПЛАТЫ!
@@ -164,25 +164,45 @@
 											</p>
 								</span>
 									</div>
-		</div>[/not-available]
+		</div>
 		</div>
 
-		[available=showfull|cat]
-		{info}
-		{content}
-		[/available]
+		
+		
 
-
-		[available=main]  	
+		
+		  	
 	<div class="fotorama" data-width="100%" 
 	 data-fit="cover" data-autoplay="true" data-loop="true" data-nav="false">
 		<img src="https://motokosmos.com.ua/images/_o/banner-1-(1).jpg">
 		<img src="https://motokosmos.com.ua/images/_o/banner-2-1775x720.jpg">
 		
 	  </div> 
+	  [/not-available]
+</div><!--END-TOP_SLIDER-->
 
+
+
+[available=showfull]
+		{info}
+		{content}
+		[/available]
+
+		[available=cat]
 </div>
+		<!--CAT-->
+		<div class="container">
+			<div class="row">
+					{info}
+					{content}
+			</div>
+		</div>
+		<!--END-CAT-->
+		[/available]
 
+
+[available=main]
+<div class="main_page">
 <ul class="cat_menu">
 	<li><div class="item_menu">
 			<img src="{THEME}/img/main_cat/1.jpg" alt="item">
@@ -274,6 +294,7 @@
 			от утомительных ожиданий уже приобретенного товара – быстрая доставка не заставит себя долго ждать. <br>
 	 </p>
 </section>
+</div>
 [/available]	
 <section id="our_brands">
 	<div class="container">
@@ -365,6 +386,10 @@
 
 	</div>
 </footer>
+
+
+
+
 	<div class="hidden"></div>
 
 	<div class="loader">
