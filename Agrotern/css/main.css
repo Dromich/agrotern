@@ -377,9 +377,12 @@ body {
 }
 .butt {
 	width: 100%;
-	padding: 10px;
-	text-align: center;
+
 	font-size: 12px;
+	margin: 0;
+	list-style: none;
+	display: block;
+	margin-top: 15px;
 }
 .b_but {	
 	padding: 10px;
@@ -389,16 +392,18 @@ body {
 	color: #fff;
 	display: inline;
 }
+.butt li {
+	display: inline-block;
+	width: 48%;
+	/* text-align: center; */
+	/* border: 1px solid red; */
+}
 .v_but {
-	
 	padding: 10px;
 	background-color: red;
 	color: #fff;
 	border-radius: 10px;
-	margin-left: 45%;
-	display: inline;
-	
-}
+	}
 #about_us {
 	padding: 5%;
 	background-image: url(../img/index.png);

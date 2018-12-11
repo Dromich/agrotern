@@ -9,7 +9,7 @@
 	
 
 	{headers}
-
+	
 
 	<link rel="shortcut icon" href="{THEME}/img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="{THEME}/img/favicon/apple-touch-icon.png">
@@ -29,6 +29,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<script src="{THEME}/libs/modernizr/modernizr.js"></script>
+	
+	
+	<link href="{THEME}/filter/filter.css" type="text/css" rel="stylesheet">
 
 </head>
 
@@ -193,8 +196,18 @@
 		<!--CAT-->
 		<div class="container">
 			<div class="row">
-					{info}
-					{content}
+				<div class="col-md-3 filter">
+						<div class="sector nobottom">
+								{include file="/filter/filter.tpl"}
+						</div>
+
+				</div>
+<div class="col-md-9">
+		<div id="content"></div>
+	{info}
+		{content}</div>
+
+					
 			</div>
 		</div>
 		<!--END-CAT-->
@@ -403,7 +416,7 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="{THEME}/libs/jquery/jquery-1.11.2.min.js"></script>
+	
 	<script src="{THEME}/libs/waypoints/waypoints.min.js"></script>
 	<script src="{THEME}/libs/animate/animate-css.js"></script>
 	<script src="{THEME}/libs/plugins-scroll/plugins-scroll.js"></script>
@@ -418,7 +431,7 @@ var price = $(this).text();
 //console.log(price);
 var metamorf = price .replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
 $(this).text(metamorf);	
-})
+});
 
 
 </script>
