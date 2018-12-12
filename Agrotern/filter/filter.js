@@ -9,51 +9,30 @@ function move_Fvalue(e,ui0,ui1){
 }
 
 $(document).ready(function() {
-	$( "#xf_year" ).slider({
+	$( "#xf_price" ).slider({
 		range: true,
-		min: 1970,
-		max: 2017,
+		min: 20000,
+		max: 500000,
 		step: 1,
-		values: [ 2000, 2015 ],
+		values: [ 56000,200000 ],
 		slide: function( event, ui ) {
-			move_Fvalue('#xf_year',ui.values[ 0 ],ui.values[ 1 ]);
+			move_Fvalue('#xf_price',ui.values[ 0 ],ui.values[ 1 ]);
 		},
 		stop: function( event, ui ) {
-			move_Fvalue('#xf_year',ui.values[ 0 ],ui.values[ 1 ]);
-			$('#xf_year .ui-slider-handle').each(function(i){
+			move_Fvalue('#xf_price',ui.values[ 0 ],ui.values[ 1 ]);
+			$('#xf_price .ui-slider-handle').each(function(i){
 				i++;
 				if($(this).hasClass('ui-state-focus')) {
-					$('#xf_year .filter-value').css({'z-index':0});
-					$('#xf_year .val'+i).css({'z-index':1});
+					$('#xf_price .filter-value').css({'z-index':0});
+					$('#xf_price .val'+i).css({'z-index':1});
 				}
 			});
 		}
 	})
-	.append('<div class="steps"><span class="s1">'+1970+'</span><span class="s2">'+1982+'</span><span class="s3">'+1993+'</span><span class="s4">'+2005+'</span><span class="s5">'+2016+'</span></div>');
-	move_Fvalue('#xf_year');
+	.append('<div class="steps"><span class="s1">'+45757+'</span><span class="s2">'+156682+'</span><span class="s3">'+261338+'</span><span class="s4">'+400000+'</span><span class="s5">'+500000+'</span></div>');
+	move_Fvalue('#xf_price');
 	
-	/*! $( "#xf_kinopoisk" ).slider({
-		range: true,
-		min: 1,
-		max: 10,
-		step: 0.1,
-		values: [ 5.5, 9.2 ],
-		slide: function( event, ui ) {
-			move_Fvalue('#xf_kinopoisk',ui.values[ 0 ].toFixed(1),ui.values[ 1 ].toFixed(1));
-		},
-		stop: function( event, ui ) {
-			move_Fvalue('#xf_kinopoisk',ui.values[ 0 ].toFixed(1),ui.values[ 1 ].toFixed(1));
-			$('#xf_kinopoisk .ui-slider-handle').each(function(i){
-				i++;
-				if($(this).hasClass('ui-state-focus')) {
-					$('#xf_kinopoisk .filter-value').css({'z-index':0});
-					$('#xf_kinopoisk .val'+i).css({'z-index':1});
-				}
-			});
-		}
-	})
-	.append('<div class="steps"><span class="s1">'+1.1+'</span><span class="s2">'+3.3+'</span><span class="s3">'+5.5+'</span><span class="s4">'+7.8+'</span><span class="s5">'+9.9+'</span></div>');
-	move_Fvalue('#xf_kinopoisk'); */
+	
 	
 	$('.filter-buttons .masha_index').remove();
 	
@@ -67,12 +46,14 @@ $(document).ready(function() {
 	$('.filter-buttons .butt > span').click(function(){
 		list=$(this).parent().children('.list');
 		if( list.css('display')=='none' ) {
+			
 			$('.filter-buttons .list').hide();
 			$('.filter-buttons .butt > span').removeClass('active');
 			$('.filter-buttons .butt .fa').removeClass('fa-rotate-180');
 			$(this).addClass('active').children('.fa').addClass('fa-rotate-180');
 			list.show();
 			} else {
+			
 			$('.filter-buttons .list').hide();
 			$('.filter-buttons .butt > span').removeClass('active');
 			$('.filter-buttons .butt .fa').removeClass('fa-rotate-180');
@@ -101,8 +82,11 @@ $(document).ready(function() {
 	$('.filter-buttons .butt .fa').removeClass('fa-rotate-180');
 })
 .on('click', '.filter-buttons .butt.red, #filter-next', function() {
+	$('#dle-content').remove();
+
 		var genre = [],
-		xf_country = [],
+		xf_power = [],
+		xf_brand = [],
 		cstart = $(this).data('cstart');
 		if($('#filter-next').length==0) $('#content').prepend('<div class="navigation-button"><a id="filter-next"></a></div>');
 		nextBtn = $('#filter-next');
@@ -114,21 +98,27 @@ $(document).ready(function() {
 			}
 		});
 		i = 0;
-		$('#xf_country .cbtn').each(function(){
+		$('#xf_power .cbtn').each(function(){
 			if( $(this).hasClass('active') ) {
-				xf_country[i] = $(this).html();
+				xf_power[i] = $(this).html();
 				i++;
 			}
 		});
+		i = 0;
+        $('#xf_brand .cbtn').each(function(){
+            if( $(this).hasClass('active') ) {
+                xf_brand[i] = $(this).html();
+                i++;
+            }
+        });
 		if( !cstart ) cstart = 0;
-		xf_year_start = $('#xf_year .val1').html();
-		xf_year_end = $('#xf_year .val2').html();
-		xf_kinopoisk_start = $('#xf_kinopoisk .val1').html();
-		xf_kinopoisk_end = $('#xf_kinopoisk .val2').html();
+		xf_price_start = $('#xf_price .val1').html();
+		xf_price_end = $('#xf_price .val2').html();
+		
 		gf = $('.filter-buttons .offin .active').index();
 		nextBtn.css({'text-indent':'-9999px','position':'relative','margin':'4px 0 -10px',backgroundColor:'#eee'}).animate({height:3,border:0,width:'100%'},'fast',function(){
 		$(this).append('<span></span>').children('span').animate({width:'50%'},'slow');
-		$.get("/engine/ajax/filter.php", {genre:genre,genre_filter:gf,xf_country:xf_country,xf_year_start:xf_year_start,xf_year_end:xf_year_end,xf_kinopoisk_start:xf_kinopoisk_start,xf_kinopoisk_end:xf_kinopoisk_end,cstart:cstart},
+		$.get("/engine/ajax/filter.php", {genre:genre,genre_filter:gf,xf_power:xf_power,xf_brand:xf_brand,xf_price_start:xf_price_start,xf_price_end:xf_price_end,cstart:cstart},
 		function(data){
 			nextBtn.children('span').animate({width:'100%'},'slow',function(){
 			if( cstart > 0 ) $('#content').append(data);
@@ -143,6 +133,6 @@ $(document).ready(function() {
 	
 
 $(window).resize(function(){
-	move_Fvalue('#xf_year');
-	move_Fvalue('#xf_kinopoisk');
+	move_Fvalue('#xf_price');
+	
 });

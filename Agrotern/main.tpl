@@ -426,12 +426,16 @@
 	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 <script>
-$('.price_val').each(function () {
+function split_register() {
+	$('.price_val').each(function () {
 var price = $(this).text();
 //console.log(price);
 var metamorf = price .replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
 $(this).text(metamorf);	
 });
+}
+
+split_register();
 
 
 </script>
