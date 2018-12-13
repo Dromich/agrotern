@@ -43,22 +43,22 @@ $(document).ready(function() {
 		$(this).blur();
 	});
 	
-	$('.filter-buttons .butt > span').click(function(){
-		list=$(this).parent().children('.list');
-		if( list.css('display')=='none' ) {
+	// $('.filter-buttons .butt > span').click(function(){
+	// 	list=$(this).parent().children('.list');
+	// 	if( list.css('display')=='none' ) {
 			
-			$('.filter-buttons .list').hide();
-			$('.filter-buttons .butt > span').removeClass('active');
-			$('.filter-buttons .butt .fa').removeClass('fa-rotate-180');
-			$(this).addClass('active').children('.fa').addClass('fa-rotate-180');
-			list.show();
-			} else {
+	// 		$('.filter-buttons .list').hide();
+	// 		$('.filter-buttons .butt > span').removeClass('active');
+	// 		$('.filter-buttons .butt .fa').removeClass('fa-rotate-180');
+	// 		$(this).addClass('active').children('.fa').addClass('fa-rotate-180');
+	// 		list.show();
+	// 		} else {
 			
-			$('.filter-buttons .list').hide();
-			$('.filter-buttons .butt > span').removeClass('active');
-			$('.filter-buttons .butt .fa').removeClass('fa-rotate-180');
-		}
-	});
+	// 		$('.filter-buttons .list').hide();
+	// 		$('.filter-buttons .butt > span').removeClass('active');
+	// 		$('.filter-buttons .butt .fa').removeClass('fa-rotate-180');
+	// 	}
+	// });
 	
 	$('.filter-buttons .offin #one-genre, .filter-buttons .offin #all-genres').click(function(){
 		$('.filter-buttons .offin span').removeClass('active');
@@ -87,6 +87,10 @@ $(document).ready(function() {
 		var genre = [],
 		xf_power = [],
 		xf_brand = [],
+		xf_cylinders = [],
+		xf_wd = [],
+		xf_weels = [],
+		xf_cabin = [],
 		cstart = $(this).data('cstart');
 		if($('#filter-next').length==0) $('#content').prepend('<div class="navigation-button"><a id="filter-next"></a></div>');
 		nextBtn = $('#filter-next');
@@ -110,6 +114,30 @@ $(document).ready(function() {
                 xf_brand[i] = $(this).html();
                 i++;
             }
+		});
+		$('#xf_cylinders .cbtn').each(function(){
+            if( $(this).hasClass('active') ) {
+                xf_cylinders[i] = $(this).html();
+                i++;
+            }
+		});
+		$('#xf_wd .cbtn').each(function(){
+            if( $(this).hasClass('active') ) {
+                xf_wd[i] = $(this).html();
+                i++;
+            }
+		});
+		$('#xf_weels .cbtn').each(function(){
+            if( $(this).hasClass('active') ) {
+                xf_weels[i] = $(this).html();
+                i++;
+            }
+		});
+		$('#xf_cabin .cbtn').each(function(){
+            if( $(this).hasClass('active') ) {
+                xf_cabin[i] = $(this).html();
+                i++;
+            }
         });
 		if( !cstart ) cstart = 0;
 		xf_price_start = $('#xf_price .val1').html();
@@ -118,7 +146,7 @@ $(document).ready(function() {
 		gf = $('.filter-buttons .offin .active').index();
 		nextBtn.css({'text-indent':'-9999px','position':'relative','margin':'4px 0 -10px',backgroundColor:'#eee'}).animate({height:3,border:0,width:'100%'},'fast',function(){
 		$(this).append('<span></span>').children('span').animate({width:'50%'},'slow');
-		$.get("/engine/ajax/filter.php", {genre:genre,genre_filter:gf,xf_power:xf_power,xf_brand:xf_brand,xf_price_start:xf_price_start,xf_price_end:xf_price_end,cstart:cstart},
+		$.get("/engine/ajax/filter.php", {genre:genre,genre_filter:gf,xf_power:xf_power,xf_brand:xf_brand,xf_cylinders:xf_cylinders,xf_wd:xf_wd,xf_weels:xf_weels,xf_cabin:xf_cabin,xf_price_start:xf_price_start,xf_price_end:xf_price_end,cstart:cstart},
 		function(data){
 			nextBtn.children('span').animate({width:'100%'},'slow',function(){
 			if( cstart > 0 ) $('#content').append(data);
@@ -128,7 +156,10 @@ $(document).ready(function() {
 		}
 		);
 		});
+
+	
 		return false;
+		
 	});
 	
 

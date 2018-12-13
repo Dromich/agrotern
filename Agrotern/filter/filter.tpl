@@ -43,6 +43,52 @@
 			
 		</div>
 	</div>
+	<div class="butt yellow">
+			<span>Количество цилиндров <i class="fa fa-angle-down"></i></span>
+			<div class="list" id="xf_cylinders">
+				
+				<button class="cbtn">1</button>
+				<button class="cbtn">3</button>
+				<button class="cbtn">4</button>
+				
+				
+				
+			</div>
+		</div>
+		<div class="butt yellow">
+				<span>Привод <i class="fa fa-angle-down"></i></span>
+				<div class="list" id="xf_wd">
+					
+					<button class="cbtn">4X4</button>
+					<button class="cbtn">2X2</button>
+					
+					
+					
+					
+				</div>
+			</div>
+			<div class="butt yellow">
+					<span>Регулируемая колея <i class="fa fa-angle-down"></i></span>
+					<div class="list" id="xf_weels">
+						
+						<button class="cbtn">Да</button>
+						<button class="cbtn">Нет</button>
+						
+						
+						
+						
+					</div>
+				</div>
+				<div class="butt yellow">
+						<span>Кабина <i class="fa fa-angle-down"></i></span>
+						<div class="list" id="xf_cabin">
+							
+							<button class="cbtn">Есть</button>
+							<button class="cbtn">Нет</button>							
+							
+							
+						</div>
+					</div>
 	<div class="butt red">
 		<span>Подобрать <i class="fa fa-filter"></i></span>
 	</div>
