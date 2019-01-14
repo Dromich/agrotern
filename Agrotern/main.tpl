@@ -35,6 +35,9 @@
 	
 	<link href="{THEME}/filter/filter.css" type="text/css" rel="stylesheet">
 
+	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.theme.default.min.css">
+
 </head>
 
 {AJAX}
@@ -315,21 +318,25 @@
 </div>
 [/available]	
 <section id="our_brands">
-	<div class="container">
+	
 		
-		<div class="row">
+		
 			<h3 class="brand_ttl">Наши бренды</h3>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre1.png" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre2.jpg" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre3.jpg" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre4.jpg" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre5.png" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre6.png" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre7.jpg" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre8.jpg" alt="brand_item"></div>
-			<div class="col-md-2 brand_grid"><img class="brand_img" src="{THEME}/img/bre9.png" alt="brand_item"></div>
-		</div>
-	</div>
+			<div class="owl-carousel">
+
+					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre1.png" alt="brand_item"></div>
+					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre2.jpg" alt="brand_item"></div>
+					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre3.jpg" alt="brand_item"></div>
+					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre4.jpg" alt="brand_item"></div>
+					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre5.png" alt="brand_item"></div>
+					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre6.png" alt="brand_item"></div>
+					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre7.jpg" alt="brand_item"></div>
+					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre8.jpg" alt="brand_item"></div>
+					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre9.png" alt="brand_item"></div>
+			</div>
+			
+		
+	
 
 </section>
 
@@ -423,6 +430,8 @@
 	
 	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+	<script src="{THEME}/libs/OwlCarousel/owl.carousel.min.js"></script>
 <script>
 function split_register() {
 	$('.price_val').each(function () {
@@ -436,6 +445,36 @@ $(this).text(metamorf);
 split_register();
 
 
+</script>
+
+<script>
+$(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+	responsiveClass:true,
+	autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:6,
+            nav:false
+        },
+        1000:{
+            items:9,
+            nav:true,
+            loop:false
+        }
+    }
+})
+
+
+})
 </script>
 </body>
 </html>
