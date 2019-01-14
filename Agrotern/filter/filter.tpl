@@ -89,7 +89,7 @@
 							
 						</div>
 					</div>
-	<div class="butt red">
+	<div id="filter_red_but" class="butt red">
 		<span>Подобрать <i class="fa fa-filter"></i></span>
 	</div>
 	<div class="clr"></div>

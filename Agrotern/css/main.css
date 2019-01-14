@@ -83,6 +83,7 @@ body {
 }
 .text-justify li a {
 	color: #333;
+	font-weight: 600;
 }
 .phones_items i {
 	font-size: 2rem;
@@ -369,13 +370,13 @@ body {
 	color: #3a3939;
 }
 .price b {
-	font-size: 2.5rem;
-	margin-left: 10px;
+	font-size: 3.2rem;
+	margin-left: -15px;
 }
 .row.row_slider {
 	margin: 0;
 }
-.butt {
+.butts {
 	width: 100%;
 
 	font-size: 12px;
@@ -392,7 +393,7 @@ body {
 	color: #fff;
 	display: inline;
 }
-.butt li {
+.butts li {
 	display: inline-block;
 	width: 48%;
 	/* text-align: center; */
@@ -572,7 +573,7 @@ footer .vork_di {
 	padding: 0;
 	margin: 0 20px;
 	display: inline-block;
-	font-size: 2.5rem;
+	font-size: 2.1rem;
 }
 .desc table {
 	border: 1px solid;
@@ -596,4 +597,17 @@ footer .vork_di {
 }
 .top_slider {
 	min-height: 150px;
+}
+.bay_naw.one_klick {
+	background-color: transparent;
+	color: #333;
+}
+.bay_naw.one_klick:hover {
+	background-color: #0047AB;
+	color: #fff;
+}
+.market_dit_ul li p {
+	margin-left: 12%;
+	margin-top: -5px;
+	font-family: 'Open Sans', sans-serif;
 }

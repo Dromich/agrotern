@@ -26,6 +26,8 @@
 	<link rel="stylesheet" href="{THEME}/css/main.css">
 	<link rel="stylesheet" href="{THEME}/css/media.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<script src="{THEME}/libs/modernizr/modernizr.js"></script>
@@ -146,6 +148,8 @@
 					</ul>
 				</div>
 			</li>
+			<li id="hm73"><a href="/snegouborochnye-mashiny/">Снегоуборочные машины</a><div></div>
+			</li>
 		</ul>
 		[not-available=showfull|cat]
 		<div class="topSlider_promo">
@@ -177,8 +181,9 @@
 		  	
 	<div class="fotorama" data-width="100%" 
 	 data-fit="cover" data-autoplay="true" data-loop="true" data-nav="false">
-		<img src="https://motokosmos.com.ua/images/_o/banner-1-(1).jpg">
-		<img src="https://motokosmos.com.ua/images/_o/banner-2-1775x720.jpg">
+		
+		<img src="{THEME}/img/slide_1.png">
+		<img src="{THEME}/img/slide_2.png">
 		
 	  </div> 
 	  [/not-available]
@@ -335,12 +340,7 @@
 					<a href="/"><img class="foot_logo_img" src="{THEME}/img/logo_foot.png" alt="logo"></a>
 			<h4 class="footerPh4">Лучший выбор
 					качественной техники</h4>
-					<div class="footer_social">
-<a href="#"><i class="fab fa-facebook-square"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-
-			</div>
+				
 				</div>
 			<div class="col-md-3">
 				<h5>Каталог</h5>
@@ -357,9 +357,7 @@
 						<li><i class="fas fa-cogs"></i> <a href="#">Доставка и оплата</a> </li>
 						<li><i class="fas fa-cogs"></i><a href="#">Гарантия</a></li>
 						<li><i class="fas fa-cogs"></i><a href="#">Контакты</a></li>
-						<li><i class="fas fa-cogs"></i><a href="#">Новости</a></li>
-						<li><i class="fas fa-cogs"></i><a href="#">Вопросы и ответы</a></li>
-						<li><i class="fas fa-cogs"></i><a href="#">Условия использования</a></li>
+						<li><i class="fas fa-cogs"></i><a href="#">О нас</a></li>
 						<li><i class="fas fa-cogs"></i><a href="#">Сотрудничество</a></li>
 						
 					</ul>

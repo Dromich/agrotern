@@ -12,7 +12,7 @@
 				<span class="price"><span class="price_val">[xfvalue_price]<span> <b>грн</b> </span>
 
 			</div>
-<div class="butt">
+<div class="butts">
 		<span class="b_but">Купить</span> 
 		[full-link]<span class="v_but">Посмотреть</span>[/full-link]
 </div>

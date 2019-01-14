@@ -13,7 +13,7 @@
 
 			</div>
 
-			<ul class="butt">
+			<ul class="butts">
 				<li><span class="b_but">Купить</span></li>
 				<li>[full-link]<span class="v_but">Посмотреть</span>[/full-link]</li>
 			</ul>
