@@ -25,7 +25,8 @@
 }
 
 .sector.nobottom {
-	padding: 30px 0 0;
+	padding: 0;
+	margin: 0;
 }
 
 .sector_title {
@@ -54,7 +55,7 @@
 
 .filter {
 	background: url(../images/fon-body.png);
-	padding: 30px 30px 15px;
+	
 }
 
 .filmslist .filter {
@@ -224,15 +225,18 @@
 }
 
 .filter-buttons .butt {
-	display: inline-block;
+	display: block;
 	margin-bottom: 5px;
+	width: 100%;
+	margin-top: -10px;
+	/* border: 1px solid #333; */
 }
 
 .filter-buttons .butt > span {
 	display: inline-block;
 	padding: 10px;
-	border-bottom-width: 3px;
-	border-bottom-style: solid;
+	/* border-bottom-width: 3px; */
+	/* border-bottom-style: solid; */
 	font-size: 18px;
 	margin-right: 30px;
 	cursor: pointer;
@@ -252,17 +256,17 @@
 .filter-buttons .list {
 	position: relative;
 	top: 100%;
-	left: -30px;
-	padding: 0 30px 30px;
+	/* left: -30px; */
+	padding: 0 5px 5px;
 	background: #fff;
 	width: 100%;
 	cursor: auto;
 	display: block;
 	z-index: 10;
-	-webkit-box-shadow: 0 4px 5px rgba(0,0,0,.15);
-	-moz-box-shadow: 0 4px 5px rgba(0,0,0,.15);
-	box-shadow: 0 4px 5px rgba(0,0,0,.15);
-	border-bottom: 1px solid #CECECE;
+	/* -webkit-box-shadow: 0 4px 5px rgba(0,0,0,.15); */
+	/* -moz-box-shadow: 0 4px 5px rgba(0,0,0,.15); */
+	/* box-shadow: 0 4px 5px rgba(0,0,0,.15); */
+	/* border-bottom: 1px solid #CECECE; */
 }
 
 .filmslist .filter-buttons .list {
@@ -322,10 +326,10 @@
 
 .filter-buttons .list .cbtn {
 	display: inline-block;
-	padding: 2px 6px;
-	font-size: 13px;
+	padding: 2px 5px;
+	font-size: 11px;
 	background: #eee;
-	margin: 10px 5px;
+	margin: 3px;
 	cursor: pointer;
 	font-weight: normal;
 	/* border: none; */
@@ -431,4 +435,20 @@
 	text-decoration: none;
 	background: #FFD862;
 	cursor: pointer;
+}
+#filter_red_but {
+	width: 100%;
+	text-align: center;
+	border: 1px solid red;
+	margin-top: 2px;
+	border-radius: 20px;
+	transition: all .5s;
+}
+#filter_red_but:hover {
+	background-color: red;
+	color: #fff!important;
+}
+#filter_red_but:hover span {
+	
+	color: #fff!important;
 }

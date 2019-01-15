@@ -56,9 +56,9 @@
 				
 
 						<ul class="header-pages-menu phones_items col-md-12">
-								<li><i class="fas fa-phone-square"></i> <a rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
-								<li><i class="fas fa-phone-square"></i> <a rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
-								<li><i class="fas fa-at"></i> <a rel="email" href="#">our_mail@gmail.com</a></li>
+								<li><i class="fas fa-phone-square"></i> <a class="contacter" rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
+								<li><i class="fas fa-phone-square"></i> <a class="contacter" rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
+								<li><i class="fas fa-at"></i> <a class="contacter" rel="email" href="#">our_mail@gmail.com</a></li>
 							</ul>
 				
 				<li>
@@ -187,6 +187,7 @@
 		
 		<img src="{THEME}/img/slide_1.png">
 		<img src="{THEME}/img/slide_2.png">
+		<img src="{THEME}/img/slide_3.png">
 		
 	  </div> 
 	  [/not-available]

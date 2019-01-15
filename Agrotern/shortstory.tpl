@@ -9,14 +9,14 @@
 			<span class="marketing_span">Хит продаж</span>
 			
 			<div class="price_section">
-				<span class="price"><span class="price_val">[xfvalue_price]<span> <b>грн</b> </span>
+				<span class="price"><span id="price_val{news-id}" class="price_val">[xfvalue_price]<span> <b>грн</b> </span>
 
 			</div>
 
-			<ul class="butts">
-				<li><span class="b_but">Купить</span></li>
-				<li>[full-link]<span class="v_but">Посмотреть</span>[/full-link]</li>
-			</ul>
+			<div class="butts">
+				<span class="b_but fl">Купить</span> 
+				[full-link]<span class="v_but fr">Посмотреть</span>[/full-link]
+		</div>
 
 		 
 		
@@ -25,3 +25,18 @@
 	</div>
 	
 </div>
+<script>
+	function split_register() {
+		console.log('Spl')
+		$('#price_val{news-id}').each(function () {
+	var price = $(this).text();
+	//console.log(price);
+	var metamorf = price .replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+	$(this).text(metamorf);	
+	});
+	}
+	
+	split_register();
+	
+	
+	</script>

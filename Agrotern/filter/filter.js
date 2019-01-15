@@ -3,6 +3,7 @@
 * http://dle.press
 * Заходите в мой блог о DLE, там выложены полезные мелочи */
 
+
 function move_Fvalue(e,ui0,ui1){
 	$(e+' .val1').stop().animate({left:$(e+' .ui-slider-handle').eq(0).css('left')},200).html( ui0?ui0:(e=='#xf_kinopoisk'?$( e ).slider( "values", 0 ).toFixed(1):$( e ).slider( "values", 0 )) );
 	$(e+' .val2').stop().animate({left:$(e+' .ui-slider-handle').eq(1).css('left')},200).html( ui1?ui1:(e=='#xf_kinopoisk'?$( e ).slider( "values", 1 ).toFixed(1):$( e ).slider( "values", 1 )) );
@@ -83,6 +84,13 @@ $(document).ready(function() {
 })
 .on('click', '.filter-buttons .butt.red, #filter-next', function() {
 	$('#dle-content').remove();
+	
+	
+	// $(document).ready(function(){
+	
+
+	// });
+	
 
 		var genre = [],
 		xf_power = [],
@@ -153,7 +161,13 @@ $(document).ready(function() {
 			else $('#content').html(data);
 			$(this).parents('.navigation-button').fadeOut(200,function(){$(this).remove()});
 			});
+			
+
+			
+			
+			
 		}
+		
 		);
 		});
 
