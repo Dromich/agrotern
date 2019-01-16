@@ -21,9 +21,10 @@
 
 	<link rel="stylesheet" href="{THEME}/libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="{THEME}/libs/animate/animate.css">
-	
+	<link media="screen" href="{THEME}/style/kylshop.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="{THEME}/css/fonts.css">
 	<link rel="stylesheet" href="{THEME}/css/main.css">
+	<link rel="stylesheet" href="{THEME}/css/engine.css">
 	<link rel="stylesheet" href="{THEME}/css/media.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
@@ -37,6 +38,9 @@
 
 	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.theme.default.min.css">
+
+
+<script type="text/javascript" src="{THEME}/js/kylshop.js"></script>
 
 </head>
 
@@ -90,7 +94,7 @@
 		</div>
 	
 		<div class="top_cart_blo col-md-2">
-			
+				{cart}
 
 		</div>
 		
@@ -433,6 +437,7 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 
 	<script src="{THEME}/libs/OwlCarousel/owl.carousel.min.js"></script>
+
 <script>
 function split_register() {
 	$('.price_val').each(function () {

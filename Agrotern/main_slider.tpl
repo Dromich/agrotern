@@ -12,10 +12,13 @@
 				<span class="price"><span class="price_val">[xfvalue_price]<span> <b>грн</b> </span>
 
 			</div>
-<div class="butts">
-		<span class="b_but fl">Купить</span> 
-		[full-link]<span class="v_but fr">Посмотреть</span>[/full-link]
-</div>
+			
+			<div class="butts">
+					<a href="{full-link}" class="add_to_cart b_but fl" data-goodsId="{news-id}" data-goodsPrice="[xfvalue_price]" data-goodsTitle="{title}">В корзину</a>
+						
+						<a href="{full-link}" class="v_but fr">Посмотреть</a>
+						
+				</div>
 			
 	</div>
 	
