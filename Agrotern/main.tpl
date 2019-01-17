@@ -5,7 +5,8 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
 
 <head>
-
+		<meta name="googlebot" content="noindex, nofollow"/>
+		<meta name="yandex" content="none"/> 
 	
 
 	{headers}
@@ -21,7 +22,8 @@
 
 	<link rel="stylesheet" href="{THEME}/libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="{THEME}/libs/animate/animate.css">
-	<link media="screen" href="{THEME}/style/kylshop.css" type="text/css" rel="stylesheet">
+	<link media="screen" href="{THEME}/css/kylshop.css" type="text/css" rel="stylesheet">
+	
 	<link rel="stylesheet" href="{THEME}/css/fonts.css">
 	<link rel="stylesheet" href="{THEME}/css/main.css">
 	<link rel="stylesheet" href="{THEME}/css/engine.css">
@@ -32,15 +34,20 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<script src="{THEME}/libs/modernizr/modernizr.js"></script>
-	
+
+	<!--link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"-->
+
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	
 	<link href="{THEME}/filter/filter.css" type="text/css" rel="stylesheet">
 
-	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.theme.default.min.css">
+
 
 
 <script type="text/javascript" src="{THEME}/js/kylshop.js"></script>
+
+<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.theme.default.min.css">
 
 </head>
 
@@ -55,14 +62,14 @@
 			<div class="top_logo col-md-3">
 					<a href="/"><img class="top_logo_img" src="{THEME}/img/logo.png" alt="logo"></a>
 				</div>
-		<div class="top_phone_blo col-md-7">
+		<div class="top_phone_blo col-md-6">
 			<ul class="text-justify">
 				
 
 						<ul class="header-pages-menu phones_items col-md-12">
-								<li><i class="fas fa-phone-square"></i> <a class="contacter" rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
-								<li><i class="fas fa-phone-square"></i> <a class="contacter" rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
-								<li><i class="fas fa-at"></i> <a class="contacter" rel="email" href="#">our_mail@gmail.com</a></li>
+								<li><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"> <a class="contacter" rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
+								<li><img class="cell_logo" src="{THEME}/img/icon/lifecell.svg" alt="Lifecell"> <a class="contacter" rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
+								<li><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell"> <a class="contacter" rel="email" href="#">our_mail@gmail.com</a></li>
 							</ul>
 				
 				<li>
@@ -93,9 +100,18 @@
 		
 		</div>
 	
-		<div class="top_cart_blo col-md-2">
+		<div class="top_cart_blo col-md-3">
 				{cart}
+				<div class="vork_di">						
+						<ul class="vork_time">							
+							<li><p class="vork_time_ttl">Время роботы:</p></li>
+							<li>Пн-Пт: 8:00-20:00</li>
+							<li>Сб-Вс: 8:00-18:00</li>
+						</ul>
+				</div>
 
+				
+				
 		</div>
 		
 		</div>
@@ -106,7 +122,7 @@
 <div class="top_slider_menu">
 		<ul class="horisontal-menu">
 			<li><a href="/">Главная</a></li>
-			<li class="hover_item"><a href="/mototraktora">Мототракторы</a><div>
+			<li class="hover_item"><a href="/mototraktory/">Мототракторы</a><div>
 					<ul>
 						<li><a class="_usrLink" href="/mototraktora/garden-scout">Мототракторы Garden Scout</a></li>
 						<li><a class="_usrLink" href="/mototraktora/Shifeng">Мототракторы Shifeng</a></li>
@@ -119,7 +135,7 @@
 						<li><a class="_usrLink" href="/mototraktora/vityaz">Мототракторы Витязь</a></li>
 					</ul>
 					<ul>
-												<li><a class="_usrLink" href="/mototraktora/mototraktor-v-kieve">Мототрактор в Киеве</a></li>
+						<li><a class="_usrLink" href="/mototraktora/mototraktor-v-kieve">Мототрактор в Киеве</a></li>
 						<li><a class="_usrLink" href="/mototraktora/mototraktor-v-odesse">Мототрактор в Одессе</a></li>
 						<li><a class="_usrLink" href="/mototraktora/mototraktor-v-harkove">Мототрактор в Харькове</a></li>
 						<li><a class="_usrLink" href="/mototraktora/mototraktor-v-zhitomire">Мототрактор в Житомире</a></li>
@@ -145,11 +161,11 @@
 					</ul>
 				</div>
 			</li>
-			<li id="hm71"><a href="/motobloki">Мотоблоки</a><div></div>
+			<li id="hm71"><a href="/motobloki/">Мотоблоки</a><div></div>
 			</li>
-			<li id="hm74"><a href="/navesnoe_oborudovanie">Навесное оборудование</a><div></div>
+			<li id="hm74"><a href="/navesnoe-oborudovanie/">Навесное оборудование</a><div></div>
 			</li>
-			<li class="hover_item"><a href="/generatory">Генераторы</a><div>
+			<li class="hover_item"><a href="/generatory/">Генераторы</a><div>
 					<ul class="lvl1">
 						<li><a href="/generatory-matari">Генераторы Matari</a></li>
 					</ul>
@@ -266,23 +282,38 @@
 	<h1>Купить мототехнику в Украине</h1>
 </div>
 
-<div class="container">
+<div id="main_top_tabs" class="container">
 
-		<div class="fotorama" data-width="100%" data-height="500px"
-		 data-autoplay="true" data-loop="true" >
-		   
-		<div class="row row_slider">
-			{custom  category="1-100"  template="main_slider" available="main" navigation="no" from="0" limit="4" fixed="no" order="date" sort="desc" cache="no"}
-			
+		<div id="tabs">
+				<ul>
+				  <li><a href="#fragment-1"><span>Лидеры продаж</span></a></li>
+				  <li><a href="#fragment-2"><span>Скидки</span></a></li>
+				  <li><a href="#fragment-3"><span>Новинки</span></a></li>
+				</ul>
+				<div class="main_tabs" id="fragment-1">
 					
-						
-							
+						<div class="owl-carousel sale_slider owl-theme">
+								{custom  category="1-100"  template="main_slider" available="main" navigation="no" from="0" limit="34" fixed="no" order="date" sort="desc" cache="no"}
+								
+						</div>
+				</div>
+				<div class="main_tabs" id="fragment-2">
 					
-			
-			
-				</div><!--One Row-->
-				
-		 </div> <!--Fotorama End-->
+						<div class="owl-carousel sale_slider owl-theme">
+								{custom  category="1-100"  template="main_slider" available="main" navigation="no" from="0" limit="30" fixed="no" order="date" sort="desc" cache="no"}
+								
+						</div>
+				</div>
+				<div class="main_tabs" id="fragment-3">
+					
+						<div class="owl-carousel sale_slider owl-theme">
+								{custom  category="1-100"  template="main_slider" available="main" navigation="no" from="0" limit="30" fixed="no" order="date" sort="desc" cache="no"}
+								
+						</div>
+				</div>
+			  </div>
+		
+		
 
 
 	
@@ -327,17 +358,17 @@
 		
 		
 			<h3 class="brand_ttl">Наши бренды</h3>
-			<div class="owl-carousel">
+			<div class="owl-carousel brand_slider">
 
-					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre1.png" alt="brand_item"></div>
-					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre2.jpg" alt="brand_item"></div>
-					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre3.jpg" alt="brand_item"></div>
-					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre4.jpg" alt="brand_item"></div>
-					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre5.png" alt="brand_item"></div>
-					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre6.png" alt="brand_item"></div>
-					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre7.jpg" alt="brand_item"></div>
-					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre8.jpg" alt="brand_item"></div>
-					<div class=" brand_grid"><img class="brand_img" src="{THEME}/img/bre9.png" alt="brand_item"></div>
+					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre1.png" alt="brand_item"></div>
+					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre2.jpg" alt="brand_item"></div>
+					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre3.jpg" alt="brand_item"></div>
+					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre4.jpg" alt="brand_item"></div>
+					<div class=" brand_grid item"> <img class="brand_img" src="{THEME}/img/bre5.png" alt="brand_item"></div>
+					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre6.png" alt="brand_item"></div>
+					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre7.jpg" alt="brand_item"></div>
+					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre8.jpg" alt="brand_item"></div>
+					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre9.png" alt="brand_item"></div>
 			</div>
 			
 		
@@ -357,10 +388,12 @@
 			<div class="col-md-3">
 				<h5>Каталог</h5>
 				<ul class="foot_ul">
+						<li> <i class="fas fa-cogs"></i><a href="#">Мототракторы</a> </li>
 					<li> <i class="fas fa-cogs"></i><a href="#">Минитракторы</a> </li>
 					<li><i class="fas fa-cogs"></i><a href="#">Мотоблоки</a></li>
 					<li><i class="fas fa-cogs"></i><a href="#">Навесное оборудование</a></li>
 					<li><i class="fas fa-cogs"></i><a href="#">Генераторы</a></li>
+					<li><i class="fas fa-cogs"></i><a href="#">Снегоуборочные машины</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3">
@@ -455,7 +488,39 @@ split_register();
 
 <script>
 $(document).ready(function(){
-	$('.owl-carousel').owlCarousel({
+
+	$('.sale_slider').each(function(){
+
+		$(this).owlCarousel({
+    loop:true,
+	margin:10,
+	nav:false,
+	dots:false,
+	navText:['Назад','Вперед'],
+	responsiveClass:true,
+	autoplay:true,
+    autoplayTimeout:500,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+    
+  });
+
+  $('.brand_slider').owlCarousel({
     loop:true,
     margin:10,
 	responsiveClass:true,
@@ -464,11 +529,11 @@ $(document).ready(function(){
     autoplayHoverPause:true,
     responsive:{
         0:{
-            items:2,
+            items:1,
             nav:true
         },
         600:{
-            items:6,
+            items:3,
             nav:false
         },
         1000:{
@@ -479,8 +544,10 @@ $(document).ready(function(){
     }
 })
 
-
 })
 </script>
+<script>
+		$( "#tabs" ).tabs();
+		</script>
 </body>
 </html>

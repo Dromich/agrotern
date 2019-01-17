@@ -1,10 +1,10 @@
-<div class="main_item col-md-3">
+<div class="main_item ">
 		
 	<div class="item_in">
 			[full-link]
-			<img class="item_img" src="[xfvalue_image_url_main_img]" alt="main image">
+			<img class="item_img" src="[xfvalue_image_url_main_img]" alt="{title}">
 			[/full-link]
-			<h3 class="item_ttl">{title limit="30"}...</h3>
+			<h3 class="item_ttl">{title limit="20"}...</h3>
 			<span class="item_brand">[xfvalue_brand]</span>
 			<span class="marketing_span">Хит продаж</span>
 			

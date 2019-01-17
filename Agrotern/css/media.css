@@ -95,5 +95,12 @@
 		
 		font-size: 2.8rem;
 	}
+	.top_cart_blo.col-md-3 {
+	text-align: center;
+	padding-top: 1.5%;
+}
+#cart {
+	width: 50%;
 	
+}
 }
