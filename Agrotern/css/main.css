@@ -798,3 +798,8 @@ footer .vork_di {
 	max-width: 160px;
 	margin-right: 20px;
 }
+.price.nnprc {
+	display: block;
+	font-size: 2.5rem;
+	font-weight: bold;
+}

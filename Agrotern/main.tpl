@@ -269,7 +269,7 @@
 
 
 
-[available=showfull|cart|static]
+[available=showfull|cart|static|payments]
 		{info}
 		{content}
 		[/available]

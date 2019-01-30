@@ -101,7 +101,13 @@ if(!empty($_POST["productsIds"]) && !empty($_POST["productsAmount"])){
 	foreach (array_reverse($news_info) as $row) {
 		$xfields = xfieldsdataload($row['xfields']);
 		$productName .= ' <a href="'.GetLink($row["id"], $row["category"], $row["alt_name"], $row["date"]).'">' . $xfields["goods_description"] . '</a> (' . $productsAmount[$i][0] . ' шт.)<br>';
-		$total = (float)$total + ((float)$xfields["price"] * (float)$productsAmount[$i][0]);
+		
+		if ($xfields["new_price"] !== NULL) {
+			$total = (float)$total + ((float)$xfields["new_price"] * (float)$productsAmount[$i][0]);
+		}else{
+			$total = (float)$total + ((float)$xfields["price"] * (float)$productsAmount[$i][0]);
+		}		
+		
 		$i++;
 	}
 

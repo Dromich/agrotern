@@ -102,7 +102,7 @@ if($is_logged == "1" || $kylshop_config["guest_allow"] == true){
 
 			$form_buy = '
 			<div class="butts">
-			<a href="'.$full_link.'" class="add_to_cart b_but fl" data-goodsId="'.$news_id.'" data-goodsimg="'.$xfields["main_img"].'" data-goodsPrice="'.(float)$xfields["price"].'" data-goodsTitle="'.$row['title'].'">В корзину</a>
+			<a id="by_btn'.$news_id.'" href="'.$full_link.'" class="add_to_cart b_but fl" data-goodsId="'.$news_id.'" data-goodsimg="'.$xfields["main_img"].'" data-goodsPrice="'.(float)$xfields["price"].'" data-goodsTitle="'.$row['title'].'">В корзину</a>
 				
 				<a href="'.$full_link.'" class="v_but fr">Посмотреть</a>
 				
