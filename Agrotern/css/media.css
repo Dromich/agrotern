@@ -1,0 +1,119 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.main_item {
+		height: 430px;
+		padding: 10px;
+	}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.main_item {
+		height: 450px;
+		padding: 10px;
+	}
+
+}
+@media only screen and (min-width : 1500px) {
+	.main_item {
+		height: 550px;
+		padding: 10px;
+	}
+	.item_img {
+		
+		margin: 0 auto;
+		display: block;
+		max-height: 260px;
+		
+	}
+	.cat_menu li {
+		display: inline-block;
+		margin-left: .5%;
+		margin-right: .5%;
+		border: 1px solid #333;
+		text-align: center;
+		width: 15%;
+		height: 400px;
+		position: relative;
+	}
+	.cat_menu li h3 {
+		
+		font-size: 2.8rem;
+	}
+	.top_cart_blo.col-md-3 {
+	text-align: center;
+	padding-top: 1.5%;
+}
+#cart {
+	width: 50%;
+	
+}
+}
