@@ -803,3 +803,7 @@ footer .vork_di {
 	font-size: 2.5rem;
 	font-weight: bold;
 }
+#cart_form_subm {
+	text-align: center;
+	padding: 8px;
+}

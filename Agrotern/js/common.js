@@ -9,11 +9,11 @@ $(function() {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("#form").submit(function() { //Change
+	$(".ajax_form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "/mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");
@@ -44,4 +44,12 @@ $(window).load(function() {
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
 
+});
+
+$('#cart_form_subm').click(function (e) { 
+	e.preventDefault();
+//дописати функцію відправки прихованої форми
+$('#cart_form').submit();
+
+	
 });

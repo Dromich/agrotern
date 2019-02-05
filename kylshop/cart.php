@@ -26,53 +26,19 @@ $main_settings = $dle_api -> load_table (PREFIX."_kylshop_settings", 'settings',
 
 $_MS = unserialize($main_settings[0]["settings"]);
 
-/*
-echo '<pre>';
-print_r($member_id);
-echo '</pre>';
-*/
 
-/*
-    [email] => master_z1zzz@mail.ru
-    [password] => 0d992b6a7b094eaf1270474d430f814f
-    [name] => Kylaksizov
-    [user_id] => 1
-    [news_num] => 46
-    [comm_num] => 213
-    [user_group] => 1
-    [lastdate] => 1479279519
-    [reg_date] => 1420641355
-    [banned] =>
-    [allow_mail] => 1
-    [info] =>
-    [signature] =>
-    [foto] => http://kylaksizov.ru/uploads/fotos/foto_1.jpg
-    [fullname] =>
-    [land] =>
-    [favorites] =>
-    [pm_all] => 24
-    [pm_unread] => 0
-    [time_limit] => 1463286982
-    [xfields] =>
-    [allowed_ip] =>
-    [hash] =>
-    [logged_ip] => 46.118.219.12
-    [restricted] => 0
-    [restricted_days] => 0
-    [restricted_date] =>
-    [timezone] =>
-    [payments_tag_hide] => script
-    [user_balance] => 0
-    [balance24] => 2
-*/
-
-############################################
 #	Если пользователь авторизован
 if($is_logged == "1" || $kylshop_config["guest_allow"] == true){
 
     if(!isset($_GET["page"])){ // первая страница корзины
 
-        $cont = '<h1>Мой заказ</h1><a href="#" class="cartClear">очистить</a>
+		$cont = '
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6 col-xs-12">
+		<h1>Мой заказ</h1><a href="#" class="cartClear">очистить</a>
+		
+		
 		<table class="listing-cart staticCart">
 			<tr>
 				<th>Нименование</th>
@@ -80,7 +46,7 @@ if($is_logged == "1" || $kylshop_config["guest_allow"] == true){
 				<th width="90">Цена / 1 шт.</th>
 			</tr>
 		</table>
-		<div class="totalGoods">Всего: <b>0</b><span> грн.</span></div>';
+		<div class="totalGoods">Всего: <b>0</b><span> грн.</span></div></div>';
 
         $field = '';
 
@@ -109,7 +75,7 @@ if($is_logged == "1" || $kylshop_config["guest_allow"] == true){
                         $input_name = $fields_type[1];
                         $input_value = "";
                     }
-                    //var_dump($replace_value);
+                   
 
                     if(!empty($fields_type[3])) $fields_type[3] = " " . $fields_type[3];
                     else $fields_type[3] = "";
@@ -138,13 +104,65 @@ if($is_logged == "1" || $kylshop_config["guest_allow"] == true){
         if($_MS["online_payments"] == "on") $button_name = 'Перейти к оплате';
         else $button_name = 'Оформить заказ';
 
-        $cont .= '<div class="action_button_cart">
-            <form method="POST" action="'.$config["http_home_url"].'?do=cart&page=payments">
-                '.$field.'
+		$cont .= '<div class="action_button_cart col-md-6 col-xs-12">
+		<h3>Детали заказа</h3>
+            <form id="cart_form" class="ajax_form" method="POST" action="'.$config["http_home_url"].'?do=cart&page=payments">
+				'.$field.'
+				
                 <input type="hidden" name="productsIds" id="my_products" value="0" required>
                 <input type="hidden" name="productsAmount" id="productsAmount" value="0" required>
-                <input type="submit" class="btn_buy" value="'.$button_name.'"> 
+				<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="AGROTERN">
+		<input type="hidden" name="admin_email" value="legranchio@gmail.com">
+		<input type="hidden" name="form_subject" value="Замовлення з AGROTERN">
+<!-- END Hidden Required Fields -->
+				
+				<div id="deliv_tupe">
+				<h4>Доставка</h4>			
+				<p>
+				<input class="delivery_item" name="delivery_id" id="delivery_id_1" value="Самовывоз со склада" type="radio">
+				Самовывоз со склада 
+			</p>
+			<p>
+				<input class="delivery_item" name="delivery_id" id="delivery_id_2" value="Служба доставки \'Новая Почта\'" type="radio">
+				Служба доставки \'Новая Почта\'
+				</p>
+				<p>
+				<input class="delivery_item" name="delivery_id" id="delivery_id_3" value="Служба доставки \'Интайм\'" type="radio">
+				Служба доставки \'Интайм\'
+				</p>
+				<p>
+				<input class="delivery_item" name="delivery_id" id="delivery_id_4" value="Служба доставки \'Деливери\'" type="radio">
+				Служба доставки \'Деливери\'				
+				</p>
+				<p>
+				<input class="delivery_item" name="delivery_id" id="delivery_id_5" value="Служба доставки \'Meest-express\'" type="radio">
+				Служба доставки \'Meest-express\'
+				</p>
+				<p>
+				<input class="delivery_item" name="delivery_id" id="delivery_id_6" value="Нашим транспортом" type="radio">
+				Нашим транспортом
+				</p>
+				</div>
+				<div id="pay_tupe">
+				<h4>Оплата</h4>
+				<input class="pay_item" name="pay_item_id" id="pay_item_id_1" value="Оплата наличными " type="radio">
+				Оплата наличными 
+			</p>
+			<p>
+				<input class="pay_item" name="pay_item_id" id="pay_item_id_2" value="Наложенный платеж" type="radio">
+				Наложенный платеж
+				</p>
+				<p>
+				<input class="pay_item" name="pay_item_id" id="pay_item_id_3" value="Безналичный платеж" type="radio">
+				Безналичный платеж
+				</p>
+				</div>
+<div id="cart_form_subm" class="btn_buy">'.$button_name.'</div>
+				<!--input type="submit" class="btn_buy" value="'.$button_name.'"-->
             </form>
+		</div>
+		</div>
 		</div>';
     }
 
