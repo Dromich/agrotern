@@ -16,7 +16,8 @@ $(function() {
 			url: "/mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			alert("Спасибо, скоро мы перезвоним!");
+			$.magnificPopup.close();
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");

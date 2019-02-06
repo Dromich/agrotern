@@ -19,7 +19,7 @@
 					[xfnotgiven_on-sale] <li class="on_sele_off"> <i class="fas fa-times"></i>  Нет в наличии</li> [/xfnotgiven_on-sale]
 			<li><a class="" href="#"></a><a href="{full-link}" class="add_to_cart bay_naw" data-goodsId="{news-id}" data-goodsPrice="[xfvalue_price]" data-goodsTitle="{title}">В корзину </a></li>
 			
-			<li><a class="bay_naw one_klick" href="#">Купить в 1 клик</a></li>
+			<li><span class="bay_naw one_klick onclk_sale" >Купить в 1 клик</span></li>
 			<li><a class="bay_naw one_klick" href="#">Купить в кредит</a></li>
 			
 			<li class="short_disk"><h5>Краткое описание</h5>
@@ -76,4 +76,53 @@
 		
 		
 		</script>
+	<div class="hidden">
+			<div id="modalform_fls">
+					<span class="mfp_close">X</span>
+				<h3>Заказать {title}</h3>
+				
+			<form class="modalformform ajax_form" >
+			<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="AGROTERN">
+		<input type="hidden" name="admin_email" value="legranchio@gmail.com">
+		<input type="hidden" name="form_subject" value="Замовлення {title}">
+<!-- END Hidden Required Fields -->
+				<input type="text" name="Ім'я" placeholder="Ваше имя" >
+				<input type="tel" name="Телефон"  placeholder="Ваш телефон">
+				<input type="submit" value="Отправить">
+			</form>
+			
+			</div>
+			
+			
+			
+				</div>
+				<script>
+						$(document).ready(function() {
+				  $('.onclk_sale').magnificPopup({
+					  
+					
+					items: [    
+					 
+					  {
+						src: '#modalform_fls', // CSS selector of an element on page that should be used as a popup
+						type: 'inline'
+					  }
+					],
+					gallery: {
+					  enabled: true
+					},
+					type: 'image'
+				
+				
+				});
+				});
+				
+				$('.mfp_close ').click(function (e) { 
+					e.preventDefault();
+				
+					$.magnificPopup.close();
+					
+				});
+						</script>
 </section>

@@ -726,6 +726,7 @@ footer .vork_di {
 	text-align: center;
 	text-transform: uppercase;
 	padding: 10px;
+	cursor: pointer;
 }
 .short_disk h5 {
 	font-size: 18px;
@@ -806,4 +807,49 @@ footer .vork_di {
 #cart_form_subm {
 	text-align: center;
 	padding: 8px;
+}
+#modalform {
+	width: 320px;
+	height: auto;
+	display: block;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+#modalform input {
+	max-width: 100%;
+	display: block;
+	margin: 18px auto;
+}
+#modalform h3 {
+	text-align: center;
+}
+#modalform .mfp_close {
+	float: right;
+	font-size: 20px;
+	margin-top: -10px;
+	cursor: pointer;
+}
+
+#modalform_fls {
+	width: 320px;
+	height: auto;
+	display: block;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+#modalform_fls input {
+	max-width: 100%;
+	display: block;
+	margin: 18px auto;
+}
+#modalform_fls h3 {
+	text-align: center;
+}
+#modalform_fls .mfp_close {
+	float: right;
+	font-size: 20px;
+	margin-top: -10px;
+	cursor: pointer;
 }

@@ -41,10 +41,11 @@
 	
 	<link href="{THEME}/filter/filter.css" type="text/css" rel="stylesheet">
 
-
+<link rel="stylesheet" href="{THEME}/css/mfp.css">
 
 
 <script type="text/javascript" src="{THEME}/js/kylshop.js"></script>
+<script src="{THEME}/js/mfp.js"></script>
 
 <link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.theme.default.min.css">
@@ -512,7 +513,29 @@
 
 
 
-	<div class="hidden"></div>
+	<div class="hidden">
+<div id="modalform">
+		<span class="mfp_close">X</span>
+	<h3>Заказать консультацию</h3>
+	
+<form class="modalformform ajax_form" >
+<!-- Hidden Required Fields -->
+<input type="hidden" name="project_name" value="AGROTERN">
+<input type="hidden" name="admin_email" value="legranchio@gmail.com">
+<input type="hidden" name="form_subject" value="Заявка з AGROTERN">
+<!-- END Hidden Required Fields -->
+	<input type="text" name="Ім'я" placeholder="Ваше имя" >
+	<input type="tel" name="Телефон"  placeholder="Ваш телефон">
+	<input type="submit" value="Отправить">
+</form>
+
+</div>
+
+
+
+	</div>
+
+	
 
 	<div class="loader">
 		<div class="loader_inner"></div>
@@ -614,6 +637,35 @@ $(document).ready(function(){
 </script>
 <script>
 		$( "#tabs" ).tabs();
+		</script>
+
+		<script>
+		$(document).ready(function() {
+  $('#wont_to_call ').magnificPopup({
+	  
+	
+	items: [    
+     
+      {
+        src: '#modalform', // CSS selector of an element on page that should be used as a popup
+        type: 'inline'
+      }
+	],
+	gallery: {
+      enabled: true
+	},
+	type: 'image'
+
+
+});
+});
+
+$('.mfp_close ').click(function (e) { 
+	e.preventDefault();
+
+	$.magnificPopup.close();
+	
+});
 		</script>
 </body>
 </html>
