@@ -82,25 +82,9 @@ if($is_logged == "1" || $kylshop_config["guest_allow"] == true){
 
         $count_orders = file_get_contents(ENGINE_DIR . '/modules/kylshop/count_orders.txt'); // номер покупки
 
-        /*
-        <form method="POST" action="https://merchant.webmoney.ru/lmi/payment.asp" accept-charset="utf-8">
-            <input type="hidden" name="LMI_PAYMENT_AMOUNT" value="'.(float)$xfields["price"].'" required>
-            <input type="hidden" name="LMI_PAYMENT_DESC_BASE64" value="'.$description.'">
-            <input type="hidden" name="LMI_PAYMENT_NO" value="'.$count_orders.'">
-            <input type="hidden" name="LMI_PAYEE_PURSE" value="'.$_WM["purse"].'">
-            <input type="hidden" name="LMI_SIM_MODE" value="0">
-            <input type="hidden" name="kylshop" value="true">
-            <input type="hidden" name="payment_description" value="'.$xfields["goods_description"].'">
-            <input type="hidden" name="user_id" value="'.$member_id["user_id"].'">
-            <input type="hidden" name="name" value="'.$member_id["name"].'">
-            <input type="hidden" name="user_email" value="'.$member_id["email"].'">
-            <input type="hidden" name="goods_ids" value="'.$news_id.'">
-            <input type="hidden" name="goods_link" value="'.$full_link.'">
-            <input type="submit" class="go_buy" value="'.$kylshop_config["submit"].'">
-        </form>
-        */
+     
         $form_buy = '<div class="payment_buttons">
-            <a href="'.$full_link.'" class="add_to_cart" data-goodsId="'.$news_id.'" data-goodsPrice="'.(float)$xfields["price"].'" data-goodsTitle="'.$xfields["goods_description"].'">+ В корзину</a>
+		<a id="by_btn'.$news_id.'" href="'.$full_link.'" class="add_to_cart " data-goodsId="'.$news_id.'" data-goodsimg="'.$xfields["main_img"].'" data-goodsPrice="'.(float)$xfields["price"].'" data-goodsTitle="'.$row['title'].'">В корзину</a>
         </div>';
         // getCurrency((float)$xfields["price"], 'RUB', 'UAH')
         $tpl->result['content'] = preg_replace( "'\[kylshop](.*?)\[/kylshop\]'si", $form_buy , $tpl->result['content'] );

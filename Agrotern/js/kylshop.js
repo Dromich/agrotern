@@ -32,8 +32,10 @@ $(function(){
                 Goods[id] = GoodsInfo;
                 localStorage.setItem("Goods", JSON.stringify(Goods)); // заносим новый товар в память
                 //#####################################################
-                $(".listing-cart tr:last").after('<tr class="oneGoods"><td><a href="'+link+'" data-goodsId="'+id+'"><img src="/uploads/posts/'+productimg+'">'+title+'</a></td><td><input type="number" name="" class="goodsAmount" min="1" value="'+amount+'"></td><td class="productPrice"><b>'+price+'</b><span> грн.</span><span class="removeGoods"></span></td></tr>');
-            }
+                $(".listing-cart tr:last").after('<tr class="oneGoods"><td><a href="'+link+'" data-goodsId="'+id+'"><img src="/uploads/posts/'+productimg+'">'+title+'</a></td><td><input type="number" name="" class="goodsAmount" min="1" value="'+amount+'"></td><td class="productPrice"><b>'+price+'</b><span> грн.</span></td><td><span class="removeGoods"></span></td></tr>');
+			
+				$('form#teleform').prepend('<input type="hidden" class="tele_form_inp" name="'+title+'" id="tef'+id+'" value="'+amount+'" />');
+			}
         
         // если в корзине ПУСТО
         } else{
@@ -49,7 +51,8 @@ $(function(){
             Goods[id] = GoodsInfo;
             localStorage.setItem("Goods", JSON.stringify(Goods)); // заносим новый товар в память
             //#####################################################
-            $(".listing-cart tr:last").after('<tr class="oneGoods"><td><a href="'+link+'" data-goodsId="'+id+'"><img src="/uploads/posts/'+productimg+'">'+title+'</a></td><td><input type="number" name="" class="goodsAmount" min="1" value="'+amount+'"></td><td class="productPrice"><b>'+price+'</b><span> грн.</span><span class="removeGoods"></span></td></tr>');
+			$(".listing-cart tr:last").after('<tr class="oneGoods"><td><a href="'+link+'" data-goodsId="'+id+'"><img src="/uploads/posts/'+productimg+'">'+title+'</a></td><td><input type="number" name="" class="goodsAmount" min="1" value="'+amount+'"></td><td class="productPrice"><b>'+price+'</b><span> грн.</span></td><td><span class="removeGoods"></span></td></tr>');
+			$('form#teleform').prepend('<input type="hidden" class="tele_form_inp" name="'+title+'" id="tef'+id+'" value="'+amount+'" />');
         }
 
         restartGoods();
@@ -85,16 +88,18 @@ $(function(){
         // выводим количество товаров в корзине
         $("#cart .number_goods").html('<b>' + CountGoods() + "</b> шт.");
         // заносим общую сумму всех товаров в корзине
-        $(".totalGoods b, #cart .total_amount b").text(AllMoneyGoods());
+		$(".totalGoods b, #cart .total_amount b").text(AllMoneyGoods());
+		$("#teleform_total").val(AllMoneyGoods()+"грн.");
         PreOrder();
     }
 
     //#####################################################
     // INIT
-    // перебор товаров и занос в корзину :DDD
+    // Оновлюєм корзину і форму телеграм після перезагрузки сторінки
     for (var i in GetGoods()){
-        $(".listing-cart tr:last, .staticCart tr:last").after('<tr class="oneGoods"><td><a href="'+GetGoods()[i]["link"]+'" data-goodsId="'+[i]+'"><img src="/uploads/posts/'+GetGoods()[i]["img"]+'">'+GetGoods()[i]["title"]+'</a></td><td><input type="number" name="" class="goodsAmount" min="1" value="'+GetGoods()[i]["amount"]+'"></td><td class="productPrice"><b>'+GetGoods()[i]["price"]+'</b><span> грн.</span><span class="removeGoods"></span></td></tr>');
-    }
+        $(".listing-cart tr:last, .staticCart tr:last").after('<tr class="oneGoods"><td><a href="'+GetGoods()[i]["link"]+'" data-goodsId="'+[i]+'"><img src="/uploads/posts/'+GetGoods()[i]["img"]+'">'+GetGoods()[i]["title"]+'</a></td><td><input type="number" name="" class="goodsAmount" min="1" value="'+GetGoods()[i]["amount"]+'"></td><td class="productPrice"><b>'+GetGoods()[i]["price"]+'</b><span> грн.</span></td><td><span class="removeGoods"></span></td></tr>');
+		$('form#teleform').prepend('<input type="hidden" class="tele_form_inp" name="'+GetGoods()[i]["title"]+'" id="tef'+[i]+'" value="'+GetGoods()[i]["amount"]+'" />');
+	}
 
     if(GetGoods() === null)
         $("#staticCart .action_button_cart").remove();
@@ -125,13 +130,7 @@ $(function(){
         cart_top_el = $("#cart").offset().top;
         cart_left_el = $("#cart").offset().left;
         
-        $(this).parent()  //ID Картинки, летящей в корзину
-        .clone().html("")
-        .css({'background': '#E97130', 'position' : 'absolute', 'zIndex' : '9999', 'width' : '50px', 'height' : '50px', 'borderRadius' : '100px', 'left' : left_el + 'px', 'top': top_el + 'px', 'textIndent': '-9999px'})
-        .prependTo("#cart")
-        .animate({'top': cart_top_el + 'px', 'left': cart_left_el + 'px',  'width': '20px',  'height': '20px', 'zIndex' : '9999'}, 1000, function() {
-            $(this).remove();
-        });
+      
 
         AddGoods(id,productimg, productTitle, productPrice, productLink);
 
@@ -154,7 +153,8 @@ $(function(){
     // очистка корзины
     $("body").on("click", ".cartClear", function(){
         localStorage.clear();
-        $(".oneGoods").remove();
+		$(".oneGoods").remove();
+		$(".tele_form_inp").remove();
         $(".allPrice b").text("0");
         $("#cart .number_goods").html('<b>0</b> шт.');
         $(".totalGoods b, #cart .total_amount b").text('0');
@@ -169,7 +169,8 @@ $(function(){
         delete Goods[goodsId];
         localStorage.setItem("Goods", JSON.stringify(Goods));
         //console.log(Goods);
-        $(this).parents("tr").remove();
+		$(this).parents("tr").remove();
+		$("#tef" + goodsId ).remove();
         restartGoods();
     })
 
@@ -191,7 +192,9 @@ $(function(){
         Goods[goodsId]["amount"] = amount;
         //Goods[goodsId]["price"] = newPriceOnetGoods;
 
-        console.log(amount + " * " + goodsPrice + " = " + newPriceOnetGoods);
+		console.log(amount + " * " + goodsPrice + " = " + newPriceOnetGoods);
+		
+		$("#tef" + goodsId).val(amount);
 
         localStorage.setItem("Goods", JSON.stringify(Goods));
         
@@ -218,9 +221,6 @@ $(function(){
 
     PreOrder();
 
-    // оплата
-    /*function Payments(){
-        $("#payment input[name='LMI_PAYMENT_AMOUNT']").val(AllMoneyGoods());
-    }*/
+    
     
 })

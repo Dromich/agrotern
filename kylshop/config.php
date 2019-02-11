@@ -38,9 +38,17 @@ $kylshop_config = array(
 	"form" => 1,
 
     // текст после оформления заказа
-    "text_after_offer" => '<h1>Спасибо за заказ</h1>',
+	"text_after_offer" => '<h1>Спасибо за заказ</h1>
+	<script>
+	localStorage.clear();
+	setTimeout(() => {
+		location.href = "/";
+	}, 2000);
+	</script>
+	
+	',
 
     // поля формы
-	"form_fields" => '{"text|name=user_name|Имя покупателя:|required":"Ваше имя:","email|email=user_email|E-mail:|required":"E-mail:","hidden|ip=user_ip|IP покупателя:|":"","textarea|comment|Комментарий к заказу:|":"Ваш комментарий:"}',
+	"form_fields" => '{"text|name=user_name|Имя покупателя:|required":"Ваше имя:","text|tele|Телефон|required":"Ваш телефон","hidden|ip=user_ip|IP покупателя:|":"","textarea|comment|Комментарий к заказу:|":"Ваш комментарий:"}',
 
 );

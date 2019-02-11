@@ -16,7 +16,7 @@
 			</div>
 			
 			<div class="butts">
-					<a href="{full-link}" class="add_to_cart b_but fl" data-goodsId="{news-id}" data-goodsPrice="[xfvalue_price]" data-goodsTitle="{title}">В корзину</a>
+					<a id="by_btn{news-id}" href="{full-link}" class="add_to_cart b_but fl" data-goodsId="{news-id}" data-goodsimg="[xfvalue_image_url_main_img]" data-goodsPrice="[xfvalue_price]" data-goodsTitle="{title}">В корзину</a>
 						
 						<a href="{full-link}" class="v_but fr">Посмотреть</a>
 						

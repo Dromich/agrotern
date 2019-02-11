@@ -14,10 +14,16 @@
 		<ul class="market_ul">
 			<li class="manufacturer">"Производитель: <b>[xfvalue_brand]</b>"</li>
 			<li><div class="rate_stars">{rating}</div></li>
-			<li class="price"><b>[xfvalue_price]</b> грн</li>
+			<li class="price">
+					[xfgiven_new_price]<span class="price nnprc"><span  class="price_val">[xfvalue_new_price] грн </span></span>[/xfgiven_new_price]
+				<span id="price_val{news-id}"><span  class="price_val"> <b >[xfvalue_price]</b></span> грн</span>
+			
+			
+			</li>
 					[xfgiven_on-sale] 	<li class="on_sele"> <i class="fas fa-check"></i> В наличии</li>[/xfgiven_on-sale]
 					[xfnotgiven_on-sale] <li class="on_sele_off"> <i class="fas fa-times"></i>  Нет в наличии</li> [/xfnotgiven_on-sale]
-			<li><a class="" href="#"></a><a href="{full-link}" class="add_to_cart bay_naw" data-goodsId="{news-id}" data-goodsPrice="[xfvalue_price]" data-goodsTitle="{title}">В корзину </a></li>
+			<li>
+				<a id="by_btn{news-id}"  href="{full-link}" class="add_to_cart bay_naw" data-goodsId="{news-id}" data-goodsimg="[xfvalue_image_url_main_img]" data-goodsPrice="[xfvalue_price]" data-goodsTitle="{title}">В корзину </a></li>
 			
 			<li><span class="bay_naw one_klick onclk_sale" >Купить в 1 клик</span></li>
 			<li><a class="bay_naw one_klick" href="#">Купить в кредит</a></li>
@@ -64,7 +70,7 @@
 <script>
 		function split_register() {
 			console.log('Spl')
-			$('.price').each(function () {
+			$('.price_val').each(function () {
 		var price = $(this).text();
 		//console.log(price);
 		var metamorf = price .replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
@@ -73,8 +79,10 @@
 		}
 		
 		split_register();
-		
-		
+	let bbimg =	$('#by_btn{news-id}').attr("data-goodsimg").substr(38);
+
+	console.log(bbimg);	
+	$('#by_btn{news-id}').attr("data-goodsimg",bbimg);
 		</script>
 	<div class="hidden">
 			<div id="modalform_fls">
@@ -125,4 +133,13 @@
 					
 				});
 						</script>
+
+
+[xfgiven_new_price]
+<script>
+$("#price_val{news-id}").addClass("old_price");
+$('#by_btn{news-id}').attr("data-goodsPrice","[xfvalue_new_price]");
+	
+</script>
+[/xfgiven_new_price]
 </section>

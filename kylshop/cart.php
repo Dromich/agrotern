@@ -106,7 +106,7 @@ if($is_logged == "1" || $kylshop_config["guest_allow"] == true){
 
 		$cont .= '<div class="action_button_cart col-md-6 col-xs-12">
 		<h3>Детали заказа</h3>
-            <form id="cart_form" class="ajax_form" method="POST" action="'.$config["http_home_url"].'?do=cart&page=payments">
+            <form id="cart_form"  method="POST" action="'.$config["http_home_url"].'?do=cart&page=payments">
 				'.$field.'
 				
                 <input type="hidden" name="productsIds" id="my_products" value="0" required>

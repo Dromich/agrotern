@@ -8,8 +8,15 @@
 		<meta name="googlebot" content="noindex, nofollow"/>
 		<meta name="yandex" content="none"/> 
 	
-
-	{headers}
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TSTGBX');</script>
+<!-- End Google Tag Manager -->
+	
+    {headers}
 	
 
 	<link rel="shortcut icon" href="{THEME}/img/favicon/favicon.ico" type="image/x-icon">
@@ -49,7 +56,7 @@
 
 <link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.theme.default.min.css">
-	[available=cart|static]
+[available=cart|static]
 <style>
 
 .top_slider_menu {
@@ -61,9 +68,14 @@
 </head>
 
 {AJAX}
-
+    
 <body>
-	<!--div class="FixedLayoutBig">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSTGBX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+    <!--div class="FixedLayoutBig">
 		
 	</div-->
 <div class="container-fluid">
@@ -74,11 +86,13 @@
 		<div class="top_phone_blo col-md-6">
 			<ul class="text-justify">
 				
+				
+								
 
 						<ul class="header-pages-menu phones_items col-md-12">
-								<li><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"> <a class="contacter" rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
-								<li><img class="cell_logo" src="{THEME}/img/icon/lifecell.svg" alt="Lifecell"> <a class="contacter" rel="tel" href="#"><b>(097)</b> 111-22-33</a></li>
-								<li><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell"> <a class="contacter" rel="email" href="#">our_mail@gmail.com</a></li>
+								<li><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"> <a class="contacter" rel="tel" href="‎tel:+380683823282"><b>(068)</b> 382-32-82</a></li>
+								<li><img class="cell_logo" src="{THEME}/img/icon/lifecell.svg" alt="Lifecell"> <a class="contacter" rel="tel" href="‎tel:+380933823282"><b>(093)</b> 382-32-82</a>	</li>
+								<li><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell"> <a class="contacter" rel="email" href="mailto:agroternua@gmail.com">agroternua@gmail.com</a></li>
 							</ul>
 				
 				<li>
@@ -287,6 +301,18 @@
 
 				</div>
 <div class="col-md-10">
+	[category=9,25-40,57-67]<h1 class="cath1">Мототрактор купить</h1>[/category]
+
+	[category=10, 41-56,68-87]<h1 class="cath1">Минитрактор купить</h1>[/category]
+
+	[category=11]<h1 class="cath1">Мотоблоки</h1>[/category]
+
+	[category=12]<h1 class="cath1">Навесное оборудование</h1>[/category]
+
+	[category=13]<h1 class="cath1">Генераторы</h1>[/category]
+
+	[category=14]<h1 class="cath1">Снегоуборочные машины</h1>[/category]
+
 		<div id="content"></div>
 	{info}
 		{content}</div>
@@ -411,7 +437,13 @@
 </section>
 </div>
 [/available]	
+
+
+
 {include file="/seo.tpl"}
+
+
+
 <section id="our_brands">
 	
 		
@@ -476,11 +508,9 @@
 					
 						
 	<div class="phone_numb footer_phone">
-								 <a class="contacter" rel="tel" href="38097"><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"><b>(097)</b> 111-22-33</a>
-								 <a class="contacter" rel="tel" href="#"><img class="cell_logo" src="{THEME}/img/icon/lifecell_blue.png" alt="Lifecell"><b>(097)</b> 111-22-33</a>
-								 <a class="contacter" rel="tel" href="#"><img class="cell_logo" src="{THEME}/img/icon/viber.svg" alt="Lifecell"><b>(097)</b> 111-22-33</a>
-					
-								 <a class="contacter" rel="email" href="#"><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell">our_mail@gmail.com</a>
+								 <a class="contacter" rel="tel" href="‎tel:+380683823282"><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"><b>(068)</b> 382-32-82</a>
+								 <a class="contacter" rel="tel" href="‎tel:+380933823282"><img class="cell_logo" src="{THEME}/img/icon/lifecell_blue.png" alt="Lifecell"><b>(093)</b> 382-32-82</a>					
+<a class="contacter" rel="email" href="mailto:agroternua@gmail.com"><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell">agroternua@gmail.com</a>
 						</div>
 						<div class="vork_time_footer">								
 								
@@ -521,7 +551,7 @@
 <form class="modalformform ajax_form" >
 <!-- Hidden Required Fields -->
 <input type="hidden" name="project_name" value="AGROTERN">
-<input type="hidden" name="admin_email" value="legranchio@gmail.com">
+<input type="hidden" name="admin_email" value="legranchio@gmail.com,agroternua@gmail.com">
 <input type="hidden" name="form_subject" value="Заявка з AGROTERN">
 <!-- END Hidden Required Fields -->
 	<input type="text" name="Ім'я" placeholder="Ваше имя" >
@@ -531,6 +561,17 @@
 
 </div>
 
+<form id="teleform">
+<!-- Hidden Required Fields -->
+<input type="hidden" name="project_name" value="AGROTERN">
+<input type="hidden" name="admin_email" value="legranchio@gmail.com,agroternua@gmail.com">
+<input type="hidden" name="form_subject" value="Покупка з AGROTERN">
+<!-- END Hidden Required Fields -->
+
+<input id="costumer_name" type="hidden" name="Ім'я замовника">
+<input id="costumer_phone" type="hidden" name="Телефон">
+<input id="teleform_total" type="hidden" name="Загальна вартість замовлення">
+</form>
 
 
 	</div>
@@ -667,5 +708,18 @@ $('.mfp_close ').click(function (e) {
 	
 });
 		</script>
+[available=main]
+<script>
+
+	$('.add_to_cart').each(function (index, element) {
+		// element == this
+		let bbimg =	$(element).attr("data-goodsimg").substr(38);
+		console.log(bbimg);	
+		$(element).attr("data-goodsimg",bbimg);
+	});	
+		
+		
+		
+			</script>[/available]
 </body>
 </html>
