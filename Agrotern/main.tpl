@@ -551,7 +551,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <form class="modalformform ajax_form" >
 <!-- Hidden Required Fields -->
 <input type="hidden" name="project_name" value="AGROTERN">
-<input type="hidden" name="admin_email" value="legranchio@gmail.com,agroternua@gmail.com">
+<input type="hidden" name="admin_email" value="agroternua@gmail.com">
 <input type="hidden" name="form_subject" value="Заявка з AGROTERN">
 <!-- END Hidden Required Fields -->
 	<input type="text" name="Ім'я" placeholder="Ваше имя" >
@@ -564,12 +564,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <form id="teleform">
 <!-- Hidden Required Fields -->
 <input type="hidden" name="project_name" value="AGROTERN">
-<input type="hidden" name="admin_email" value="legranchio@gmail.com,agroternua@gmail.com">
+<input type="hidden" name="admin_email" value="agroternua@gmail.com">
 <input type="hidden" name="form_subject" value="Покупка з AGROTERN">
 <!-- END Hidden Required Fields -->
 
 <input id="costumer_name" type="hidden" name="Ім'я замовника">
 <input id="costumer_phone" type="hidden" name="Телефон">
+<input id="deliver_tupe" type="hidden" name="Спосіб доставки">
+<input id="payy_tupe" type="hidden" name="Спосіб оплати">
 <input id="teleform_total" type="hidden" name="Загальна вартість замовлення">
 </form>
 

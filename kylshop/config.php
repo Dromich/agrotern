@@ -43,7 +43,7 @@ $kylshop_config = array(
 	localStorage.clear();
 	setTimeout(() => {
 		location.href = "/";
-	}, 2000);
+	}, 6000);
 	</script>
 	
 	',

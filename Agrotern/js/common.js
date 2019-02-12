@@ -69,6 +69,10 @@ $(document).ready(function(){
 			$("#costumer_phone").val(tel);
 			$("#costumer_name").val(name);
 
+			
+			$("#payy_tupe").val($(".pay_item").val());
+$("#deliver_tupe").val($(".delivery_item").val());
+
 			var inputName = document.getElementById("kylshop_field_tele");
 			if (!inputName.value.trim()) {
 				alert("Укажите ваш телефон");

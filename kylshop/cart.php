@@ -111,11 +111,7 @@ if($is_logged == "1" || $kylshop_config["guest_allow"] == true){
 				
                 <input type="hidden" name="productsIds" id="my_products" value="0" required>
                 <input type="hidden" name="productsAmount" id="productsAmount" value="0" required>
-				<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="AGROTERN">
-		<input type="hidden" name="admin_email" value="legranchio@gmail.com">
-		<input type="hidden" name="form_subject" value="Замовлення з AGROTERN">
-<!-- END Hidden Required Fields -->
+			
 				
 				<div id="deliv_tupe">
 				<h4>Доставка</h4>			
@@ -124,19 +120,19 @@ if($is_logged == "1" || $kylshop_config["guest_allow"] == true){
 				Самовывоз со склада 
 			</p>
 			<p>
-				<input class="delivery_item" name="delivery_id" id="delivery_id_2" value="Служба доставки \'Новая Почта\'" type="radio">
+				<input class="delivery_item" name="delivery_id" id="delivery_id_2" value="Служба доставки Новая Почта" type="radio">
 				Служба доставки \'Новая Почта\'
 				</p>
 				<p>
-				<input class="delivery_item" name="delivery_id" id="delivery_id_3" value="Служба доставки \'Интайм\'" type="radio">
+				<input class="delivery_item" name="delivery_id" id="delivery_id_3" value="Служба доставки Интайм" type="radio">
 				Служба доставки \'Интайм\'
 				</p>
 				<p>
-				<input class="delivery_item" name="delivery_id" id="delivery_id_4" value="Служба доставки \'Деливери\'" type="radio">
+				<input class="delivery_item" name="delivery_id" id="delivery_id_4" value="Служба доставки Деливери" type="radio">
 				Служба доставки \'Деливери\'				
 				</p>
 				<p>
-				<input class="delivery_item" name="delivery_id" id="delivery_id_5" value="Служба доставки \'Meest-express\'" type="radio">
+				<input class="delivery_item" name="delivery_id" id="delivery_id_5" value="Служба доставки Meest-express" type="radio">
 				Служба доставки \'Meest-express\'
 				</p>
 				<p>
