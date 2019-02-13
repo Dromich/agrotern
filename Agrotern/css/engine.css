@@ -22,7 +22,7 @@
 		margin: -15px 0 0 -15px;
 	}
 	#loading-layer:after {
-		background-color: #ff485b;
+		background-color: #0047AB;
 	}
 
 	#loading-layer:before {
@@ -85,9 +85,9 @@
 /* --- Оформление календаря --- */
 .calendar { width: 100%; text-align: center; font-size: .9em; margin-bottom: 0; }
 .calendar tr td, .calendar tr th { padding: 3px; }
-	.calendar tr td a { color: #ff485b !important; font-weight: bold; }
+	.calendar tr td a { color: #0047AB !important; font-weight: bold; }
 	.calendar tr td { padding: 5px 3px; }
-	.calendar tr td.weekday, .calendar tr th.weekday { color: #ff485b; }
+	.calendar tr td.weekday, .calendar tr th.weekday { color: #0047AB; }
 	.calendar tr th { background-color: rgba(255,255,255,0.1); font-weight: bold; text-transform: uppercase; }
 	.calendar tr th.monthselect { background-color: transparent; padding-bottom: 15px; }
 
@@ -105,7 +105,7 @@
 		height: 6px;
 		display: block;
 		overflow: hidden;
-		background-color: #ff485b;
+		background-color: #0047AB;
 	}
 
 /*--- Рейтинг - Звездами ---*/
@@ -221,7 +221,7 @@
 		white-space: nowrap;
 		color: inherit;
 	}
-	#dropmenudiv a:hover { background-color: #ff485b; color: #fff; }
+	#dropmenudiv a:hover { background-color: #0047AB; color: #fff; }
 
 /*---показ оригинальной картинки загруженной на сайт из уменьшенной копии---*/
 .highslide-wrapper, .highslide-outline { background: #fff }
@@ -342,12 +342,12 @@
 		text-decoration: none !important;
 		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14); -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14);
 
-		background-color: #ff485b;
-		background-image: -webkit-linear-gradient(top, #f45068 0%, #f93f59 100%);
-		background-image: -moz-linear-gradient(top, #f45068 0%, #f93f59 100%);
-		background-image: -o-linear-gradient(top, #f45068 0%, #f93f59 100%);
-		background-image: -ms-linear-gradient(top, #f45068 0%, #f93f59 100%);
-		background-image: linear-gradient(top, #f45068 0%, #f93f59 100%);
+		background-color: #0047AB;
+		background-image: -webkit-linear-gradient(top, #0047AB 0%, #0047AB 100%);
+		background-image: -moz-linear-gradient(top, #0047AB 0%, #0047AB 100%);
+		background-image: -o-linear-gradient(top, #0047AB 0%, #0047AB 100%);
+		background-image: -ms-linear-gradient(top, #0047AB 0%, #0047AB 100%);
+		background-image: linear-gradient(top, #0047AB 0%, #0047AB 100%);
 
 		-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 	}
@@ -414,7 +414,7 @@ pre code { display: block; padding: 0.5em; background: #f9fafa; border: 1px soli
 		padding: 6px 10px;
 		border-radius: 2px;
 	}
-	.bb-btn:hover, .bb-btn:active { color: #ff485b; }
+	.bb-btn:hover, .bb-btn:active { color: #0047AB; }
 	.bb-btn:active {
 		background: #f3f3f3;
 		border-color: #cfcfcf;
@@ -811,12 +811,12 @@ input[type="color"] {
 	text-decoration: none !important;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14); -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14);
 
-	background-color: #ff485b;
-	background-image: -webkit-linear-gradient(top, #f45068 0%, #f93f59 100%);
-	background-image: -moz-linear-gradient(top, #f45068 0%, #f93f59 100%);
-	background-image: -o-linear-gradient(top, #f45068 0%, #f93f59 100%);
-	background-image: -ms-linear-gradient(top, #f45068 0%, #f93f59 100%);
-	background-image: linear-gradient(top, #f45068 0%, #f93f59 100%);
+	background-color: #0047AB;
+	background-image: -webkit-linear-gradient(top, #0047AB 0%, #0047AB 100%);
+	background-image: -moz-linear-gradient(top, #0047AB 0%, #0047AB 100%);
+	background-image: -o-linear-gradient(top, #0047AB 0%, #0047AB 100%);
+	background-image: -ms-linear-gradient(top, #0047AB 0%, #0047AB 100%);
+	background-image: linear-gradient(top, #0047AB 0%, #0047AB 100%);
 
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
@@ -824,15 +824,11 @@ input[type="color"] {
 	.ui-button { padding: 4px 12px; height: 30px; font-size: 11px; margin: 2px; }
 
 	.btn:hover, .bbcodes:hover, .ui-button:hover {
-		background-color: #ff4e6b;
-		background-image: -webkit-linear-gradient(top, #ff5974 0%, #ff4563 100%);
-		background-image: -moz-linear-gradient(top, #ff5974 0%, #ff4563 100%);
-		background-image: -o-linear-gradient(top, #ff5974 0%, #ff4563 100%);
-		background-image: -ms-linear-gradient(top, #ff5974 0%, #ff4563 100%);
-		background-image: linear-gradient(top, #ff5974 0%, #ff4563 100%);
+		background-color: #4e5aff;
+		
 	}
 	.btn:active, .bbcodes:active, .ui-button:active {
-		background: #f93e59;
+		background: #3e79f9;
 		box-shadow: inset 0 1px 4px 0 rgba(0,0,0,0.14); -webkit-box-shadow: inset 0 1px 4px 0 rgba(0,0,0,0.14);
 	}
 	.btn > .icon { fill: #fff; }
@@ -846,7 +842,7 @@ input[type="color"] {
 		background-image: -ms-linear-gradient(top, #f9f9f9 0%, #f4f4f4 100%);
 		background-image: linear-gradient(top, #f9f9f9 0%, #f4f4f4 100%);
 	}
-	.btn_white:hover { color: #ff485b !important; }
+	.btn_white:hover { color: #0047AB !important; }
 	.btn_white:active { background: #eaeaea; }
 
 	.btn_border {
@@ -856,7 +852,7 @@ input[type="color"] {
 	}
 	.btn_border:hover {
 		background: none;
-		color: #ff485b !important;
+		color: #0047AB !important;
 	}
 	.btn_border:active { background: #eaeaea; }
 
@@ -938,13 +934,13 @@ table.xfields {
 .qq-upload-drop-area {
     position:absolute; top:0; left:0; width:100%; height:100%; z-index:2;
 	max-width: 437px;
-    background:#FF9797; text-align:center; 
+    background:rgb(102, 194, 236); text-align:center; 
 }
 .qq-upload-drop-area span {
     display:block; position:absolute; top: 50%; width:100%; margin-top:-8px; font-size:16px;
 }
 
-.qq-upload-drop-area-active {background:#FF7171;}
+.qq-upload-drop-area-active {background:rgb(113, 170, 255);}
 .uploadedfile {
 	display: inline-block;
     width: 115px;

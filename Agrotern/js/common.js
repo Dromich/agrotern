@@ -57,6 +57,16 @@ $(window).load(function() {
 
 ///====TELEGRAM FORM FUNCTIONS===\\\
 
+function GetGoods(){
+	return JSON.parse(localStorage.getItem("Goods"));
+}
+function AllMoneyGoods(){
+	var sum = 0;
+	for (var i in GetGoods()){
+		sum = sum + (parseInt(GetGoods()[i]["amount"]) * parseFloat(GetGoods()[i]["price"]));
+	}
+	return sum;
+}
 $(document).ready(function(){
 		
 	$("#cart_form_subm").click(function(){
@@ -66,22 +76,31 @@ $(document).ready(function(){
 
 
 
-			$("#costumer_phone").val(tel);
-			$("#costumer_name").val(name);
+	$("#costumer_phone").val(tel);
+$("#costumer_name").val(name);
+
+
 
 			
 			$("#payy_tupe").val($(".pay_item").val());
-$("#deliver_tupe").val($(".delivery_item").val());
+			$("#deliver_tupe").val($(".delivery_item").val());
 
 			var inputName = document.getElementById("kylshop_field_tele");
 			if (!inputName.value.trim()) {
 				alert("Укажите ваш телефон");
-			}else{
+			} else {
 				var inputName = document.getElementById("kylshop_field_comment");
 				if (inputName.value.trim()) {
-					$('form#teleform').append('<input type="hidden" class="tele_form_inp" name="Коментар замовника" id="costumer_coment" value="'+costumer_coment_text+'" />');
-				}
+					$('form#teleform').append('<input type="hidden" class="tele_form_inp" name="Коментар замовника" id="costumer_coment" value="' + costumer_coment_text + '" />');
+				};
 
+//перебераємо всі покупки
+		for (var i in GetGoods()) {
+					
+		$('form#teleform').prepend('<input type="hidden" class="tele_form_inp" name="'+GetGoods()[i]["title"]+'" id="tef'+[i]+'" value="'+GetGoods()[i]["amount"]+'" />');
+		}
+
+	$("#teleform_total").val(AllMoneyGoods()+"грн.");
 			
 $("#teleform").submit();			
 
@@ -145,4 +164,54 @@ $('.add_to_cart').click(function(){
         }, function() {
             $(this).detach()
         });  
+  });
+
+
+  $( document ).ready(function(){
+	$( "#mob_menu_icon" ).click(function(){	
+		$( "#mob_menu_div" ).slideToggle("slow")
+
+		if (!$(this).hasClass("x") ) {			
+			$("#mob_m_ham1").addClass('rotate_pl')
+			$("#mob_m_ham2").addClass('rotate_ml')
+			$("#mob_m_ham3").addClass('hidden')
+			$(this).addClass("x")
+			$(this).css("paddingTop","20px")
+			
+			}else{
+			$("#mob_m_ham1").removeClass('rotate_pl')
+			$("#mob_m_ham2").removeClass('rotate_ml')
+			$("#mob_m_ham3").removeClass('hidden')
+			
+			$(this).removeClass("x")
+			$(this).css("paddingTop","10px")
+			};
+
+
+
+		
+		
+		//$("#mob_menu_icon").removeClass(("x")
+		//$("#mob_m_ham2").remove()
+		
+		
+
+	});
+
+	$( "#expand_mob_ul" ).click(function(){	
+		$( ".mm-menu li ul" ).slideToggle()
+
+		let text = $(this).text();
+
+		if (text =="свернуть" ) {
+			
+			$(this).text("Розвернуть")
+			$("#mob_menu_div").css("height","auto")		
+			}else{			
+				$("#mob_menu_div").css("height","100%")
+				$(this).text("свернуть")
+			};	
+
+	})
+	
   });

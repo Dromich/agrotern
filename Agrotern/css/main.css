@@ -79,11 +79,13 @@ body {
 }
 .text-justify li {
 	display: inline-block;
-	margin: 8px;
+	margin: 2px;
+	padding: 0;
 }
 .text-justify li a {
 	color: #333c;
 	font-weight: 600;
+	font-size: 14px;
 }
 .phones_items i {
 	font-size: 2rem;
@@ -92,14 +94,13 @@ body {
 	vertical-align: bottom;
 }
 .phones_items a {
-	font-size: 17px;
-	font-weight: 600;
-	/* color: #333333b3 !important; */
+	font-size: 15px;
+	font-weight: 600;	
 	font-family: arial;
 }
 .header-pages-menu a {
 	text-transform: uppercase;
-	letter-spacing: 1.35px;
+	letter-spacing: 1.1px;
 	transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) all ;
 }
 .header-pages-menu a:hover {
@@ -130,7 +131,7 @@ body {
 #sw {
 	background-color: transparent;
 	border: none;
-	margin-left: -5%;
+	margin-left: -6%;
 }
 .top_logo_img {
 	max-width: 100%;
@@ -550,7 +551,7 @@ footer .vork_di {
 	border-radius: 28px;
 	display: block;
 	margin: 10px 0;
-	width: 50%;
+	width: 100%;
 	color: #fff;
 	background-color: #0E3368;
 	transition: all .5s;
@@ -614,6 +615,7 @@ footer .vork_di {
 .bay_naw.one_klick {
 	background-color: transparent;
 	color: #333;
+	cursor: pointer;
 }
 .bay_naw.one_klick:hover {
 	background-color: #0047AB;
@@ -796,8 +798,8 @@ footer .vork_di {
 	color: red;
 }
 .oneGoods img {
-	max-width: 160px;
-	margin-right: 20px;
+	max-width: 120px;
+	margin-right: 10px;
 }
 .price.nnprc {
 	display: block;
@@ -855,4 +857,77 @@ footer .vork_di {
 }
 .cath1 {
 	margin-top: -22px;
+}
+.sblock {
+	text-align: center;
+}
+.cat_menu li a {
+	color: #333;
+}
+#mob_menu_icon {
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	top: 0;
+	left: 15px;
+	padding-top: 10px;
+	z-index: 9998;
+}
+#mob_menu_icon span {
+	height: 3px;
+	width: 95%;
+	display: block;
+	margin: 10px auto;
+	background-color: #474444;
+	transition: all .8s;
+}
+.rotate_pl{
+	transform: rotate(45deg);
+	margin: 0!important;
+}
+.rotate_ml{
+	transform: rotate(-45deg);
+	margin: 0!important;
+}
+#mob_menu_div {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #131314;
+	transition: all .5s;
+	padding-top: 35px;
+	display: none;
+	overflow: scroll;
+}
+.mm-menu {
+	display: block;
+	width: 100%;
+	padding: 2px 22px;
+	list-style: none;
+	/* margin: 0; */
+}
+.mm-menu li {
+	padding: 5px;
+	/* border-bottom: 1px solid; */
+}
+.mm-menu li a {
+	color: #fff;
+}
+.mm-menu li ul {
+	display: none;
+}
+#expand_mob_ul {
+	display: block;
+	width: auto;
+	float: right;
+	padding: 15px;
+	color: #fff;
+	margin-top: -20px;
+	margin-right: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	position: fixed;
+	right: 0;
 }

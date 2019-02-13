@@ -32,7 +32,7 @@
 				{short-story} </li>
 		</ul>
 	</div>
-	<div class="market_ditail col-md-4">
+	<div class="market_ditail col-md-4 no_mobile">
 		<ul class="market_dit_ul">
 			<li>
 				<img class="fulstor_icon" src="{THEME}/img/icon/delivery-truck.svg" alt="delivery-truck">
@@ -92,7 +92,7 @@
 			<form class="modalformform ajax_form" >
 			<!-- Hidden Required Fields -->
 		<input type="hidden" name="project_name" value="AGROTERN">
-		<input type="hidden" name="admin_email" value="legranchio@gmail.com">
+		<input type="hidden" name="admin_email" value="agroternua@gmail.com">
 		<input type="hidden" name="form_subject" value="Замовлення {title}">
 <!-- END Hidden Required Fields -->
 				<input type="text" name="Ім'я" placeholder="Ваше имя" >

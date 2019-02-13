@@ -5,8 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
 
 <head>
-		<meta name="googlebot" content="noindex, nofollow"/>
-		<meta name="yandex" content="none"/> 
+		
 	
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -56,7 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.theme.default.min.css">
-[available=cart|static]
+[available=cart|static|search]
 <style>
 
 .top_slider_menu {
@@ -75,9 +74,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     
-    <!--div class="FixedLayoutBig">
-		
-	</div-->
+<div id="mob_menu_icon" >
+<span id="mob_m_ham1"></span>
+<span id="mob_m_ham2"></span>
+<span id="mob_m_ham3"></span>
+
+</div> 
+
+<div id="mob_menu_div">
+	{include file="/mobil_menu.tpl"}
+	
+</div>
+
+
 <div class="container-fluid">
 	<div class="top_logo_blo row">
 			<div class="top_logo col-md-3">
@@ -90,12 +99,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								
 
 						<ul class="header-pages-menu phones_items col-md-12">
-								<li><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"> <a class="contacter" rel="tel" href="‎tel:+380683823282"><b>(068)</b> 382-32-82</a></li>
-								<li><img class="cell_logo" src="{THEME}/img/icon/lifecell.svg" alt="Lifecell"> <a class="contacter" rel="tel" href="‎tel:+380933823282"><b>(093)</b> 382-32-82</a>	</li>
-								<li><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell"> <a class="contacter" rel="email" href="mailto:agroternua@gmail.com">agroternua@gmail.com</a></li>
+								<li><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"> <a class="contacter" rel="tel" href="tel: +380683823282"><b>(068)</b> 382-32-82</a></li>
+								<li><img class="cell_logo" src="{THEME}/img/icon/lifecell.svg" alt="Lifecell"> <a class="contacter" rel="tel" href="‎tel: +380933823282"><b>(093)</b> 382-32-82</a>	</li>
+								<li><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell"> <a class="contacter" rel="email" href="mailto: agroternua@gmail.com">agroternua@gmail.com</a></li>
 							</ul>
 				
-				<li>
+				<li class="no_mobile">
 					<nav>
 						<ul class="header-pages-menu col-md-12">
 							<li><a href="/o-nas.html">О нас</a></li>
@@ -116,7 +125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <input name="subaction" value="search" type="hidden">
                             <div class="sblock">
                                 <input id="story" name="story" placeholder="Введите слово для поиска" autocomplete="off" type="text">
-                                <button id="sw" type="submit"><span class="fa fa-search"></span></button>
+                                <button id="sw" type="submit"><span class="fa fa-search "></span></button>
                             </div>
                         </form>
 			</div>
@@ -143,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="top_slider">
 <div class="top_slider_menu">
-		<ul class="horisontal-menu">
+		<ul class="horisontal-menu no_mobile">
 			<li><a href="/">Главная</a></li>
 			<li class="hover_item"><a href="/mototraktory/">Мототракторы</a><div>
 					<ul>
@@ -179,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</ul>
 				</div>
 			</li>
-			<li class="hover_item"><a href="/minitraktory">Минитракторы</a><div>
+			<li class="hover_item"><a href="/minitraktory/">Минитракторы</a><div>
 					<ul>
 						<li><a class="_usrLink" href="/minitraktory/s_kabinoy">Минитракторы с кабиной</a></li>
 						<li><a class="_usrLink" href="/minitraktory/bez_kabini">Минитракторы без кабины</a></li>
@@ -209,7 +218,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<ul>
 							<li><a class="_usrLink" href="/minitraktory/minitraktor-v-kieve/">Минитрактор в Киеве</a></li>
 							<li><a class="_usrLink" href="/minitraktory/minitraktor-v-odesse/">Минитрактор в Одессе</a></li>
-							<li><a class="_usrLink" href="/minitraktor-v-harkove/>Минитрактор в Харькове</a></li>
+							<li><a class="_usrLink" href="/minitraktor-v-harkove/">Минитрактор в Харькове</a></li>
 							<li><a class="_usrLink" href="/minitraktory/minitraktor-v-zhitomire/">Минитрактор в Житомире</a></li>
 							<li><a class="_usrLink" href="/minitraktory/minitraktor-vo-lvove/">Минитрактор во Львове</a></li>
 							<li><a class="_usrLink" href="/minitraktory/minitraktor-v-chernigove/">Минитрактор в Чернигове</a></li>
@@ -243,8 +252,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<li id="hm73"><a href="/snegouborochnye-mashiny/">Снегоуборочные машины</a><div></div>
 			</li>
 		</ul>
-		[not-available=showfull|cat|cart|static]
-		<div class="topSlider_promo">
+		[not-available=showfull|cat|cart|static|search]
+		<div class="topSlider_promo no_mobile">
 			<div class="promoItem">
 		<i class="fas fa-dollar-sign"></i> <span class="promoSlogan">НИКАКОЙ ПРЕДОПЛАТЫ!
 			<p>Оплата товара при получении			
@@ -284,13 +293,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-[available=showfull|cart|static|payments]
+[available=showfull|cart|static|payments|search]
 		{info}
 		{content}
+    </div>
 		[/available]
 
 		[available=cat]
-</div>
+
 		<!--CAT-->
 		<div class="container">
 			<div class="row">
@@ -327,35 +337,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 [available=main]
 <div class="main_page">
 <ul class="cat_menu">
-	<li><div class="item_menu">
+	<li><a href="/mototraktory/">
+		<div class="item_menu">
 			<img src="{THEME}/img/main_cat/1.jpg" alt="item">
 		</div>
 		<h3>Мототракторы</h3>
+	</a>
 	</li>
-	<li><div class="item_menu">
+	<li><a href="/minitraktory/">
+		<div class="item_menu">
 			<img src="{THEME}/img/main_cat/2.jpg" alt="item">
 		</div>
 		<h3>Минитракторы</h3>
+	</a>
 	</li>
-	<li><div class="item_menu">
+	<li>
+		<a href="/motobloki/">
+		<div class="item_menu">
 			<img src="{THEME}/img/main_cat/3.jpg" alt="item">
 		</div>
 		<h3>Мотоблоки</h3>
+	</a>
 	</li>
-	<li><div class="item_menu">
+	<li>
+		<a href="/navesnoe-oborudovanie/">
+		<div class="item_menu">
 			<img src="{THEME}/img/main_cat/4.jpg" alt="item">
 		</div>
 		<h3>Навесное оборудование</h3>
+	</a>
 	</li>
-	<li><div class="item_menu">
+	<li>
+		<a href="/generatory/">
+		<div class="item_menu">
 			<img src="{THEME}/img/main_cat/5.jpg" alt="item">
 		</div>
 		<h3>Генераторы</h3>
+	</a>
 	</li>
-	<li><div class="item_menu">
+	<li>
+		<a href="/snegouborochnye-mashiny/">
+		<div class="item_menu">
 			<img src="{THEME}/img/snig.jpg" alt="item">
 		</div>
 		<h3>Снегоуборочные машины</h3>
+	</a>
 	</li>
 </ul>
 
@@ -508,9 +534,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 						
 	<div class="phone_numb footer_phone">
-								 <a class="contacter" rel="tel" href="‎tel:+380683823282"><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"><b>(068)</b> 382-32-82</a>
-								 <a class="contacter" rel="tel" href="‎tel:+380933823282"><img class="cell_logo" src="{THEME}/img/icon/lifecell_blue.png" alt="Lifecell"><b>(093)</b> 382-32-82</a>					
-<a class="contacter" rel="email" href="mailto:agroternua@gmail.com"><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell">agroternua@gmail.com</a>
+								 <a class="contacter"  href="‎tel:+380683823282"><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"><b>(068)</b> 382-32-82</a>
+								 <a class="contacter"  href="‎tel:+380933823282"><img class="cell_logo" src="{THEME}/img/icon/lifecell_blue.png" alt="Lifecell"><b>(093)</b> 382-32-82</a>					
+<a class="contacter" rel="email" href="mailto: agroternua@gmail.com"><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell">agroternua@gmail.com</a>
 						</div>
 						<div class="vork_time_footer">								
 								

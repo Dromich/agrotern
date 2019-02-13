@@ -1,10 +1,5 @@
 $(function(){
 
-    // localStorage.setItem("active_menu", path); or null
-    // localStorage.getItem("active_menu");
-    // localStorage.clear();
-
-    //alert(localStorage.getItem("preOrder"));
 
     //##################################################### AddGoods START
     // функция добавления товара в корзину
@@ -32,9 +27,8 @@ $(function(){
                 Goods[id] = GoodsInfo;
                 localStorage.setItem("Goods", JSON.stringify(Goods)); // заносим новый товар в память
                 //#####################################################
-                $(".listing-cart tr:last").after('<tr class="oneGoods"><td><a href="'+link+'" data-goodsId="'+id+'"><img src="/uploads/posts/'+productimg+'">'+title+'</a></td><td><input type="number" name="" class="goodsAmount" min="1" value="'+amount+'"></td><td class="productPrice"><b>'+price+'</b><span> грн.</span></td><td><span class="removeGoods"></span></td></tr>');
-			
-				$('form#teleform').prepend('<input type="hidden" class="tele_form_inp" name="'+title+'" id="tef'+id+'" value="'+amount+'" />');
+                $(".listing-cart tr:last").after('<tr class="oneGoods"><td><a href="'+link+'" data-goodsId="'+id+'"><img src="/uploads/posts/'+productimg+'">'+title+'</a></td><td><input type="number" name="" class="goodsAmount" min="1" value="'+amount+'"></td><td class="productPrice"><b>'+price+'</b><span> грн.</span></td><td><span class="removeGoods"></span></td></tr>');			
+				//$('form#teleform').prepend('<input type="hidden" class="tele_form_inp" name="'+title+'" id="tef'+id+'" value="'+amount+'" />');
 			}
         
         // если в корзине ПУСТО
@@ -52,19 +46,22 @@ $(function(){
             localStorage.setItem("Goods", JSON.stringify(Goods)); // заносим новый товар в память
             //#####################################################
 			$(".listing-cart tr:last").after('<tr class="oneGoods"><td><a href="'+link+'" data-goodsId="'+id+'"><img src="/uploads/posts/'+productimg+'">'+title+'</a></td><td><input type="number" name="" class="goodsAmount" min="1" value="'+amount+'"></td><td class="productPrice"><b>'+price+'</b><span> грн.</span></td><td><span class="removeGoods"></span></td></tr>');
-			$('form#teleform').prepend('<input type="hidden" class="tele_form_inp" name="'+title+'" id="tef'+id+'" value="'+amount+'" />');
+          //  $('form#teleform').prepend('<input type="hidden" class="tele_form_inp" name="'+title+'" id="tef'+id+'" value="'+amount+'" />');
+			
         }
 
         restartGoods();
     }
-    //##################################################### AddGoods END
+	//##################################################### AddGoods END
+	
+
 
     // получение информации о товарах в корзине
     function GetGoods(){
         return JSON.parse(localStorage.getItem("Goods"));
     }
 
-    //console.log(GetGoods()[1]["title"]);
+    
 
     // получение количество товаров в корзине
     function CountGoods(){
@@ -88,9 +85,10 @@ $(function(){
         // выводим количество товаров в корзине
         $("#cart .number_goods").html('<b>' + CountGoods() + "</b> шт.");
         // заносим общую сумму всех товаров в корзине
-		$(".totalGoods b, #cart .total_amount b").text(AllMoneyGoods());
-		$("#teleform_total").val(AllMoneyGoods()+"грн.");
-        PreOrder();
+		$(".totalGoods b, #cart .total_amount b").text(AllMoneyGoods());		
+		PreOrder();
+
+		
     }
 
     //#####################################################
@@ -98,22 +96,18 @@ $(function(){
     // Оновлюєм корзину і форму телеграм після перезагрузки сторінки
     for (var i in GetGoods()){
         $(".listing-cart tr:last, .staticCart tr:last").after('<tr class="oneGoods"><td><a href="'+GetGoods()[i]["link"]+'" data-goodsId="'+[i]+'"><img src="/uploads/posts/'+GetGoods()[i]["img"]+'">'+GetGoods()[i]["title"]+'</a></td><td><input type="number" name="" class="goodsAmount" min="1" value="'+GetGoods()[i]["amount"]+'"></td><td class="productPrice"><b>'+GetGoods()[i]["price"]+'</b><span> грн.</span></td><td><span class="removeGoods"></span></td></tr>');
-		$('form#teleform').prepend('<input type="hidden" class="tele_form_inp" name="'+GetGoods()[i]["title"]+'" id="tef'+[i]+'" value="'+GetGoods()[i]["amount"]+'" />');
+		//$('form#teleform').prepend('<input type="hidden" class="tele_form_inp" name="'+GetGoods()[i]["title"]+'" id="tef'+[i]+'" value="'+GetGoods()[i]["amount"]+'" />');
 	}
 
-    if(GetGoods() === null)
+	if(GetGoods() === null)
+	
         $("#staticCart .action_button_cart").remove();
 
     restartGoods();
     // INIT END
     //#####################################################
 
-    /*jQuery.each(productIsset, function() {
-        if(this == id)
-            tmpCount = 1;
-    });*/
-
-    //console.log(CountGoods());
+    
 
     // добавляем товар в корзину
     $("body").on("click", ".add_to_cart", function(){
@@ -122,13 +116,7 @@ $(function(){
         productTitle = $(this).attr("data-goodsTitle");
 		productPrice = $(this).attr("data-goodsPrice");
 		productimg = $(this).attr("data-goodsimg");
-        productLink = $(this).attr("href");
-
-        top_el = $(this).offset().top;
-        left_el = $(this).offset().left;
-
-        cart_top_el = $("#cart").offset().top;
-        cart_left_el = $("#cart").offset().left;
+        productLink = $(this).attr("href"); 
         
       
 
@@ -167,11 +155,11 @@ $(function(){
 
         Goods = GetGoods();
         delete Goods[goodsId];
-        localStorage.setItem("Goods", JSON.stringify(Goods));
-        //console.log(Goods);
+        localStorage.setItem("Goods", JSON.stringify(Goods));       
 		$(this).parents("tr").remove();
-		$("#tef" + goodsId ).remove();
+		
         restartGoods();
+       // $("#tef" + goodsId ).remove();
     })
 
     // пересчёт товаров при изменении их кол-во
@@ -194,11 +182,12 @@ $(function(){
 
 		console.log(amount + " * " + goodsPrice + " = " + newPriceOnetGoods);
 		
-		$("#tef" + goodsId).val(amount);
+		
 
         localStorage.setItem("Goods", JSON.stringify(Goods));
         
-        restartGoods();
+		restartGoods();
+		//$("#tef" + goodsId).val(amount);
     });
 
     // предзаказ
