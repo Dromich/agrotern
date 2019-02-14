@@ -5,8 +5,8 @@
 			[xfgiven_onsale]	<div class="onsale">Роспродажа</div>[/xfgiven_onsale]
 			[full-link]
 			<img class="item_img" src="[xfvalue_image_url_main_img]" alt="{title}">
-			[/full-link]
-			<h3 class="item_ttl">{title}</h3>
+			
+			<span class="item_ttl">{title}</span>[/full-link]
 			<span class="item_brand">[xfvalue_brand]</span>
 			[xfgiven_hitman]<span class="marketing_span">Хит продаж</span>[/xfgiven_hitman]
 			[xfgiven_novinka]	<span class="marketing_span">Новинка</span>[/xfgiven_novinka]

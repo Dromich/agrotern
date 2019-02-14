@@ -30,6 +30,8 @@ if($is_logged == "1" || $kylshop_config["guest_allow"] == true){
 
     $modal = '<div id="bg_0"></div>
 	<div id="modalCart">
+
+	
 		<table class="listing-cart">
 			<tr>
 				<th>Нименование</th>

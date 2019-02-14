@@ -2,21 +2,24 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
 
 <head>
-		
-	
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+    <meta name="google-site-verification" content="6C2PKA92GP2fJZhHXPOHk0mZNQXmW10xVNUGtGcNcow" />
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5TSTGBX');</script>
-<!-- End Google Tag Manager -->
-	
-    {headers}
-	
+	<!-- End Google Tag Manager -->
+
+	{headers}
+
 
 	<link rel="shortcut icon" href="{THEME}/img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="{THEME}/img/favicon/apple-touch-icon.png">
@@ -29,193 +32,193 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="stylesheet" href="{THEME}/libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="{THEME}/libs/animate/animate.css">
 	<link media="screen" href="{THEME}/css/kylshop.css" type="text/css" rel="stylesheet">
-	
+
 	<link rel="stylesheet" href="{THEME}/css/fonts.css">
 	<link rel="stylesheet" href="{THEME}/css/main.css">
 	<link rel="stylesheet" href="{THEME}/css/engine.css">
 	<link rel="stylesheet" href="{THEME}/css/media.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
 
 	<script src="{THEME}/libs/modernizr/modernizr.js"></script>
 
 	<!--link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"-->
 
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	
+
 	<link href="{THEME}/filter/filter.css" type="text/css" rel="stylesheet">
 
-<link rel="stylesheet" href="{THEME}/css/mfp.css">
+	<link rel="stylesheet" href="{THEME}/css/mfp.css">
 
 
-<script type="text/javascript" src="{THEME}/js/kylshop.js"></script>
-<script src="{THEME}/js/mfp.js"></script>
+	<script type="text/javascript" src="{THEME}/js/kylshop.js"></script>
+	<script src="{THEME}/js/mfp.js"></script>
 
-<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.theme.default.min.css">
-[available=cart|static|search]
-<style>
+	[available=cart|static|search|xfsearch]
+	<style>
 
-.top_slider_menu {
+		.top_slider_menu {
 	position: relative!important;
 
 }
 </style>
-[/available]
+	[/available]
 </head>
 
 {AJAX}
-    
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSTGBX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    
-<div id="mob_menu_icon" >
-<span id="mob_m_ham1"></span>
-<span id="mob_m_ham2"></span>
-<span id="mob_m_ham3"></span>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSTGBX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
-</div> 
+	<div id="mob_menu_icon">
+		<span id="mob_m_ham1"></span>
+		<span id="mob_m_ham2"></span>
+		<span id="mob_m_ham3"></span>
 
-<div id="mob_menu_div">
-	{include file="/mobil_menu.tpl"}
-	
-</div>
+	</div>
+
+	<div id="mob_menu_div">
+		{include file="/mobil_menu.tpl"}
+
+	</div>
 
 
-<div class="container-fluid">
-	<div class="top_logo_blo row">
+	<div class="container-fluid">
+		<div class="top_logo_blo row">
 			<div class="top_logo col-md-3">
-					<a href="/"><img class="top_logo_img" src="{THEME}/img/logo.png" alt="logo"></a>
-				</div>
-		<div class="top_phone_blo col-md-6">
-			<ul class="text-justify">
-				
-				
-								
-
-						<ul class="header-pages-menu phones_items col-md-12">
-								<li><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"> <a class="contacter" rel="tel" href="tel: +380683823282"><b>(068)</b> 382-32-82</a></li>
-								<li><img class="cell_logo" src="{THEME}/img/icon/lifecell.svg" alt="Lifecell"> <a class="contacter" rel="tel" href="‎tel: +380933823282"><b>(093)</b> 382-32-82</a>	</li>
-								<li><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell"> <a class="contacter" rel="email" href="mailto: agroternua@gmail.com">agroternua@gmail.com</a></li>
-							</ul>
-				
-				<li class="no_mobile">
-					<nav>
-						<ul class="header-pages-menu col-md-12">
-							<li><a href="/o-nas.html">О нас</a></li>
-							<li><a href="/oplata-i-dostavka.html">Доставка и оплата</a></li>
-							<li><a href="/garantija.html">Гарантия</a></li>
-							<li><a href="kontaktnaja-informacija.html">Контакты</a></li>	
-							<li><a href="/sotrudnichestvo.html">Сотрудничество</a></li>
-						</ul>
-					</nav>
-				</li>
-				
-				
-			</ul>
-
-			<div class="sform">
-					<form id="quicksearch" method="post">
-                            <input name="do" value="search" type="hidden">
-                            <input name="subaction" value="search" type="hidden">
-                            <div class="sblock">
-                                <input id="story" name="story" placeholder="Введите слово для поиска" autocomplete="off" type="text">
-                                <button id="sw" type="submit"><span class="fa fa-search "></span></button>
-                            </div>
-                        </form>
+				<a href="/"><img class="top_logo_img" src="{THEME}/img/logo.png" alt="logo"></a>
 			</div>
-		
-		</div>
-	
-		<div class="top_cart_blo col-md-3">
+			<div class="top_phone_blo col-md-6">
+				<ul class="text-justify">
+
+
+
+
+					<ul class="header-pages-menu phones_items col-md-12">
+						<li><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"> <a class="contacter" rel="tel"
+							 href="tel: +380683823282"><b>(068)</b> 382-32-82</a></li>
+						<li><img class="cell_logo" src="{THEME}/img/icon/lifecell.svg" alt="Lifecell"> <a class="contacter" rel="tel"
+							href="tel:+380933823282"><b>(093)</b> 382-32-82</a> </li>
+						<li><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell"> <a class="contacter" rel="email"
+							 href="mailto: agroternua@gmail.com">agroternua@gmail.com</a></li>
+					</ul>
+
+					<li class="no_mobile">
+						<nav>
+							<ul class="header-pages-menu col-md-12">
+								<li><a href="/o-nas.html">О нас</a></li>
+								<li><a href="/oplata-i-dostavka.html">Доставка и оплата</a></li>
+								<li><a href="/garantija.html">Гарантия</a></li>
+								<li><a href="kontaktnaja-informacija.html">Контакты</a></li>
+								<li><a href="/sotrudnichestvo.html">Сотрудничество</a></li>
+							</ul>
+						</nav>
+					</li>
+
+
+				</ul>
+
+				<div class="sform">
+					<form id="quicksearch" method="post">
+						<input name="do" value="search" type="hidden">
+						<input name="subaction" value="search" type="hidden">
+						<div class="sblock">
+							<input id="story" name="story" placeholder="Введите слово для поиска" autocomplete="off" type="text">
+							<button id="sw" type="submit"><span class="fa fa-search "></span></button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+			<div class="top_cart_blo col-md-3">
 				{cart}
-				<div class="vork_di">						
-						<ul class="vork_time">							
-							<li><p class="vork_time_ttl">Время роботы:</p></li>
-							<li>Пн-Пт: 8:00-20:00</li>
-							<li>Сб-Вс: 8:00-18:00</li>
+				<div class="vork_di">
+					<ul class="vork_time">
+						<li>
+							<p class="vork_time_ttl">Время роботы:</p>
+						</li>
+						<li>Пн-Пт: 8:00-20:00</li>
+						<li>Сб-Вс: 8:00-18:00</li>
+					</ul>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="top_slider">
+		<div class="top_slider_menu">
+			<ul class="horisontal-menu no_mobile">
+				<li><a href="/">Главная</a></li>
+				<li class="hover_item"><a href="/mototraktory/">Мототракторы</a>
+					<div>
+						<ul>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-garden-scout/">Мототракторы Garden Scout</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-shifeng/">Мототракторы Shifeng</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-bulat/">Мототракторы Булат</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-fajter/">Мототракторы Файтер</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-forte/">Мототракторы Forte</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-dw/">Мототракторы DW</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-dobrynja/">Мототракторы Добрыня</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-claus/">Мототракторы Claus</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-vitjaz/">Мототракторы Витязь</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-lider/">Мототракторы Lider</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktory-dtz/">Мототракторы ДТЗ</a></li>
 						</ul>
-				</div>
-
-				
-				
-		</div>
-		
-		</div>
-
-</div>	
-
-<div class="top_slider">
-<div class="top_slider_menu">
-		<ul class="horisontal-menu no_mobile">
-			<li><a href="/">Главная</a></li>
-			<li class="hover_item"><a href="/mototraktory/">Мототракторы</a><div>
-					<ul>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-garden-scout/">Мототракторы Garden Scout</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-shifeng/">Мототракторы Shifeng</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-bulat/">Мототракторы Булат</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-fajter/">Мототракторы Файтер</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-forte/">Мототракторы Forte</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-dw/">Мототракторы DW</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-dobrynja/">Мототракторы Добрыня</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-claus/">Мототракторы Claus</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-vitjaz/">Мототракторы Витязь</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-lider/">Мототракторы Lider</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktory-dtz/">Мототракторы ДТЗ</a></li>
-					</ul>
-					<ul>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-kieve/">Мототрактор в Киеве</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-odesse/">Мототрактор в Одессе</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-harkove/">Мототрактор в Харькове</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-zhitomire/">Мототрактор в Житомире</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-vo-lvove/">Мототрактор во Львове</a></li>
-						<li><a class="_usrLink" href="/mototraktora/mototraktor-v-chernigove">Мототрактор в Чернигове</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-cherkassah/">Мототрактор в Черкассах</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-dnepre/">Мототрактор в Днепре</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-chernovcah/">Мототрактор в Черновцах</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-poltave/">Мототрактор в Полтаве</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-sumah/">Мототрактор в Сумах</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-ivano-frankovske/">Мототрактор в Ивано-Франковске</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-rovno/">Мототрактор в Ровно</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-hersone/">Мототрактор в Херсоне</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-hmelnickom/">Мототрактор в Хмельницком</a></li>
-						<li><a class="_usrLink" href="/mototraktory/mototraktor-v-nikolaeve/">Мототрактор в Николаеве</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="hover_item"><a href="/minitraktory/">Минитракторы</a><div>
-					<ul>
-						<li><a class="_usrLink" href="/minitraktory/s_kabinoy">Минитракторы с кабиной</a></li>
-						<li><a class="_usrLink" href="/minitraktory/bez_kabini">Минитракторы без кабины</a></li>
-					</ul>
-					<ul>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-garden-scout/">Минитракторы Garden Scout</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-shifeng/">Минитракторы Shifeng</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-bulat/">Минитракторы Булат</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-fajter/">Минитракторы Файтер</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-forte/">Минитракторы Forte</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-dw/">Минитракторы DW</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-dobrynja/">Минитракторы Добрыня</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-claus/">Минитракторы Claus</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-vitjaz/">Минитракторы Витязь</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-lider/">Минитракторы Lider</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-dtz/">Минитракторы ДТЗ</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-dongfeng/">Минитракторы DongFeng</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-foton/">Минитракторы Foton</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-jinma/">Минитракторы Jinma</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-mitsubishi/">Минитракторы Mitsubishi</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-solis/">Минитракторы SOLIS</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-wuzheng/">Минитракторы WUZHENG</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-xingtai/">Минитракторы Xingtai</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-zoomlion/">Минитракторы Zoomlion</a></li>
-						<li><a class="_usrLink" href="/minitraktory/minitraktory-mtzbelarus/">Минитракторы МТЗ(Belarus)</a></li>
-					</ul>
-					<ul>
+						<ul>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-kieve/">Мототрактор в Киеве</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-odesse/">Мототрактор в Одессе</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-harkove/">Мототрактор в Харькове</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-zhitomire/">Мототрактор в Житомире</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-vo-lvove/">Мототрактор во Львове</a></li>
+							<li><a class="_usrLink" href="/mototraktora/mototraktor-v-chernigove">Мототрактор в Чернигове</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-cherkassah/">Мототрактор в Черкассах</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-dnepre/">Мототрактор в Днепре</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-chernovcah/">Мототрактор в Черновцах</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-poltave/">Мототрактор в Полтаве</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-sumah/">Мототрактор в Сумах</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-ivano-frankovske/">Мототрактор в Ивано-Франковске</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-rovno/">Мототрактор в Ровно</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-hersone/">Мототрактор в Херсоне</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-hmelnickom/">Мототрактор в Хмельницком</a></li>
+							<li><a class="_usrLink" href="/mototraktory/mototraktor-v-nikolaeve/">Мототрактор в Николаеве</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="hover_item"><a href="/minitraktory/">Минитракторы</a>
+					<div>
+						<ul>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-s-kabinoj/">Минитракторы с кабиной</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-bez-kabiny/">Минитракторы без кабины</a></li>
+						</ul>
+						<ul>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-shifeng/">Минитракторы Shifeng</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-bulat/">Минитракторы Булат</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-dw/">Минитракторы DW</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-dtz/">Минитракторы ДТЗ</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-dongfeng/">Минитракторы DongFeng</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-foton/">Минитракторы Foton</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-jinma/">Минитракторы Jinma</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-mitsubishi/">Минитракторы Mitsubishi</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-solis/">Минитракторы SOLIS</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-wuzheng/">Минитракторы WUZHENG</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-xingtai/">Минитракторы Xingtai</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-zoomlion/">Минитракторы Zoomlion</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-mtzbelarus/">Минитракторы МТЗ(Belarus)</a></li>
+						</ul>
+						<ul>
 							<li><a class="_usrLink" href="/minitraktory/minitraktor-v-kieve/">Минитрактор в Киеве</a></li>
 							<li><a class="_usrLink" href="/minitraktory/minitraktor-v-odesse/">Минитрактор в Одессе</a></li>
 							<li><a class="_usrLink" href="/minitraktor-v-harkove/">Минитрактор в Харькове</a></li>
@@ -234,328 +237,396 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<li><a class="_usrLink" href="/minitraktory/minitraktor-v-nikolaeve/">Минитрактор в Николаеве</a></li>
 						</ul>
 
-						
 
 
-				</div>
-			</li>
-			<li id="hm71"><a href="/motobloki/">Мотоблоки</a><div></div>
-			</li>
-			<li id="hm74"><a href="/navesnoe-oborudovanie/">Навесное оборудование</a><div></div>
-			</li>
-			<li class="hover_item"><a href="/generatory/">Генераторы</a><div>
-					<ul class="lvl1">
-						<li><a href="/generatory-matari">Генераторы Matari</a></li>
-					</ul>
-				</div>
-			</li>
-			<li id="hm73"><a href="/snegouborochnye-mashiny/">Снегоуборочные машины</a><div></div>
-			</li>
-		</ul>
-		[not-available=showfull|cat|cart|static|search]
-		<div class="topSlider_promo no_mobile">
-			<div class="promoItem">
-		<i class="fas fa-dollar-sign"></i> <span class="promoSlogan">НИКАКОЙ ПРЕДОПЛАТЫ!
-			<p>Оплата товара при получении			
-					</p>
-		</span>
-			</div>
-			<div class="promoItem">
-					<i class="fas fa-gift"></i> <span class="promoSlogan">ПРИЯТНЫЕ СЮРПРИЗЫ!
-						<p>Навесное оборудование в подарок.			
-								</p>
+
+					</div>
+				</li>
+				<li id="hm71"><a href="/motobloki/">Мотоблоки</a>
+					<div></div>
+				</li>
+				<li id="hm74"><a href="/navesnoe-oborudovanie/">Навесное оборудование</a>
+					<div></div>
+				</li>
+				<li class="hover_item"><a href="/generatory/">Генераторы</a>
+					<div>
+						<ul class="lvl1">
+							<li><a href="/generatory-matari">Генераторы Matari</a></li>
+						</ul>
+					</div>
+				</li>
+				<li id="hm73"><a href="/snegouborochnye-mashiny/">Снегоуборочные машины</a>
+					<div></div>
+				</li>
+			</ul>
+			[not-available=showfull|cat|cart|static|search|xfsearch]
+			<div class="topSlider_promo no_mobile">
+				<div class="promoItem">
+					<i class="fas fa-dollar-sign"></i> <span class="promoSlogan">НИКАКОЙ ПРЕДОПЛАТЫ!
+						<p>Оплата товара при получении
+						</p>
 					</span>
-						</div>
-						<div class="promoItem">
-								<i class="far fa-registered"></i><span class="promoSlogan">100% ОРИГИНАЛ
-									<p>Гарантия от производитиля.			
-											</p>
-								</span>
-									</div>
-		</div>
-		</div>
-
-		
-		
-
-		
-		  	
-	<div class="fotorama" data-width="100%" 
-	 data-fit="cover" data-autoplay="true" data-loop="true" data-nav="false">
-		
-		<img src="{THEME}/img/slide_1.png">
-		<img src="{THEME}/img/slide_2.png">
-		<img src="{THEME}/img/slide_3.png">
-		
-	  </div> 
-	  [/not-available]
-</div><!--END-TOP_SLIDER-->
-
-
-
-[available=showfull|cart|static|payments|search]
-		{info}
-		{content}
-    </div>
-		[/available]
-
-		[available=cat]
-
-		<!--CAT-->
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2 filter">
-						<div class="sector nobottom">
-								{include file="/filter/filter.tpl"}
-						</div>
-
 				</div>
-<div class="col-md-10">
-	[category=9,25-40,57-67]<h1 class="cath1">Мототрактор купить</h1>[/category]
+				<div class="promoItem">
+					<i class="fas fa-gift"></i> <span class="promoSlogan">ПРИЯТНЫЕ СЮРПРИЗЫ!
+						<p>Навесное оборудование в подарок.
+						</p>
+					</span>
+				</div>
+				<div class="promoItem">
+					<i class="far fa-registered"></i><span class="promoSlogan">100% ОРИГИНАЛ
+						<p>Гарантия от производитиля.
+						</p>
+					</span>
+				</div>
+			</div>
+		</div>
 
-	[category=10, 41-56,68-87]<h1 class="cath1">Минитрактор купить</h1>[/category]
 
-	[category=11]<h1 class="cath1">Мотоблоки</h1>[/category]
 
-	[category=12]<h1 class="cath1">Навесное оборудование</h1>[/category]
 
-	[category=13]<h1 class="cath1">Генераторы</h1>[/category]
 
-	[category=14]<h1 class="cath1">Снегоуборочные машины</h1>[/category]
 
-		<div id="content"></div>
+		<div class="fotorama" data-width="100%" data-fit="cover" data-autoplay="true" data-loop="true" data-nav="false">
+
+			<img src="{THEME}/img/slide_1.png">
+			<img src="{THEME}/img/slide_2.png">
+			<img src="{THEME}/img/slide_3.png">
+
+		</div>
+		[/not-available]
+	</div>
+	<!--END-TOP_SLIDER-->
+
+
+
+	[available=showfull|cart|static|payments|search|xfsearch]
 	{info}
-		{content}</div>
+	{content}
+	</div>
+	[/available]
 
-					
-			</div>
-		</div>
-		<!--END-CAT-->
-		[/available]
-
-
-[available=main]
-<div class="main_page">
-<ul class="cat_menu">
-	<li><a href="/mototraktory/">
-		<div class="item_menu">
-			<img src="{THEME}/img/main_cat/1.jpg" alt="item">
-		</div>
-		<h3>Мототракторы</h3>
-	</a>
-	</li>
-	<li><a href="/minitraktory/">
-		<div class="item_menu">
-			<img src="{THEME}/img/main_cat/2.jpg" alt="item">
-		</div>
-		<h3>Минитракторы</h3>
-	</a>
-	</li>
-	<li>
-		<a href="/motobloki/">
-		<div class="item_menu">
-			<img src="{THEME}/img/main_cat/3.jpg" alt="item">
-		</div>
-		<h3>Мотоблоки</h3>
-	</a>
-	</li>
-	<li>
-		<a href="/navesnoe-oborudovanie/">
-		<div class="item_menu">
-			<img src="{THEME}/img/main_cat/4.jpg" alt="item">
-		</div>
-		<h3>Навесное оборудование</h3>
-	</a>
-	</li>
-	<li>
-		<a href="/generatory/">
-		<div class="item_menu">
-			<img src="{THEME}/img/main_cat/5.jpg" alt="item">
-		</div>
-		<h3>Генераторы</h3>
-	</a>
-	</li>
-	<li>
-		<a href="/snegouborochnye-mashiny/">
-		<div class="item_menu">
-			<img src="{THEME}/img/snig.jpg" alt="item">
-		</div>
-		<h3>Снегоуборочные машины</h3>
-	</a>
-	</li>
-</ul>
-
-<div class="seo_ttl">
-	<h1>Купить мототехнику в Украине</h1>
-</div>
-
-<div id="main_top_tabs" class="container">
-
-		<div id="tabs">
-				<ul>
-				  <li><a href="#fragment-1"><span>Хиты продаж</span></a></li>
-				  <li><a href="#fragment-2"><span>Распродажа</span></a></li>
-				  <li><a href="#fragment-3"><span>Новинки</span></a></li>
-				</ul>
-				<div class="main_tabs" id="fragment-1">
-					
-						<div class="owl-carousel sale_slider owl-theme">
-								{custom  category="88"  template="main_slider" available="main" navigation="no" from="0" limit="20" fixed="no" order="date" sort="desc" cache="no"}
-								
-						</div>
-				</div>
-				<div class="main_tabs" id="fragment-2">
-					
-						<div class="owl-carousel sale_slider owl-theme">
-								{custom  category="89"  template="main_slider" available="main" navigation="no" from="0" limit="20" fixed="no" order="date" sort="desc" cache="no"}
-								
-						</div>
-				</div>
-				<div class="main_tabs" id="fragment-3">
-					
-						<div class="owl-carousel sale_slider owl-theme">
-								{custom  category="90"  template="main_slider" available="main" navigation="no" from="0" limit="20" fixed="no" order="date" sort="desc" cache="no"}
-								
-						</div>
-				</div>
-			  </div>
-		
-		
-
-
-	
-</div><!--End Slider container-->
-
-<section id="about_us">
-<h3 class="about_ttl">О компании</h3>
-
-
-
-<p>Компания «Agrotern» основана в 2008 году и, на данный момент, это самая крупная
-	компания по реализации сельскохозяйственной техники на рынке Украины. В ассортименте
-	 интернет-магазина Вы найдете продукцию только самых надежных торговых марок, таких 
-	 как  <b>Garden Scout,  Forte, DW, Shifeng, Claus,
-	 DongFeng, Xingtai, Foton, Jinma, Файтер, Булат, ДТЗ</b> и множество других.</p>
-
-	 <p>
-			Покупая в интернет-магазине «Agrotern», Вы можете быть уверены в качестве представленной 
-			продукции - весь товар поставляется напрямую от ведущих производителей Мира.
-	 </p>
-
-
-
-	 <p>
-			<h4>Мы предлагаем: </h4> <br>
-			огромный ассортимент товаров;  <br>
-			привлекательные цены; <br>
-			гарантию качества; <br>
-			гибкую систему скидок для постоянных покупателей; <br>
-			организацию доставки товара во все населенные пункты Украины.  <br>
-			 
-	 </p>
-
-	 <p>
-			<h4>Наш интернет магазин избавит Вас:</h4> <br>
-			от трудоемких поисков, утомительных скитаний в целях найти нужный товар – все необходимое собрано у нас; <br>
-			от сомнений и разочарований некачественным товаром и обслуживанием - мы с пониманием заботимся о спокойствии клиента и поэтому держим лидерство в гарантийном обслуживании; <br>
-			от утомительных ожиданий уже приобретенного товара – быстрая доставка не заставит себя долго ждать. <br>
-	 </p>
-</section>
-</div>
-[/available]	
-
-
-
-{include file="/seo.tpl"}
-
-
-
-<section id="our_brands">
-	
-		
-		
-			<h3 class="brand_ttl">Наши бренды</h3>
-			<div class="owl-carousel brand_slider">
-
-					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre1.png" alt="brand_item"></div>
-					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre2.jpg" alt="brand_item"></div>
-					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre3.jpg" alt="brand_item"></div>
-					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre4.jpg" alt="brand_item"></div>
-					<div class=" brand_grid item"> <img class="brand_img" src="{THEME}/img/bre5.png" alt="brand_item"></div>
-					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre6.png" alt="brand_item"></div>
-					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre7.jpg" alt="brand_item"></div>
-					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre8.jpg" alt="brand_item"></div>
-					<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre9.png" alt="brand_item"></div>
-			</div>
-			
-		
-	
-
-</section>
-
-<footer>
+	[available=cat]
+	</div>
+	<!--CAT-->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
-					<a href="/"><img class="foot_logo_img" src="{THEME}/img/logo_foot.png" alt="logo"></a>
-			<h4 class="footerPh4">Лучший выбор
-					качественной техники</h4>
-				<span class="pay_inf">Принимаем к оплате</span>
-				<img class="visamastercard" src="{THEME}/img/vasa_master.png" alt="visa Mastercard">
-				
+			<div class="col-md-2 filter">
+				<div class="sector nobottom">
+					{include file="/filter/filter.tpl"}
 				</div>
-			<div class="col-md-3">
-				<h5>Каталог</h5>
-				<ul class="foot_ul">
-						<li> <i class="fas fa-cogs"></i><a href="/mototraktory/">Мототракторы</a> </li>
-					<li> <i class="fas fa-cogs"></i><a href="/minitraktory">Минитракторы</a> </li>
-					<li><i class="fas fa-cogs"></i><a href="/motobloki/">Мотоблоки</a></li>
-					<li><i class="fas fa-cogs"></i><a href="/navesnoe-oborudovanie/">Навесное оборудование</a></li>
-					<li><i class="fas fa-cogs"></i><a href="/generatory/">Генераторы</a></li>
-					<li><i class="fas fa-cogs"></i><a href="/snegouborochnye-mashiny/">Снегоуборочные машины</a></li>
-				</ul>
+
 			</div>
-			<div class="col-md-3">
-					<h5>Навигация</h5>
-					<ul class="foot_ul">
-						
+			<div class="col-md-10">
+				[category=9]<h1 class="cath1">Мототрактор купить</h1>[/category]
+				[category=25]<h1 class="cath1">Мототракторы в Киеве</h1>[/category]
+                [category=26]<h1 class="cath1">Мототракторы в Одессе</h1>[/category]
+                [category=27]<h1 class="cath1">Мототракторы в Харькове</h1>[/category]
+                [category=28]<h1 class="cath1">Мототракторы в Житомире</h1>[/category]
+                [category=29]<h1 class="cath1">Мототракторы в Львове</h1>[/category]
+                [category=30]<h1 class="cath1">Мототракторы в Чернигове</h1>[/category]
+                [category=31]<h1 class="cath1">Мототракторы в Черкассах</h1>[/category]
+                [category=32]<h1 class="cath1">Мототракторы в Днепре</h1>[/category]
+                [category=33]<h1 class="cath1">Мототракторы в Черновцах</h1>[/category]
+                [category=34]<h1 class="cath1">Мототракторы в Полтаве</h1>[/category]
+                [category=35]<h1 class="cath1">Мототракторы в Сумах</h1>[/category]
+                [category=36]<h1 class="cath1">Мототракторы в Ивано-Франковске</h1>[/category]
+                [category=37]<h1 class="cath1">Мототракторы в Ровно</h1>[/category]
+                [category=38]<h1 class="cath1">Мототракторы в Херсоне</h1>[/category]
+                [category=39]<h1 class="cath1">Мототракторы в Хмельницком</h1>[/category]
+                [category=40]<h1 class="cath1">Мототракторы в Николаеве</h1>[/category]
+                [category=57]<h1 class="cath1">Мототракторы Garden Scout</h1>[/category]
+                [category=60]<h1 class="cath1">Мототракторы Shifeng</h1>[/category]
+                [category=61]<h1 class="cath1">Мототракторы Булат</h1>[/category]
+                [category=65]<h1 class="cath1">Мототракторы Файтер</h1>[/category]
+                [category=59]<h1 class="cath1">Мототракторы Forte</h1>[/category]
+                [category=67]<h1 class="cath1">Мототракторы DW</h1>[/category]
+                [category=63]<h1 class="cath1">Мототракторы Добрыня</h1>[/category]
+                [category=58]<h1 class="cath1">Мототракторы Claus</h1>[/category]
+                [category=62]<h1 class="cath1">Мототракторы Витязь</h1>[/category]
+                [category=66]<h1 class="cath1">Мототракторы Lider</h1>[/category]
+                [category=64]<h1 class="cath1">Мототракторы ДТЗ</h1>[/category]
 
-						<li><i class="fas fa-cogs"></i><a href="/o-nas.html">О нас</a></li>
-							<li><i class="fas fa-cogs"></i><a href="/oplata-i-dostavka.html">Доставка и оплата</a></li>
-							<li><i class="fas fa-cogs"></i><a href="/garantija.html">Гарантия</a></li>
-							<li><i class="fas fa-cogs"></i><a href="kontaktnaja-informacija.html">Контакты</a></li>	
-							<li><i class="fas fa-cogs"></i><a href="/sotrudnichestvo.html">Сотрудничество</a></li>
-						
-					</ul>
-			</div>
-			<div class="col-md-3">
-				<h5>Контактная информация</h5>
+				[category=10]<h1 class="cath1">Минитрактор купить</h1>[/category]
+                [category=41]<h1 class="cath1">Минитракторы в Киеве</h1>[/category]
+                [category=42]<h1 class="cath1">Минитракторы в Одессе</h1>[/category]
+                [category=43]<h1 class="cath1">Минитракторы в Харькове</h1>[/category]
+                [category=44]<h1 class="cath1">Минитракторы в Житомире</h1>[/category]
+                [category=45]<h1 class="cath1">Минитракторы во Львове</h1>[/category]
+                [category=46]<h1 class="cath1">Минитракторы в Чернигове</h1>[/category]
+                [category=47]<h1 class="cath1">Минитракторы в Черкассах</h1>[/category]
+                [category=48]<h1 class="cath1">Минитракторы в Днепре</h1>[/category]
+                [category=49]<h1 class="cath1">Минитракторы в Черновцах</h1>[/category]
+                [category=50]<h1 class="cath1">Минитракторы в Полтаве</h1>[/category]
+                [category=51]<h1 class="cath1">Минитракторы в Сумах</h1>[/category]
+                [category=52]<h1 class="cath1">Минитракторы в Ивано-Франковске</h1>[/category]
+                [category=53]<h1 class="cath1">Минитракторы в Ровно</h1>[/category]
+                [category=54]<h1 class="cath1">Минитракторы в Херсоне</h1>[/category]
+                [category=55]<h1 class="cath1">Минитракторы в Хмельницком</h1>[/category]
+                [category=56]<h1 class="cath1">Минитракторы в Николаеве</h1>[/category]
+                [category=72]<h1 class="cath1">Минитракторы Shifeng</h1>[/category]
+                [category=73]<h1 class="cath1">Минитракторы Булат</h1>[/category]
+                [category=69]<h1 class="cath1">Минитракторы DW</h1>[/category]
+                [category=76]<h1 class="cath1">Минитракторы ДТЗ</h1>[/category]
+                [category=79]<h1 class="cath1">Минитракторы DongFeng</h1>[/category]
+                [category=80]<h1 class="cath1">Минитракторы Foton</h1>[/category]
+                [category=81]<h1 class="cath1">Минитракторы Jinma</h1>[/category]
+                [category=82]<h1 class="cath1">Минитракторы Mitsubishi</h1>[/category]
+                [category=83]<h1 class="cath1">Минитракторы SOLIS</h1>[/category]
+                [category=84]<h1 class="cath1">Минитракторы WUZHENG</h1>[/category]
+                [category=85]<h1 class="cath1">Минитракторы Xingtai</h1>[/category]
+                [category=86]<h1 class="cath1">Минитракторы Zoomlion</h1>[/category]
+                [category=87]<h1 class="cath1">Минитракторы МТЗ</h1>[/category]
 
-					
-						
-	<div class="phone_numb footer_phone">
-								 <a class="contacter"  href="‎tel:+380683823282"><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"><b>(068)</b> 382-32-82</a>
-								 <a class="contacter"  href="‎tel:+380933823282"><img class="cell_logo" src="{THEME}/img/icon/lifecell_blue.png" alt="Lifecell"><b>(093)</b> 382-32-82</a>					
-<a class="contacter" rel="email" href="mailto: agroternua@gmail.com"><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell">agroternua@gmail.com</a>
-						</div>
-						<div class="vork_time_footer">								
-								
-								<ul class="vork_time">							
-									<li><p class="vork_time_ttl">Время роботы:</p></li>
-									<li>Пн-Пт: 8:00-20:00</li>
-									<li>Сб-Вс: 8:00-18:00</li>
-								</ul>
-						</div>
-						<div id="wont_to_call">хотите мы вам перезвоним?</div>
-			</div>
+
+				[category=11]<h1 class="cath1">Мотоблоки</h1>[/category]
+
+				[category=12]<h1 class="cath1">Навесное оборудование</h1>[/category]
+
+				[category=13]<h1 class="cath1">Генераторы</h1>[/category]
+
+				[category=14]<h1 class="cath1">Снегоуборочные машины</h1>[/category]
+
+				<div id="content"></div>
+				{info}
+				{content}</div>
 
 
-			<div class="copir col-md-12 col-xs-12">
-				<p>© 2012—2018 <strong>AGROTERN</strong> Все права защищены</p>
-		</div>
 		</div>
 	</div>
-	<!--div class="footer_bottom_line">
+	<!--END-CAT-->
+	[/available]
+
+
+	[available=main]
+	<div class="main_page">
+		<ul class="cat_menu">
+			<li><a href="/mototraktory/">
+					<div class="item_menu">
+						<img src="{THEME}/img/main_cat/1.jpg" alt="item">
+					</div>
+					<h3>Мототракторы</h3>
+				</a>
+			</li>
+			<li><a href="/minitraktory/">
+					<div class="item_menu">
+						<img src="{THEME}/img/main_cat/2.jpg" alt="item">
+					</div>
+					<h3>Минитракторы</h3>
+				</a>
+			</li>
+			<li>
+				<a href="/motobloki/">
+					<div class="item_menu">
+						<img src="{THEME}/img/main_cat/3.jpg" alt="item">
+					</div>
+					<h3>Мотоблоки</h3>
+				</a>
+			</li>
+			<li>
+				<a href="/navesnoe-oborudovanie/">
+					<div class="item_menu">
+						<img src="{THEME}/img/main_cat/4.jpg" alt="item">
+					</div>
+					<h3>Навесное оборудование</h3>
+				</a>
+			</li>
+			<li>
+				<a href="/generatory/">
+					<div class="item_menu">
+						<img src="{THEME}/img/main_cat/5.jpg" alt="item">
+					</div>
+					<h3>Генераторы</h3>
+				</a>
+			</li>
+			<li>
+				<a href="/snegouborochnye-mashiny/">
+					<div class="item_menu">
+						<img src="{THEME}/img/snig.jpg" alt="item">
+					</div>
+					<h3>Снегоуборочные машины</h3>
+				</a>
+			</li>
+		</ul>
+
+		<div class="seo_ttl">
+			<h1>Купить мототехнику в Украине</h1>
+		</div>
+
+		<div id="main_top_tabs" class="container">
+
+			<div id="tabs">
+				<ul>
+					<li><a href="#fragment-1"><span>Хиты продаж</span></a></li>
+					<li><a href="#fragment-2"><span>Распродажа</span></a></li>
+					<li><a href="#fragment-3"><span>Новинки</span></a></li>
+				</ul>
+				<div class="main_tabs" id="fragment-1">
+
+					<div class="owl-carousel sale_slider owl-theme">
+						{custom category="88" template="main_slider" available="main" navigation="no" from="0" limit="20" fixed="no"order="date" sort="desc" cache="no"}
+
+					</div>
+				</div>
+				<div class="main_tabs" id="fragment-2">
+
+					<div class="owl-carousel sale_slider owl-theme">
+						{custom category="89" template="main_slider" available="main" navigation="no" from="0" limit="20" fixed="no" order="date" sort="desc" cache="no"}
+
+					</div>
+				</div>
+				<div class="main_tabs" id="fragment-3">
+
+					<div class="owl-carousel sale_slider owl-theme">
+						{custom category="90" template="main_slider" available="main" navigation="no" from="0" limit="20" fixed="no"order="date" sort="desc" cache="no"}
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+		<!--End Slider container-->
+
+		<section id="about_us">
+			<h3 class="about_ttl">О компании</h3>
+
+
+
+			<p>Компания «Agrotern» основана в 2008 году и, на данный момент, это самая крупная
+				компания по реализации сельскохозяйственной техники на рынке Украины. В ассортименте
+				интернет-магазина Вы найдете продукцию только самых надежных торговых марок, таких
+				как <b>Garden Scout, Forte, DW, Shifeng, Claus,
+					DongFeng, Xingtai, Foton, Jinma, Файтер, Булат, ДТЗ</b> и множество других.</p>
+
+			<p>
+				Покупая в интернет-магазине «Agrotern», Вы можете быть уверены в качестве представленной
+				продукции - весь товар поставляется напрямую от ведущих производителей Мира.
+			</p>
+
+
+
+			<p>
+				<h4>Мы предлагаем: </h4> <br>
+				огромный ассортимент товаров; <br>
+				привлекательные цены; <br>
+				гарантию качества; <br>
+				гибкую систему скидок для постоянных покупателей; <br>
+				организацию доставки товара во все населенные пункты Украины. <br>
+
+			</p>
+
+			<p>
+				<h4>Наш интернет магазин избавит Вас:</h4> <br>
+				от трудоемких поисков, утомительных скитаний в целях найти нужный товар – все необходимое собрано у нас; <br>
+				от сомнений и разочарований некачественным товаром и обслуживанием - мы с пониманием заботимся о спокойствии
+				клиента и поэтому держим лидерство в гарантийном обслуживании; <br>
+				от утомительных ожиданий уже приобретенного товара – быстрая доставка не заставит себя долго ждать. <br>
+			</p>
+		</section>
+	</div>
+	[/available]
+
+
+
+	{include file="/seo.tpl"}
+
+
+
+	<section id="our_brands">
+
+
+
+		<h3 class="brand_ttl">Наши бренды</h3>
+		<div class="owl-carousel brand_slider">
+
+			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre1.png" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre2.jpg" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre3.jpg" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre4.jpg" alt="brand_item"></div>
+			<div class=" brand_grid item"> <img class="brand_img" src="{THEME}/img/bre5.png" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre6.png" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre7.jpg" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre8.jpg" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre9.png" alt="brand_item"></div>
+		</div>
+
+
+
+
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="/"><img class="foot_logo_img" src="{THEME}/img/logo_foot.png" alt="logo"></a>
+					<h4 class="footerPh4">Лучший выбор
+						качественной техники</h4>
+					<span class="pay_inf">Принимаем к оплате</span>
+					<img class="visamastercard" src="{THEME}/img/vasa_master.png" alt="visa Mastercard">
+
+				</div>
+				<div class="col-md-3">
+					<h5>Каталог</h5>
+					<ul class="foot_ul">
+						<li> <i class="fas fa-cogs"></i><a href="/mototraktory/">Мототракторы</a> </li>
+						<li> <i class="fas fa-cogs"></i><a href="/minitraktory">Минитракторы</a> </li>
+						<li><i class="fas fa-cogs"></i><a href="/motobloki/">Мотоблоки</a></li>
+						<li><i class="fas fa-cogs"></i><a href="/navesnoe-oborudovanie/">Навесное оборудование</a></li>
+						<li><i class="fas fa-cogs"></i><a href="/generatory/">Генераторы</a></li>
+						<li><i class="fas fa-cogs"></i><a href="/snegouborochnye-mashiny/">Снегоуборочные машины</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h5>Навигация</h5>
+					<ul class="foot_ul">
+
+
+						<li><i class="fas fa-cogs"></i><a href="/o-nas.html">О нас</a></li>
+						<li><i class="fas fa-cogs"></i><a href="/oplata-i-dostavka.html">Доставка и оплата</a></li>
+						<li><i class="fas fa-cogs"></i><a href="/garantija.html">Гарантия</a></li>
+						<li><i class="fas fa-cogs"></i><a href="kontaktnaja-informacija.html">Контакты</a></li>
+						<li><i class="fas fa-cogs"></i><a href="/sotrudnichestvo.html">Сотрудничество</a></li>
+
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h5>Контактная информация</h5>
+
+
+
+					<div class="phone_numb footer_phone">
+						<a class="contacter" href="tel:+380683823282"><img class="cell_logo" src="{THEME}/img/icon/kyivstar.svg" alt="Kyivstar"><b>(068)</b>
+							382-32-82</a>
+						<a class="contacter" href="tel:+380933823282"><img class="cell_logo" src="{THEME}/img/icon/lifecell_blue.png"
+							 alt="Lifecell"><b>(093)</b> 382-32-82</a>
+						<a class="contacter" rel="email" href="mailto:agroternua@gmail.com"><img class="cell_logo" src="{THEME}/img/icon/chatting.svg"
+							 alt="Lifecell">agroternua@gmail.com</a>
+					</div>
+					<div class="vork_time_footer">
+
+						<ul class="vork_time">
+							<li>
+								<p class="vork_time_ttl">Время роботы:</p>
+							</li>
+							<li>Пн-Пт: 8:00-20:00</li>
+							<li>Сб-Вс: 8:00-18:00</li>
+						</ul>
+					</div>
+					<div id="wont_to_call">хотите мы вам перезвоним?</div>
+				</div>
+
+
+				<div class="copir col-md-12 col-xs-12">
+					<p>© 2012—2018 <strong>AGROTERN</strong> Все права защищены</p>
+				</div>
+			</div>
+		</div>
+		<!--div class="footer_bottom_line">
 		
 		<div class="pay_blo">
 			<p>Мы принимаем</p>
@@ -564,47 +635,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 
 	</div-->
-</footer>
+	</footer>
 
 
 
 
 	<div class="hidden">
-<div id="modalform">
-		<span class="mfp_close">X</span>
-	<h3>Заказать консультацию</h3>
-	
-<form class="modalformform ajax_form" >
-<!-- Hidden Required Fields -->
-<input type="hidden" name="project_name" value="AGROTERN">
-<input type="hidden" name="admin_email" value="agroternua@gmail.com">
-<input type="hidden" name="form_subject" value="Заявка з AGROTERN">
-<!-- END Hidden Required Fields -->
-	<input type="text" name="Ім'я" placeholder="Ваше имя" >
-	<input type="tel" name="Телефон"  placeholder="Ваш телефон">
-	<input type="submit" value="Отправить">
-</form>
+		<div id="modalform">
+			<span class="mfp_close">X</span>
+			<h3>Заказать консультацию</h3>
 
-</div>
+			<form class="modalformform ajax_form">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="AGROTERN">
+				<input type="hidden" name="admin_email" value="agroternua@gmail.com">
+				<input type="hidden" name="form_subject" value="Заявка з AGROTERN">
+				<!-- END Hidden Required Fields -->
+				<input type="text" name="Ім'я" placeholder="Ваше имя">
+				<input type="tel" name="Телефон" placeholder="Ваш телефон">
+				<input type="submit" value="Отправить">
+			</form>
 
-<form id="teleform">
-<!-- Hidden Required Fields -->
-<input type="hidden" name="project_name" value="AGROTERN">
-<input type="hidden" name="admin_email" value="agroternua@gmail.com">
-<input type="hidden" name="form_subject" value="Покупка з AGROTERN">
-<!-- END Hidden Required Fields -->
+		</div>
 
-<input id="costumer_name" type="hidden" name="Ім'я замовника">
-<input id="costumer_phone" type="hidden" name="Телефон">
-<input id="deliver_tupe" type="hidden" name="Спосіб доставки">
-<input id="payy_tupe" type="hidden" name="Спосіб оплати">
-<input id="teleform_total" type="hidden" name="Загальна вартість замовлення">
-</form>
+		<form id="teleform">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="AGROTERN">
+			<input type="hidden" name="admin_email" value="agroternua@gmail.com">
+			<input type="hidden" name="form_subject" value="Покупка з AGROTERN">
+			<!-- END Hidden Required Fields -->
+
+			<input id="costumer_name" type="hidden" name="Ім'я замовника">
+			<input id="costumer_phone" type="hidden" name="Телефон">
+			<input id="deliver_tupe" type="hidden" name="Спосіб доставки">
+			<input id="payy_tupe" type="hidden" name="Спосіб оплати">
+			<input id="teleform_total" type="hidden" name="Загальна вартість замовлення">
+		</form>
 
 
 	</div>
 
-	
+
 
 	<div class="loader">
 		<div class="loader_inner"></div>
@@ -617,137 +688,132 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-	
+
 	<script src="{THEME}/libs/waypoints/waypoints.min.js"></script>
 	<script src="{THEME}/libs/animate/animate-css.js"></script>
 	<script src="{THEME}/libs/plugins-scroll/plugins-scroll.js"></script>
-	
+
 	<script src="{THEME}/js/common.js"></script>
-	
-	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 
 	<script src="{THEME}/libs/OwlCarousel/owl.carousel.min.js"></script>
 
-<script>
-function split_register() {
-	$('.price_val').each(function () {
-var price = $(this).text();
-//console.log(price);
-var metamorf = price .replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
-$(this).text(metamorf);	
-});
-}
+	<script>
+		function split_register() {
+			$('.price_val').each(function () {
+				var price = $(this).text();
+				//console.log(price);
+				var metamorf = price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+				$(this).text(metamorf);
+			});
+		}
 
-split_register();
+		split_register();
+	</script>
 
+	<script>
+		$(document).ready(function () {
 
-</script>
+			$('.sale_slider').each(function () {
 
-<script>
-$(document).ready(function(){
+				$(this).owlCarousel({
+					loop: true,
+					margin: 10,
+					fluidSpeed: 5,
+					smartSpeed: 800,
+					navText: ['<i class="fas fa-arrow-circle-left"></i>Назад', 'Вперед<i class="fas fa-arrow-circle-right"></i>'],
+					responsiveClass: true,
+					autoplay: true,
+					autoplayTimeout: 1800,
+					autoplayHoverPause: true,
+					responsive: {
+						0: {
+							items: 1,
+							nav: true
+						},
+						600: {
+							items: 2,
+							nav: false
+						},
+						1000: {
+							items: 4,
+							nav: true,
+							loop: false
+						}
+					}
+				})
 
-	$('.sale_slider').each(function(){
+			});
 
-		$(this).owlCarousel({
-    loop:true,
-	margin:10,
-	fluidSpeed:5,
-	smartSpeed:800,	
-	navText:['<i class="fas fa-arrow-circle-left"></i>Назад','Вперед<i class="fas fa-arrow-circle-right"></i>'],
-	responsiveClass:true,
-	autoplay:true,
-    autoplayTimeout:1800,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:2,
-            nav:false
-        },
-        1000:{
-            items:4,
-            nav:true,
-            loop:false
-        }
-    }
-})
-    
-  });
+			$('.brand_slider').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				autoplay: true,
+				autoplayTimeout: 1000,
+				autoplayHoverPause: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					600: {
+						items: 3,
+						nav: false
+					},
+					1000: {
+						items: 9,
+						nav: true,
+						loop: false
+					}
+				}
+			})
 
-  $('.brand_slider').owlCarousel({
-    loop:true,
-    margin:10,
-	responsiveClass:true,
-	autoplay:true,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:9,
-            nav:true,
-            loop:false
-        }
-    }
-})
+		})
+	</script>
+	<script>
+		$("#tabs").tabs();
+	</script>
 
-})
-</script>
-<script>
-		$( "#tabs" ).tabs();
-		</script>
-
-		<script>
-		$(document).ready(function() {
-  $('#wont_to_call ').magnificPopup({
-	  
-	
-	items: [    
-     
-      {
-        src: '#modalform', // CSS selector of an element on page that should be used as a popup
-        type: 'inline'
-      }
-	],
-	gallery: {
-      enabled: true
-	},
-	type: 'image'
+	<script>
+		$(document).ready(function () {
+			$('#wont_to_call ').magnificPopup({
 
 
-});
-});
+				items: [
 
-$('.mfp_close ').click(function (e) { 
-	e.preventDefault();
+					{
+						src: '#modalform', // CSS selector of an element on page that should be used as a popup
+						type: 'inline'
+					}
+				],
+				gallery: {
+					enabled: true
+				},
+				type: 'image'
 
-	$.magnificPopup.close();
-	
-});
-		</script>
-[available=main]
-<script>
 
-	$('.add_to_cart').each(function (index, element) {
-		// element == this
-		let bbimg =	$(element).attr("data-goodsimg").substr(38);
-		console.log(bbimg);	
-		$(element).attr("data-goodsimg",bbimg);
-	});	
-		
-		
-		
-			</script>[/available]
+			});
+		});
+
+		$('.mfp_close ').click(function (e) {
+			e.preventDefault();
+
+			$.magnificPopup.close();
+
+		});
+	</script>
+	[available=main]
+	<script>
+		$('.add_to_cart').each(function (index, element) {
+			// element == this
+			let bbimg = $(element).attr("data-goodsimg").substr(38);
+			
+			$(element).attr("data-goodsimg", bbimg);
+		});
+	</script>[/available]
 </body>
+
 </html>

@@ -20,10 +20,10 @@
 		</div>
 	</li>
 	<li class="hover_item"><a href="/minitraktory/">Минитракторы</a><div>
-			<ul>
-				<li><a class="_usrLink" href="/minitraktory/s_kabinoy">Минитракторы с кабиной</a></li>
-				<li><a class="_usrLink" href="/minitraktory/bez_kabini">Минитракторы без кабины</a></li>
-			</ul>
+		<ul>
+			<li><a class="_usrLink" href="/minitraktory/minitraktory-s-kabinoj/">Минитракторы с кабиной</a></li>
+			<li><a class="_usrLink" href="/minitraktory/minitraktory-bez-kabiny/">Минитракторы без кабины</a></li>
+		</ul>
 			<ul>
 				<li><a class="_usrLink" href="/minitraktory/minitraktory-garden-scout/">Минитракторы Garden Scout</a></li>
 				<li><a class="_usrLink" href="/minitraktory/minitraktory-shifeng/">Минитракторы Shifeng</a></li>

@@ -117,11 +117,13 @@ $(function(){
 		productPrice = $(this).attr("data-goodsPrice");
 		productimg = $(this).attr("data-goodsimg");
         productLink = $(this).attr("href"); 
-        
+		
+		
       
 
         AddGoods(id,productimg, productTitle, productPrice, productLink);
-
+		$("#bg_0, #modalCart").fadeIn("slow");
+        $('html, body').animate({scrollTop: 0}, 700);
         return false;
     });
 
