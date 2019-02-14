@@ -1,6 +1,6 @@
 <script type="text/javascript" src="{THEME}/filter/filter.js"></script>
 <div class="filter no-select">
-	<div class="title"><i class="fa fa-calendar"></i> Цена</div>
+	<div class="title"><i class="fa fa-calendar"></i> Цена От и До</div>
 	<div id="xf_price" class="filter-slider">
 		<span class="filter-value val1"></span>
 		<span class="filter-value val2"></span>
