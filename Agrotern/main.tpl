@@ -211,10 +211,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</li>
 				<li class="hover_item"><a href="/minitraktory/">Минитракторы</a>
 					<div>
-						<ul>
-							<li><a class="_usrLink" href="/minitraktory/minitraktory-s-kabinoj/">Минитракторы с кабиной</a></li>
-							<li><a class="_usrLink" href="/minitraktory/minitraktory-bez-kabiny/">Минитракторы без кабины</a></li>
-						</ul>
+					
 						<ul>
 							<li><a class="_usrLink" href="/minitraktory/minitraktory-shifeng/">Минитракторы Shifeng</a></li>
 							<li><a class="_usrLink" href="/minitraktory/minitraktory-bulat/">Минитракторы Булат</a></li>
@@ -229,6 +226,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<li><a class="_usrLink" href="/minitraktory/minitraktory-xingtai/">Минитракторы Xingtai</a></li>
 							<li><a class="_usrLink" href="/minitraktory/minitraktory-zoomlion/">Минитракторы Zoomlion</a></li>
 							<li><a class="_usrLink" href="/minitraktory/minitraktory-mtzbelarus/">Минитракторы МТЗ(Belarus)</a></li>
+						</ul>
+						<ul class="minTr_cabins">
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-s-kabinoj/">Минитракторы с кабиной</a></li>
+							<li><a class="_usrLink" href="/minitraktory/minitraktory-bez-kabiny/">Минитракторы без кабины</a></li>
 						</ul>
 						<ul>
 							<li><a class="_usrLink" href="/minitraktory/minitraktor-v-kieve/">Минитрактор в Киеве</a></li>
@@ -254,6 +255,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 					</div>
 				</li>
+
+
 				<li id="hm71"><a href="/motobloki/">Мотоблоки</a>
 					<div></div>
 				</li>
@@ -323,13 +326,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<!--CAT-->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-2 filter">
+			<div class="col-md-3 filter">
 				<div class="sector nobottom">
 					{include file="/filter/filter.tpl"}
 				</div>
 
 			</div>
-			<div class="col-md-10">
+			<div class="col-md-9">
 				[category=9]<h1 class="cath1">Мототрактор купить</h1>[/category]
 				[category=25]<h1 class="cath1">Мототракторы в Киеве</h1>[/category]
                 [category=26]<h1 class="cath1">Мототракторы в Одессе</h1>[/category]
@@ -399,7 +402,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				[category=14]<h1 class="cath1">Снегоуборочные машины</h1>[/category]
 
-				<div id="content"></div>
+				<div id="content">
+					
+				</div>
 				{info}
 				{content}</div>
 

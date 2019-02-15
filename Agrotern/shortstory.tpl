@@ -12,11 +12,12 @@
 			[xfgiven_novinka]	<span class="marketing_span">Новинка</span>[/xfgiven_novinka]
 			
 			<div class="price_section">
-					[xfgiven_new_price]<span class="price nnprc"><span  class="price_val">[xfvalue_new_price] грн </span></span>[/xfgiven_new_price]
+	[xfgiven_new_price]<span class="price nnprc"><span  class="price_val">[xfvalue_new_price] грн </span></span>[/xfgiven_new_price]
 				
-					<span class="price"><span id="price_val{news-id}" class="price_val">[xfvalue_price]</span> грн </span>
+	<span id="price{news-id}" class="price"><span id="price_val{news-id}" class="price_val">[xfvalue_price]</span> грн </span>
 
 			</div>
+
 			[kylshop]{add-to-cart}[/kylshop]
 			
 
@@ -30,6 +31,7 @@
 [xfgiven_new_price]
 <script>
 $("#price_val{news-id}").addClass("old_price");
+$("#price{news-id}").addClass("old_price_on");
 $('#by_btn{news-id}').attr("data-goodsPrice","[xfvalue_new_price]");
 	
 </script>
