@@ -81,7 +81,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style>
 	[/available]
 </head>
+<script src="{THEME}/js/lazyload.js"></script>
 
+      <script>
+window.addEventListener("load", function(event) {
+    lazyload();
+});
+    </script>
 {AJAX}
 
 <body>
@@ -89,6 +95,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSTGBX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
+	[smartphone]
 	<div id="mob_menu_icon">
 		<span id="mob_m_ham1"></span>
 		<span id="mob_m_ham2"></span>
@@ -101,11 +108,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	</div>
 
-
+	[/smartphone]
 	<div class="container-fluid">
 		<div class="top_logo_blo row">
 			<div class="top_logo col-md-3">
-				<a href="/"><img class="top_logo_img" src="{THEME}/img/logo.png" alt="logo"></a>
+				<a href="/"><img class="lazyload top_logo_img" data-src="{THEME}/img/logo.png" src="{THEME}/img/preloader.gif" alt="logo"></a>
 			</div>
 			<div class="top_phone_blo col-md-6">
 				<ul class="text-justify">
@@ -420,14 +427,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<ul class="cat_menu">
 			<li><a href="/mototraktory/">
 					<div class="item_menu">
-						<img src="{THEME}/img/main_cat/1.jpg" alt="item">
+						<img class="lazyload "  data-src="{THEME}/img/main_cat/1.jpg" src="{THEME}/img/preloader.gif" alt="item">
 					</div>
 					<h3>Мототракторы</h3>
 				</a>
 			</li>
 			<li><a href="/minitraktory/">
 					<div class="item_menu">
-						<img src="{THEME}/img/main_cat/2.jpg" alt="item">
+						<img class="lazyload "  data-src="{THEME}/img/main_cat/2.jpg" src="{THEME}/img/preloader.gif" alt="item">
 					</div>
 					<h3>Минитракторы</h3>
 				</a>
@@ -435,7 +442,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<li>
 				<a href="/motobloki/">
 					<div class="item_menu">
-						<img src="{THEME}/img/main_cat/3.jpg" alt="item">
+						<img class="lazyload "  data-src="{THEME}/img/main_cat/3.jpg" src="{THEME}/img/preloader.gif" alt="item">
 					</div>
 					<h3>Мотоблоки</h3>
 				</a>
@@ -443,7 +450,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<li>
 				<a href="/navesnoe-oborudovanie/">
 					<div class="item_menu">
-						<img src="{THEME}/img/main_cat/4.jpg" alt="item">
+						<img class="lazyload "  data-src="{THEME}/img/main_cat/4.jpg" src="{THEME}/img/preloader.gif" alt="item">
 					</div>
 					<h3>Навесное оборудование</h3>
 				</a>
@@ -451,7 +458,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<li>
 				<a href="/generatory/">
 					<div class="item_menu">
-						<img src="{THEME}/img/main_cat/5.jpg" alt="item">
+						<img class="lazyload "  data-src="{THEME}/img/main_cat/5.jpg" src="{THEME}/img/preloader.gif" alt="item">
 					</div>
 					<h3>Генераторы</h3>
 				</a>
@@ -459,7 +466,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<li>
 				<a href="/snegouborochnye-mashiny/">
 					<div class="item_menu">
-						<img src="{THEME}/img/snig.jpg" alt="item">
+						<img class="lazyload "  data-src="{THEME}/img/snig.jpg" src="{THEME}/img/preloader.gif" alt="item">
 					</div>
 					<h3>Снегоуборочные машины</h3>
 				</a>
@@ -557,15 +564,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<h3 class="brand_ttl">Наши бренды</h3>
 		<div class="owl-carousel brand_slider">
 
-			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre1.png" alt="brand_item"></div>
-			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre2.jpg" alt="brand_item"></div>
-			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre3.jpg" alt="brand_item"></div>
-			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre4.jpg" alt="brand_item"></div>
-			<div class=" brand_grid item"> <img class="brand_img" src="{THEME}/img/bre5.png" alt="brand_item"></div>
-			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre6.png" alt="brand_item"></div>
-			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre7.jpg" alt="brand_item"></div>
-			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre8.jpg" alt="brand_item"></div>
-			<div class=" brand_grid item"><img class="brand_img" src="{THEME}/img/bre9.png" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="lazyload brand_img" data-src="{THEME}/img/bre1.png" src="{THEME}/img/preloader.gif" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="lazyload brand_img" data-src="{THEME}/img/bre2.jpg" src="{THEME}/img/preloader.gif" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="lazyload brand_img" data-src="{THEME}/img/bre3.jpg" src="{THEME}/img/preloader.gif" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="lazyload brand_img" data-src="{THEME}/img/bre4.jpg" src="{THEME}/img/preloader.gif" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="lazyload brand_img" data-src="{THEME}/img/bre5.png" src="{THEME}/img/preloader.gif" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="lazyload brand_img" data-src="{THEME}/img/bre6.png" src="{THEME}/img/preloader.gif" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="lazyload brand_img" data-src="{THEME}/img/bre7.jpg" src="{THEME}/img/preloader.gif" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="lazyload brand_img" data-src="{THEME}/img/bre8.jpg" src="{THEME}/img/preloader.gif" alt="brand_item"></div>
+			<div class=" brand_grid item"><img class="lazyload brand_img" data-src="{THEME}/img/bre9.png" src="{THEME}/img/preloader.gif" alt="brand_item"></div>
 		</div>
 
 
@@ -577,7 +584,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
-					<a href="/"><img class="foot_logo_img" src="{THEME}/img/logo_foot.png" alt="logo"></a>
+					<a href="/"><img class="lazyload foot_logo_img"  data-src="{THEME}/img/logo_foot.png" src="{THEME}/img/preloader.gif" alt="logo"></a>
 					<h4 class="footerPh4">Лучший выбор
 						качественной техники</h4>
 					<span class="pay_inf">Принимаем к оплате</span>

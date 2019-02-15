@@ -4,7 +4,7 @@
 
 			[xfgiven_onsale]	<div class="onsale">Роспродажа</div>[/xfgiven_onsale]
 			[full-link]
-			<img class="item_img" src="[xfvalue_image_url_main_img]" alt="{title}">
+			<img class="lazyload item_img"  data-src="[xfvalue_image_url_main_img]" src="{THEME}/img/preloader.gif" alt="{title}">
 			
 			<span class="item_ttl">{title}</span>[/full-link]
 			<span class="item_brand">[xfvalue_brand]</span>

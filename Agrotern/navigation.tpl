@@ -29,10 +29,15 @@ $( "#ajax-next-page" ).click(function( event ) {
                         url: nextPage,
                         success: function(data) {
                             $('#ajax-next-page').remove();
-                            $('#dle-content').append($('#dle-content', data).html());
+							$('#dle-content').append($('#dle-content', data).html());
+							setTimeout(() => {
+								lazyload();	
+							}, 500);
+							
                         }
                     })
-                }
+				}
+				
   
 });
 

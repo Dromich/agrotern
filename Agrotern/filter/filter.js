@@ -179,6 +179,9 @@ $(document).ready(function() {
 			if( cstart > 0 ) $('#content').append(data);
 			else $('#content').html(data);
 			$(this).parents('.navigation-button').fadeOut(200,function(){$(this).remove()});
+			setTimeout(() => {
+				lazyload();	
+			}, 500);
 			});
 			
 
