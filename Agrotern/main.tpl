@@ -9,6 +9,18 @@
 <head>
 
     <meta name="google-site-verification" content="6C2PKA92GP2fJZhHXPOHk0mZNQXmW10xVNUGtGcNcow" />
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134612386-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134612386-1');
+</script>
+
 
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -116,7 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<li><a href="/o-nas.html">О нас</a></li>
 								<li><a href="/oplata-i-dostavka.html">Доставка и оплата</a></li>
 								<li><a href="/garantija.html">Гарантия</a></li>
-								<li><a href="kontaktnaja-informacija.html">Контакты</a></li>
+								<li><a href="/kontaktnaja-informacija.html">Контакты</a></li>
 								<li><a href="/sotrudnichestvo.html">Сотрудничество</a></li>
 							</ul>
 						</nav>
@@ -145,8 +157,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<li>
 							<p class="vork_time_ttl">Время роботы:</p>
 						</li>
-						<li>Пн-Пт: 8:00-20:00</li>
-						<li>Сб-Вс: 8:00-18:00</li>
+						<li>Пн-Пт: 8:00-22:00</li>
+						<li>Сб-Вс: 8:00-20:00</li>
 					</ul>
 				</div>
 
@@ -501,15 +513,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				интернет-магазина Вы найдете продукцию только самых надежных торговых марок, таких
 				как <b>Garden Scout, Forte, DW, Shifeng, Claus,
 					DongFeng, Xingtai, Foton, Jinma, Файтер, Булат, ДТЗ</b> и множество других.</p>
-
-			<p>
+             <p>
 				Покупая в интернет-магазине «Agrotern», Вы можете быть уверены в качестве представленной
 				продукции - весь товар поставляется напрямую от ведущих производителей Мира.
 			</p>
 
-
-
-			<p>
+            <p>
 				<h4>Мы предлагаем: </h4> <br>
 				огромный ассортимент товаров; <br>
 				привлекательные цены; <br>
@@ -589,7 +598,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<li><i class="fas fa-cogs"></i><a href="/o-nas.html">О нас</a></li>
 						<li><i class="fas fa-cogs"></i><a href="/oplata-i-dostavka.html">Доставка и оплата</a></li>
 						<li><i class="fas fa-cogs"></i><a href="/garantija.html">Гарантия</a></li>
-						<li><i class="fas fa-cogs"></i><a href="kontaktnaja-informacija.html">Контакты</a></li>
+						<li><i class="fas fa-cogs"></i><a href="/kontaktnaja-informacija.html">Контакты</a></li>
 						<li><i class="fas fa-cogs"></i><a href="/sotrudnichestvo.html">Сотрудничество</a></li>
 
 					</ul>
@@ -613,8 +622,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<li>
 								<p class="vork_time_ttl">Время роботы:</p>
 							</li>
-							<li>Пн-Пт: 8:00-20:00</li>
-							<li>Сб-Вс: 8:00-18:00</li>
+							<li>Пн-Пт: 8:00-22:00</li>
+							<li>Сб-Вс: 8:00-20:00</li>
 						</ul>
 					</div>
 					<div id="wont_to_call">хотите мы вам перезвоним?</div>
