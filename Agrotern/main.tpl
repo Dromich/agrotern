@@ -61,7 +61,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	<script src="{THEME}/libs/modernizr/modernizr.js"></script>
 
-	<!--link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"-->
+	
 
 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -70,11 +70,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="stylesheet" href="{THEME}/css/mfp.css">
 
 
-	<script type="text/javascript" src="{THEME}/js/kylshop.js"></script>
-	<script src="{THEME}/js/mfp.js"></script>
+	
 
 	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="{THEME}/libs/OwlCarousel/assets/owl.theme.default.min.css">
+
+
 	[available=cart|static|search|xfsearch]
 	<style>
 
@@ -720,11 +721,13 @@ window.addEventListener("load", function(event) {
 	<script src="{THEME}/libs/plugins-scroll/plugins-scroll.js"></script>
 
 	<script src="{THEME}/js/common.js"></script>
-	[not-smartphone]
+	
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-	[/not-smartphone]
+	
 	<script src="{THEME}/libs/OwlCarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="{THEME}/js/kylshop.js"></script>
+	<script src="{THEME}/js/mfp.js"></script>
 
 	<script>
 		function split_register() {
