@@ -403,7 +403,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				[category=14]<h1 class="cath1">Снегоуборочные машины</h1>[/category]
 
 				<div id="content">
-					
+
 				</div>
 				{info}
 				{content}</div>
@@ -690,11 +690,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 
 
-
+[not-smartphone]
 	<div class="loader">
 		<div class="loader_inner"></div>
 	</div>
-
+	[/not-smartphone]
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>

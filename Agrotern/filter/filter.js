@@ -26,11 +26,14 @@ $(document).ready(function() {
 					$('#xf_price .val'+i).css({'z-index':1});
 				}
 			});
+			
+			
+		},
+		change: function( event, ui ) {
 			$('#content').html('<br>');//костиль який заміняє вивід фільра на пустишку щоб відображалась анімація
 	
 
 			eventFire(bigRedBut[0], 'click');
-			
 		}
 	})
 	.append('<div class="steps"><span class="s1">'+45757+'</span><span class="s2">'+156682+'</span><span class="s3">'+261338+'</span><span class="s4">'+400000+'</span><span class="s5">'+500000+'</span></div>');
