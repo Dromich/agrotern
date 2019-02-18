@@ -71,6 +71,33 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.b_but {
+		padding: 5px;
+		
+	}
+	.v_but {
+		padding: 5px;
+	
+	}
+	.butts {
+		width: 100%;
+		font-size: 12px;
+		margin: 5px auto;
+		list-style: none;
+		display: block;
+		/* position: relative; */
+		left: 0;
+		bottom: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.butts a {
+		display: block;
+		float: none !important;
+		margin: 10px auto;
+		width: 90%;
+		text-align: center;
+	}
 	.col-md-12.desc table {
 		margin: 0 auto;
 		display: block;
@@ -79,7 +106,7 @@
 		font-size: 11px;
 	}
 	.main_item {
-		height: 450px;
+		height: 420px;
 		padding: 10px;
 	}
 	.bay_naw {
@@ -176,6 +203,14 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.b_but {
+		padding: 5px;
+		
+	}
+	.v_but {
+		padding: 5px;
+	
+	}
 	.col-md-12.desc table {
 		margin: 0 auto;
 		display: block;
@@ -184,7 +219,7 @@
 		font-size: 11px;
 	}
 	.main_item {
-		height: 450px;
+		height: 420px;
 		padding: 10px;
 	}
 	.bay_naw {

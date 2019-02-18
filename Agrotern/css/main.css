@@ -950,3 +950,24 @@ footer .vork_di {
 .minTr_cabins {
 	padding: 10px 0px !important;
 }
+.mob_consult_ttl {
+	text-align: center;
+	font-size: 28px;
+}
+.consult_form.ajax_form {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+.consult_form.ajax_form input {
+	margin: 10px auto;
+	border-radius: 10px;
+	border: 1px solid;
+}
+.red_submit {
+	display: block;
+	width: 95% !important;
+	padding: 10px;
+	background-color: red;
+	color: #fff;
+}
