@@ -698,7 +698,7 @@ footer .vork_di {
 	margin-left: 60px;
 }
 #cart {
-	width: 70%;
+	width: 80%;
 	display: block;
 	margin: 0 auto;
 	border-radius: 20px;
@@ -871,7 +871,7 @@ footer .vork_di {
 	width: 50px;
 	position: fixed;
 	top: 0;
-	left: 15px;
+	right:  15px;
 	padding-top: 10px;
 	z-index: 9998;
 }
@@ -926,7 +926,7 @@ footer .vork_di {
 	float: right;
 	padding: 15px;
 	color: #fff;
-	margin-top: -20px;
+	margin-top: 0px;
 	margin-right: 20px;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -970,4 +970,7 @@ footer .vork_di {
 	padding: 10px;
 	background-color: red;
 	color: #fff;
+}
+.top_logo.col-md-3.col-xs-4 {
+	z-index: 998;
 }

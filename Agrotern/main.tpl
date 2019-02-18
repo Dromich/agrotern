@@ -116,7 +116,7 @@ window.addEventListener("load", function(event) {
 	[/smartphone]
 	<div class="container-fluid">
 		<div class="top_logo_blo row">
-			<div class="top_logo col-md-3">
+			<div class="top_logo col-md-3 col-xs-4">
 				<a href="/"><img class="top_logo_img" src="{THEME}/img/logo.svg" alt="logo"></a>
 			</div>
 			<div class="top_phone_blo col-md-6">
@@ -130,7 +130,7 @@ window.addEventListener("load", function(event) {
 							 href="tel: +380683823282"><b>(068)</b> 382-32-82</a></li>
 						<li><img class="cell_logo" src="{THEME}/img/icon/lifecell.svg" alt="Lifecell"> <a class="contacter" rel="tel"
 							href="tel:+380933823282"><b>(093)</b> 382-32-82</a> </li>
-						<li><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell"> <a class="contacter" rel="email"
+						<li id="email_top_li"><img class="cell_logo" src="{THEME}/img/icon/chatting.svg" alt="Lifecell"> <a class="contacter" rel="email"
 							 href="mailto: agroternua@gmail.com">agroternua@gmail.com</a></li>
 					</ul>
 

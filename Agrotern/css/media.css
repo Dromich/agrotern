@@ -71,6 +71,19 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.sform {
+		width: 100%;
+		padding: 5px;
+	}
+	.top_logo_img {
+		max-width: 100%;		
+		width: 100%;
+		
+	}
+	.item_ttl {
+	
+		font-size: 15px;
+	}
 	.b_but {
 		padding: 5px;
 		
@@ -198,11 +211,52 @@
 	.text-justify li {		
 		margin: 2px;
 	}
+	.price.nnprc {
+		
+		font-size: 2.2rem;
+	
+	}
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	#email_top_li a {
+		font-size: 9px;
+	}
+	.sform {
+		width: 100%;
+		padding: 5px;
+	}
+	.top_logo_img {
+		max-width: 100%;		
+		width: 100%;
+		
+	}
+	.onsale {
+		position: absolute;
+		border: 2px solid red;
+		padding: 8px;
+		text-transform: uppercase;
+		color: red;
+		transform: rotate(-45deg);
+		top: 6%;
+		left: 1%;
+		font-size: 10px;
+	}
+	.price {
+		font-size: 1.6rem;
+		
+	}
+	.price.nnprc {
+		
+		font-size: 1.6rem;
+	
+	}
+	.item_ttl {
+	
+		font-size: 12px;
+	}
 	.b_but {
 		padding: 5px;
 		
@@ -219,7 +273,7 @@
 		font-size: 11px;
 	}
 	.main_item {
-		height: 420px;
+		height: 350px;
 		padding: 10px;
 	}
 	.bay_naw {
