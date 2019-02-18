@@ -63,7 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	
 
-	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
 	<link href="{THEME}/filter/filter.css" type="text/css" rel="stylesheet">
 
