@@ -556,7 +556,32 @@ window.addEventListener("load", function(event) {
 	</div>
 	[/available]
 
+	[smartphone]
 
+<section id="mob_consult">
+<div class="container">
+	<div class="row">
+
+		<h3 class="mob_consult_ttl">Заказать консультацию</h3>
+
+		<form class="consult_form ajax_form">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="AGROTERN">
+			<input type="hidden" name="admin_email" value="agroternua@gmail.com">
+			<input type="hidden" name="form_subject" value="Заявка з AGROTERN">
+			<!-- END Hidden Required Fields -->
+			<input type="text" name="Ім'я" placeholder="Ваше имя" required>
+			<input type="tel" name="Телефон" placeholder="Ваш телефон" required>
+			<input class="red_submit" type="submit" value="Отправить">
+		</form>
+
+	</div>
+</div>
+
+</section>
+
+
+	[/smartphone]
 
 	{include file="/seo.tpl"}
 
